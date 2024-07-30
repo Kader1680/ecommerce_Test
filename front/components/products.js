@@ -10,7 +10,7 @@ function Products() {
    
 
         <div  className='discount absolute'>20 %</div>
-        <Image alt='alt'  src="/p1.png " width={300} height={460.03}  />
+        <Image alt='alt'  src="./p1.png " width={300} height={460.03}  />
         <div className='price  flex justify-between '>
             <div>name Product</div>
             <div className=' block '>
@@ -22,7 +22,7 @@ function Products() {
     
     <div className='relative'>
         <div  className='discount absolute'>20 %</div>
-        <Image alt='alt'  src="/p2.png " width={300} height={460.03}  />
+        <Image alt='alt'  src="./p2.png " width={300} height={460.03}  />
         <div className='price  flex justify-between '>
             <div>name Product</div>
             <div className=' grid grid-cols-1 '>

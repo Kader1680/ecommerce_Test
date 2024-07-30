@@ -23,9 +23,8 @@ function GetApp() {
 
 
         </div>
-        
-    {/* <img  className='scndImg md:absolute' width={308} height={483} src='/Rectangle 799.png' />
-     */}
+    
+    
     </div>
   )
 }
