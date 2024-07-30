@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-
+import p1 from "../public/p1.png"
 function Products() {
   return (
     <div className='products  md:gap-4 grid sm:grid-cols-2 md:grid-cols-4'>
@@ -10,7 +10,7 @@ function Products() {
    
 
         <div  className='discount absolute'>20 %</div>
-        <Image alt='alt'  src="./p1.png " width={300} height={460.03}  />
+        <Image alt='alt'  src={p1} width={300} height={460.03}  />
         <div className='price  flex justify-between '>
             <div>name Product</div>
             <div className=' block '>
@@ -22,7 +22,7 @@ function Products() {
     
     <div className='relative'>
         <div  className='discount absolute'>20 %</div>
-        <Image alt='alt'  src="./p2.png " width={300} height={460.03}  />
+        <Image alt='alt'  src="/p2.png " width={300} height={460.03}  />
         <div className='price  flex justify-between '>
             <div>name Product</div>
             <div className=' grid grid-cols-1 '>
