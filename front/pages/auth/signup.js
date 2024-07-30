@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function SignUp() {
-  const variants = ["flat", "bordered", "underlined", "faded"];
 
   return (
     <div className=" loginPart  sm:block md:flex md:items-center md:justify-center   ">
@@ -18,12 +17,12 @@ function SignUp() {
         <div className="authO" style={{ marginTop: "2rem" }}>
           <Button className="googleBtn">
   
-            <Image alt="alt" src="/images/googleIcon.png " width={20} height={20} />{" "}
+            <Image alt="alt" src="/images/googleIcon.png " width={20} height={20} /> 
             Continuez avec Google
           </Button>
 
           <Button className="facebookBtn">
-            <Image alt="alt" src="/images/facebook.png " width={20} height={20} />{" "}
+            <Image alt="alt" src="/images/facebook.png " width={20} height={20} /> 
             Continuez avec Facebook
           </Button>
           <Button className="appleBtn">
@@ -63,7 +62,7 @@ function SignUp() {
             </form>
 
 
-            <p className="btmTxt" >Already have an account? <Link className=" underline" to="">Log in</Link></p>
+            <p className="btmTxt" >Already have an account? <Link className=" underline" to="/">Log in</Link></p>
           </div>
         </div>
       </div>

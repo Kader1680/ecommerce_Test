@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 
 function login() {
-  const variants = ["flat", "bordered", "underlined", "faded"];
 
   return (
 

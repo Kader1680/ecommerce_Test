@@ -1,12 +1,10 @@
 import React from 'react'
-import {dataProducts} from './dataProducts'
 import Image from "next/image";
 import { Button, Link } from '@nextui-org/react';
 import GetApp from '@/components/getApp';
 import Products from '@/components/products';
 
 function Home() {
-    const [coutner, setcoutner] = useState(0);
      
    
   return (
