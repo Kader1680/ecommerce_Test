@@ -50,7 +50,7 @@ function profil() {
 
             <div className=' lg:grid-span-3 flex items-center justify-center gap-3'>
             <Image width={30} height={30} alt='alt'  src='/images/mail.png' />
-            <Button as={Link} className='font-bold  bg-black text-white rounded-full' href="#" variant="flat">
+            <Button as={Link} className='font-bold  bg-black text-white rounded-full'   variant="flat">
             Follow
         
             </Button>

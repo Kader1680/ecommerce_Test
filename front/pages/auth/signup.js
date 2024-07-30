@@ -54,7 +54,7 @@ function SignUp() {
                   />
 
              
-              <Link className="mt-4 float-end" to="/">forget password</Link>
+              <Link className="mt-4 float-end" href="/">forget password</Link>
 
               <Button className="LoginIcon" style={{ backgroundColor:"black", margin: "30px 0px" }}>
                  Log in
@@ -62,7 +62,7 @@ function SignUp() {
             </form>
 
 
-            <p className="btmTxt" >Already have an account? <Link className=" underline" to="/">Log in</Link></p>
+            <p className="btmTxt" >Already have an account? <Link className=" underline"  href="/" >Log in</Link></p>
           </div>
         </div>
       </div>
@@ -74,3 +74,6 @@ function SignUp() {
 }
 
 export default SignUp;
+
+
+ 

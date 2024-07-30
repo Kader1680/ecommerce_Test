@@ -13,7 +13,7 @@ function login() {
         <h3 className=" text-center	">Login to KIFT</h3>
         <p className=" dntHaveAccnt text-center	">
           Don&lsquo;t have an account?
-          <Link className=" font-bold text-center	" to="/sign">
+          <Link className=" font-bold text-center	" href="/sign">
             Sign up
           </Link>
         </p>
@@ -57,7 +57,7 @@ function login() {
                   />
 
              
-              <Link className="mt-4 float-end" to="/">forget password</Link>
+              <Link className="mt-4 float-end" href="/">forget password</Link>
 
               <Button className="LoginIcon" style={{ backgroundColor:"black", margin: "30px 0px" }}>
                  Log in
@@ -65,7 +65,7 @@ function login() {
             </form>
 
 
-            <p className="btmTxt" >This site is protected by reCAPTCHA Enterprise and the Google <Link className=" underline" to="">Privacy Policy</Link> and <Link className=" underline" >Terms of Service</Link> apply.</p>
+            <p className="btmTxt" >This site is protected by reCAPTCHA Enterprise and the Google <Link className=" underline" href="">Privacy Policy</Link> and <Link href="/" className=" underline" >Terms of Service</Link> apply.</p>
           </div>
         </div>
       </div>
