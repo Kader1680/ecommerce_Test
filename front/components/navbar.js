@@ -42,9 +42,9 @@ const MyNavbar = () => {
       </ul>
       <div className="flex space-x-4">
       
-        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/images/srch.svg' /></div>
-        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/images/noti.svg' /></div>
-        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/images/bg.svg' /></div>
+        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/srch.svg' /></div>
+        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/noti.svg' /></div>
+        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/bg.svg' /></div>
       </div>
       <div className="hidden lg:flex space-x-4 ml-4">
       <Button as={Link} className=' bg-white text-black rounded-full border' href="#" variant="flat">

@@ -27,7 +27,7 @@ function chekout() {
                         </Button>
                         <Button style={{  width:"50%" }}  as={Link} className=' mt-5 mb-5 bg-white text-white rounded-full border' href="#" variant="flat">
                         
-                            <Image width={30} height={30} alt='alt'  src='/images/PayPal 1.png' />
+                            <Image width={30} height={30} alt='alt'  src='/PayPal 1.png' />
                         </Button>
                       </div>
                       <p style={{ fontSize:"12px", color:"#b0b0b0" }}>By continuing, I confirm that I have read and accept the Terms and Conditions. and the Privacy Policy.</p>

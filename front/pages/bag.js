@@ -10,7 +10,7 @@ function bag() {
             Bag
             </h2>
              <div className='embty mr-auto  items-center'>
-            <Image width={200} height={200} alt='alt' src='/images/embty.png' />
+            <Image width={200} height={200} alt='alt' src='/embty.png' />
 
             <h2 className=' font-bold' style={{ fontSize:"48px" }}>
             YOUR BAG IS EMPTY
@@ -40,7 +40,7 @@ function bag() {
                 <div className='rounded border p-4'>
                     <div className='   flex items-center justify-between'>
                         <div className=' flex justify-center items-center'>
-                            <Image width={50} height={50}   alt='alt' src='/images/profilItem.png' />
+                            <Image width={50} height={50}   alt='alt' src='/profilItem.png' />
                             <div className=' ms-3'>
                                 <h6>Floyd Miles</h6>
                                 <p className=' font-normal'>@floydmiles </p>
@@ -52,7 +52,7 @@ function bag() {
                     </div>
 
                     <div className='flex items-center mt-3'>
-                        <Image width={200} height={200}  alt='alt' src='/images/item (1).png' />
+                        <Image width={200} height={200}  alt='alt' src='/item (1).png' />
                         <div>
                             <div className=' ms-3 font-bold'>CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED</div>
                             <div className='ms-3 flex items-center'>
@@ -70,7 +70,7 @@ function bag() {
             <div className='rounded border p-4'>
                 <div className='   flex items-center justify-between'>
                     <div className=' flex justify-center items-center'>
-                        <Image width={50} height={200}  alt='alt' src='/images/profilItem.png' />
+                        <Image width={50} height={200}  alt='alt' src='/profilItem.png' />
                         <div className=' ms-3'>
                             <h6>Floyd Miles</h6>
                             <p>@floydmiles </p>
@@ -82,7 +82,7 @@ function bag() {
                 </div>
 
                 <div className='flex items-center mt-3'>
-                    <Image width={200} height={200}  alt='alt' src='/images/it.png' />
+                    <Image width={200} height={200}  alt='alt' src='/it.png' />
                     <div>
                         <div className=' ms-3 font-bold'>CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED</div>
                         <div className='ms-3 flex items-center'>
@@ -101,7 +101,7 @@ function bag() {
             <div className='rounded border p-4'>
                 <div className='   flex items-center justify-between'>
                     <div className=' flex justify-center items-center'>
-                        <Image width={50} height={50}   alt='alt' src='/images/profilItem.png' />
+                        <Image width={50} height={50}   alt='alt' src='/profilItem.png' />
                         <div className=' ms-3'>
                             <h6>Floyd Miles</h6>
                             <p>@floydmiles </p>
@@ -113,7 +113,7 @@ function bag() {
                 </div>
 
                 <div className='flex items-center mt-3'>
-                    <Image width={200} height={200} alt='alt' src='/images/item (6).png' />
+                    <Image width={200} height={200} alt='alt' src='/item (6).png' />
                     <div>
                         <div className=' ms-3 font-bold'>CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED</div>
                         <div className='ms-3 flex items-center'>
@@ -132,7 +132,7 @@ function bag() {
             <div className='rounded border p-4 mt-2'>
                 <div className='   flex items-center justify-between'>
                     <div className=' flex justify-center items-center'>
-                        <Image width={50} height={50}  alt='alt' src='/images/profilItem.png' />
+                        <Image width={50} height={50}  alt='alt' src='/profilItem.png' />
                         <div className=' ms-3'>
                             <h6>Floyd Miles</h6>
                             <p>@floydmiles </p>
@@ -144,7 +144,7 @@ function bag() {
                 </div>
 
                 <div className='flex items-center mt-3'>
-                    <Image width={200} height={200} alt='alt' src='/images/item (6).png' />
+                    <Image width={200} height={200} alt='alt' src='/item (6).png' />
                     <div>
                         <div className=' ms-3 font-bold'>CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED</div>
                         <div className='ms-3 flex items-center'>
@@ -162,7 +162,7 @@ function bag() {
             <div className='rounded border p-4'>
                 <div className='   flex items-center justify-between'>
                     <div className=' flex justify-center items-center'>
-                        <Image width={50} height={50}  alt='alt' src='/images/profilItem.png' />
+                        <Image width={50} height={50}  alt='alt' src='/profilItem.png' />
                         <div className=' ms-3'>
                             <h6>Floyd Miles</h6>
                             <p>@floydmiles </p>
@@ -174,7 +174,7 @@ function bag() {
                 </div>
 
                 <div className='flex items-center mt-3'>
-                    <Image width={200} height={200} alt='alt' src='/images/item (5).png' />
+                    <Image width={200} height={200} alt='alt' src='/item (5).png' />
                     <div>
                         <div className=' ms-3 font-bold'>CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED</div>
                         <div className='ms-3 flex items-center'>
@@ -230,13 +230,13 @@ function bag() {
 
                     <h3 className=' mb-4'>Download the app</h3>
 
-                    <Image style={{ width:"100%" }} width={200} height={200} alt='alt' src='/images/Rectangle 2521.png' />
+                    <Image style={{ width:"100%" }} width={200} height={200} alt='alt' src='/Rectangle 2521.png' />
 
                     <p className=' mt-4'>List and shop and easier than on web </p>
                     <p className=' mt-4'>(and unlock the lastest features )</p>
                     <div  className=' flex items-center mt-3 mb-3 '>
-                        <Image width={200} height={200} alt='alt'   src="/images/App Store Blue Border.png" />
-                        <Image width={200} height={200}  alt='alt' className=' ms-5'  src="/images/Google Play Blue Border.png" />
+                        <Image width={200} height={200} alt='alt'   src="/App Store Blue Border.png" />
+                        <Image width={200} height={200}  alt='alt' className=' ms-5'  src="/Google Play Blue Border.png" />
                     </div>
                 </div>
             </div>

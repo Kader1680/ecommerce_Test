@@ -12,7 +12,7 @@ function SearchBar() {
         radius="lg"
         placeholder="search items"
         startContent={
-          <Image alt='alt' width={20} height={20} src='/images/searchicon.png' />
+          <Image alt='alt' width={20} height={20} src='/searchicon.png' />
         }
       />
   </div>

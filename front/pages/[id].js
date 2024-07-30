@@ -11,7 +11,7 @@ function id() {
         <div className='singleProduct grid md:grid-cols-10  '>
         <div className=' md:col-span-7 sm:col-span-10 '>
 
-            <Image alt='alt'  style={{ borderRadius:"30px" }} width={759} height={674} src= '/images/singleProduct.png' />
+            <Image alt='alt'  style={{ borderRadius:"30px" }} width={759} height={674} src= '/singleProduct.png' />
 
         </div>
 
@@ -20,7 +20,7 @@ function id() {
         <div className='description md:col-span-3 sm:col-span-10'>
             <h2>DJI mavic mini 2 4K Drone Fly More Version New Unregistered /Drone 10km 4500m</h2>
             <div className=' flex items-center'>
-                <Image alt='alt'  width={80.5} height={14} src='/images/Img - Rated 4.00 out of 5.png' />
+                <Image alt='alt'  width={80.5} height={14} src='/Img - Rated 4.00 out of 5.png' />
                 <p className=' ms-4' style={{ fontSize:"14px" }}>1 Review</p>
             </div>
             <p>Price</p>
@@ -89,7 +89,7 @@ function id() {
                         <p>Free shipping on orders over $89 Details</p>
                     </CardBody>
                 </Card>
-                <Image alt='alt' width={100} height={100} src='/images/Screenshot 2024-04-23 at 12.57 1.png'/>
+                <Image alt='alt' width={100} height={100} src='/Screenshot 2024-04-23 at 12.57 1.png'/>
 
                 <div className='safe flex items-center mt-3'>
                     <Image alt='alt'  width={32} height={32} src='images/shield.png' />
@@ -101,7 +101,7 @@ function id() {
                     name="Leslie Alexander"
                     description="(137) reviews"
                     avatarProps={{
-                        src: "/images/Ellipse 443.png"
+                        src: "/Ellipse 443.png"
                 }}
                  />
             </div>

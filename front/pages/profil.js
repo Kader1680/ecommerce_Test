@@ -13,17 +13,17 @@ function profil() {
 
                 
             <div className=' sm:mr-auto items-center'>
-                <Image width={30} height={30} alt='alt'  src='/images/Ellipse 1178.png' />
+                <Image width={30} height={30} alt='alt'  src='/Ellipse 1178.png' />
             </div>
 
 
             <div className=' lg:grid-span-1 items-center'>
                <div className=' flex items-center'>
                     <h3>Leslie Alexander</h3>
-                    <Image width={30} height={30} alt='alt' src='/images/Frame.png' />
+                    <Image width={30} height={30} alt='alt' src='/Frame.png' />
                </div>
                <div className=' flex items-center'>
-                    <Image alt='alt' width={100} height={28} src='/images/Frame 1000005481.png' />
+                    <Image alt='alt' width={100} height={28} src='/Frame 1000005481.png' />
                     <p className=' ms-2' style={{ fontSize:"15px" }}>(137) reviews</p>
                </div>
             </div>
@@ -49,7 +49,7 @@ function profil() {
             </div>
 
             <div className=' lg:grid-span-3 flex items-center justify-center gap-3'>
-            <Image width={30} height={30} alt='alt'  src='/images/mail.png' />
+            <Image width={30} height={30} alt='alt'  src='/mail.png' />
             <Button as={Link} className='font-bold  bg-black text-white rounded-full'   variant="flat">
             Follow
         

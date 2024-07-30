@@ -11,20 +11,20 @@ function GetApp() {
             <p className=' sm:text-center'>Download the app for free on iPhone, iPad and Android.</p>
             <div  className=' flex items-center mt-3 mb-3 '>
            
-                        <Image alt='alt' height={100} width={100}  src="/images/App Store Blue Border.png" />
-                        <Image alt='alt' height={30}  className=' ms-5' width={100} src="/images/Google Play Blue Border.png" />
+                        <Image alt='alt' height={100} width={100}  src="/App Store Blue Border.png" />
+                        <Image alt='alt' height={30}  className=' ms-5' width={100} src="/Google Play Blue Border.png" />
             </div>
         </div>
         <div className='imgDirc  '>
 
             
-            <Image alt='alt' height={30} width={33} className='relative'  src='/images/Rectangle 798.png' />
+            <Image alt='alt' height={30} width={33} className='relative'  src='/Rectangle 798.png' />
             
 
 
         </div>
         
-    {/* <img  className='scndImg md:absolute' width={308} height={483} src='/images/Rectangle 799.png' />
+    {/* <img  className='scndImg md:absolute' width={308} height={483} src='/Rectangle 799.png' />
      */}
     </div>
   )
