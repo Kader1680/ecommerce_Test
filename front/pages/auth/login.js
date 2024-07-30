@@ -1,15 +1,11 @@
 import { Button, Input } from "@nextui-org/react";
 import React from "react";
 import Image from "next/image";
-import { EyeFilledIcon } from "../../components/Input/EyeFilledIcon";
-import { EyeSlashFilledIcon } from "../../components/Input/EyeSlashFilledIcon";
+import Link from "next/link";
 
 function login() {
   const variants = ["flat", "bordered", "underlined", "faded"];
 
-  const [isVisible, setIsVisible] = React.useState(false);
-
-  const toggleVisibility = () => setIsVisible(!isVisible);
   return (
 
     <div className="Authentication">
@@ -17,24 +13,24 @@ function login() {
       <div className="leftSideLogin  ">
         <h3 className=" text-center	">Login to KIFT</h3>
         <p className=" dntHaveAccnt text-center	">
-          Don't have an account?{" "}
-          <a className=" font-bold text-center	" href="/sign">
+          Don&lsquo;t have an account?
+          <Link className=" font-bold text-center	" to="/sign">
             Sign up
-          </a>
+          </Link>
         </p>
         <div className="authO">
           <Button className="googleBtn">
   
-            <Image src="/images/googleIcon.png " width={20} height={20} /> 
+            <Image alt="alt"   src="/images/googleIcon.png " width={20} height={20} /> 
             Continuez avec Google
           </Button>
 
           <Button className="facebookBtn">
-            <Image src="/images/facebook.png " width={20} height={20} /> 
+            <Image alt="alt"    src="/images/facebook.png " width={20} height={20} /> 
             Continuez avec Facebook
           </Button>
           <Button className="appleBtn">
-            <Image src="/images/Apple.png " width={20} height={20} /> Continuez
+            <Image alt="alt"  src="/images/Apple.png " width={20} height={20} /> Continuez
             avec Appel
           </Button>
           <div className=" flex items-center	  justify-between">
@@ -62,7 +58,7 @@ function login() {
                   />
 
              
-              <a className="mt-4 float-end" href="/">forget password</a>
+              <Link className="mt-4 float-end" to="/">forget password</Link>
 
               <Button className="LoginIcon" style={{ backgroundColor:"black", margin: "30px 0px" }}>
                  Log in
@@ -70,12 +66,12 @@ function login() {
             </form>
 
 
-            <p className="btmTxt" >This site is protected by reCAPTCHA Enterprise and the Google <a className=" underline" href="">Privacy Policy</a> and <a className=" underline" >Terms of Service</a> apply.</p>
+            <p className="btmTxt" >This site is protected by reCAPTCHA Enterprise and the Google <Link className=" underline" to="">Privacy Policy</Link> and <Link className=" underline" >Terms of Service</Link> apply.</p>
           </div>
         </div>
       </div>
       <div class="rightSideLogin" >
-        <Image width={648} height={819} src="/images/rightImg.png " />
+        <Image alt="alt" width={648} height={819} src="/images/rightImg.png " />
       </div>
     </div>
     </div>

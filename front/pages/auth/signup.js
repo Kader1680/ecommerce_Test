@@ -1,15 +1,12 @@
 import { Button, Input } from "@nextui-org/react";
 import React from "react";
 import Image from "next/image";
-import { EyeFilledIcon } from "../../components/Input/EyeFilledIcon";
-import { EyeSlashFilledIcon } from "../../components/Input/EyeSlashFilledIcon";
+ 
+import Link from "next/link";
 
 function SignUp() {
   const variants = ["flat", "bordered", "underlined", "faded"];
 
-  const [isVisible, setIsVisible] = React.useState(false);
-
-  const toggleVisibility = () => setIsVisible(!isVisible);
   return (
     <div className=" loginPart  sm:block md:flex md:items-center md:justify-center   ">
       <div className="leftSideLogin  ">
@@ -21,16 +18,16 @@ function SignUp() {
         <div className="authO" style={{ marginTop: "2rem" }}>
           <Button className="googleBtn">
   
-            <Image src="/images/googleIcon.png " width={20} height={20} />{" "}
+            <Image alt="alt" src="/images/googleIcon.png " width={20} height={20} />{" "}
             Continuez avec Google
           </Button>
 
           <Button className="facebookBtn">
-            <Image src="/images/facebook.png " width={20} height={20} />{" "}
+            <Image alt="alt" src="/images/facebook.png " width={20} height={20} />{" "}
             Continuez avec Facebook
           </Button>
           <Button className="appleBtn">
-            <Image src="/images/Apple.png " width={20} height={20} /> Continuez
+            <Image alt="alt" src="/images/Apple.png " width={20} height={20} /> Continuez
             avec Appel
           </Button>
           <div className=" flex items-center	  justify-between">
@@ -58,7 +55,7 @@ function SignUp() {
                   />
 
              
-              <a className="mt-4 float-end" href="/">forget password</a>
+              <Link className="mt-4 float-end" to="/">forget password</Link>
 
               <Button className="LoginIcon" style={{ backgroundColor:"black", margin: "30px 0px" }}>
                  Log in
@@ -66,12 +63,12 @@ function SignUp() {
             </form>
 
 
-            <p className="btmTxt" >Already have an account? <a className=" underline" href="">Log in</a></p>
+            <p className="btmTxt" >Already have an account? <Link className=" underline" to="">Log in</Link></p>
           </div>
         </div>
       </div>
       <div class="rightSideLogin" >
-        <Image width={648} height={819} src="/images/leftimg.png " />
+        <Image alt="alt" width={648} height={819} src="/images/leftimg.png " />
       </div>
     </div>
   );

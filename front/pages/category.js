@@ -1,6 +1,7 @@
 import FilterCategory from '@/components/filterBar'
 import GetApp from '@/components/getApp'
 import Products from '@/components/products'
+import Image from 'next/image'
 import React from 'react'
 
 function category() {
@@ -10,35 +11,36 @@ function category() {
         <p className=' font-bold'>CATEGORIES</p>
         <div className='type md:flex justify-center gap-2 '>
             <div>
-                <img src='/images/cat (1).png' />
+            
+                <Image width={100} height={100} alt='alt' src='/images/cat (1).png' />
                 <p className=' text-center font-bold mt-2'>Coats & Jackets</p>
             </div>
             <div>
-                <img src='/images/cat (2).png' />
+                <Image width={100} height={100} alt='alt' src='/images/cat (2).png' />
                 <p className=' text-center font-bold mt-2'>Sweaters</p>
             </div>
             <div>
-                <img src='/images/cat (3).png' />
+                <Image width={100} height={100} alt='alt' src='/images/cat (3).png' />
                 <p className=' text-center font-bold mt-2'>Tops</p>
             </div>
             <div>
-                <img src='/images/cat (4).png' />
+                <Image width={100} height={100} alt='alt' src='/images/cat (4).png' />
                 <p className=' text-center font-bold mt-2'>Dresses</p>
             </div>
             <div>
-                <img src='/images/cat (7).png' />
+                <Image width={100} height={100} alt='alt' src='/images/cat (7).png' />
                 <p className=' text-center font-bold mt-2'>Shoes</p>
             </div>
             <div>
-                <img src='/images/cat (8).png' />
+                <Image width={100} height={100} alt='alt' src='/images/cat (8).png' />
                 <p className=' text-center font-bold mt-2'>Handbags</p>
             </div>
             <div>
-                <img src='/images/cat (9).png' />
+                <Image width={100} height={100} alt='alt' src='/images/cat (9).png' />
                 <p className=' text-center font-bold mt-2'>Skirts</p>
             </div>
             <div>
-                <img src='/images/cat (10).png' />
+                <Image width={100} height={100} alt='alt' src='/images/cat (10).png' />
                 <p className=' text-center font-bold mt-2'>Accessories</p>
             </div>
             

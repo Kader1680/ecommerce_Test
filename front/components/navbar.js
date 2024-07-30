@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Button, link } from '@nextui-org/react';
+import Image from 'next/image';
 
 
 
@@ -40,9 +41,10 @@ const MyNavbar = () => {
         </li>
       </ul>
       <div className="flex space-x-4">
-        <div className="text-lg"><img width={30} src='/images/srch.svg' /></div>
-        <div className="text-lg"><img width={30} src='/images/noti.svg' /></div>
-        <div className="text-lg"><img width={30} src='/images/bg.svg' /></div>
+      
+        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/images/srch.svg' /></div>
+        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/images/noti.svg' /></div>
+        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/images/bg.svg' /></div>
       </div>
       <div className="hidden lg:flex space-x-4 ml-4">
       <Button as={Link} className=' bg-white text-black rounded-full border' href="#" variant="flat">
@@ -60,7 +62,7 @@ const MyNavbar = () => {
       <div>
       
       
-      <ul style={{ 'zIndex':'100' }} className= {`${isOpen ? 'sm:block md:block' : 'sm:hidden md:hidden'} absolute top-16 left-0 w-full bg-white flex flex-col items-center space-y-4 hidden z-30`} >
+      <ul style={{ 'zIndex':'100' }} className= {`${isOpen ? 'sm:block md:block' : 'sm:hidden md:hidden'} absolute top-16 left-0 w-full bg-white flex flex-col items-center space-y-4  z-30`} >
         <li>
           <Link href="/">
             Menswear

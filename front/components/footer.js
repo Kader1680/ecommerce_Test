@@ -1,5 +1,6 @@
 import React from 'react'
 import Counter from './counter'
+import Image from 'next/image'
 
 function Footer() {
   return (
@@ -13,10 +14,11 @@ function Footer() {
                     <li>Email example@info.com</li>
                     <li>Call (064) 332-1233</li>
                     <li>Subscribe To Our Newsletter</li>
+                    
                     <li style={{ fontWeight:"bolder" }}  className=' uppercase'>BUY AND SELL ON APP</li>
                     <div  className=' flex items-center mt-3 mb-3 '>
-                        <img width={100}  src="/images/appstore.png " />
-                        <img className=' ms-5' width={100} src="/images/playstore.png " />
+                        <Image alt='alt' height={30} width={100}  src="/images/appstore.png " />
+                        <Image alt='alt' height={30} className=' ms-5' width={100} src="/images/playstore.png " />
                     </div>
                     <li style={{ fontWeight:"bolder" }} className='uppercase'>CONNECT WITH US</li>
 
@@ -45,7 +47,7 @@ function Footer() {
                     <li>Michael Kors  </li>
                     <li>Louis Vuitton </li>
                     <li>lululemon athletica </li>
-                    <li>PINK Victoria's Secret  </li>
+                    <li>PINK Victoria &lsquo; s Secret  </li>
                     <li>Coach  </li>
                     <li>Chanel </li>
                     <li>See All Brands » </li>
@@ -75,7 +77,7 @@ function Footer() {
         <hr style={{ width:"100%" }}></hr>
         <div className=' sm:text-center md:flex items-center justify-between pt-5 mb-5'>
             <div className='sm:text-center'>© 2024 KIFT, Inc. PrivacyTerms </div>
-            <img className='sm:text-center' src='/images/footer-img.png.png' />
+            <Image alt='alt' height={30} width={30} className='sm:text-center' src='/images/footer-img.png.png' />
         </div>
    </div>
   )

@@ -21,10 +21,10 @@ function Home() {
                 </div>
                 <div style={{ position:"relative" }} className='field2'>
                   
-                    <img style={{ position:"absolute", top:"26px", right:"2%", zIndex: "2" }} className='direction' src="/images/white.png " width={71} height={
+                    <Image  alt='alt' style={{ position:"absolute", top:"26px", right:"2%", zIndex: "2" }} className='direction' src="/images/white.png " width={71} height={
 70} />
 
-                    <img  className='direction' src="/images/sll.png " width={648} height={
+                    <Image  alt='alt'  className='direction' src="/images/sll.png " width={648} height={
                     258} />      
        
                </div>
@@ -41,9 +41,9 @@ function Home() {
             
             <div className='field2 relative'>
 
-               <img style={{ position:"absolute", top:"3%", right:"4%", zIndex: "2" }} className='direction' src="/images/white.png " width={71} height={
+               <Image  alt='alt' style={{ position:"absolute", top:"3%", right:"4%", zIndex: "2" }} className='direction' src="/images/white.png " width={71} height={
 70} />
-               <img className='women' src="/images/picwomen.png " width={
+               <Image alt='alt' className='women' src="/images/picwomen.png " width={
 663} height={
     757} />
             </div>
@@ -70,13 +70,13 @@ function Home() {
         <h3 className=' sm:text-center' >Best selling brands</h3>
         <div className='md:flex md:items-cente md:justify-between markes sm:grid sm:grid-cols-2'>
                     
-        <img  src="/images/ans.png "  />
-            <img  src="/images/maj.png " />
-            <img  src="/images/coste.png " />
-            <img  src="/images/bl.png "  />
-            <img  src="/images/rebok.png " />
-            <img  src="/images/kb.png " />
-            <img  src="/images/nike.png "/>
+        <Image width={100} height={100} alt='alt'  src="/images/ans.png "  />
+            <Image width={100} height={100} alt='alt'  src="/images/maj.png " />
+            <Image width={100} height={100} alt='alt'  src="/images/coste.png " />
+            <Image width={100} height={100} alt='alt'  src="/images/bl.png "  />
+            <Image width={100} height={100} alt='alt'  src="/images/rebok.png " />
+            <Image width={100} height={100} alt='alt'  src="/images/kb.png " />
+            <Image width={100} height={100} alt='alt'  src="/images/nike.png "/>
         </div>
         </div>
 
@@ -85,12 +85,12 @@ function Home() {
 
         <div className='clothes  mt-9 md:gap-3     '>
             <div className=' grid md:grid-cols-2 gap-2'>
-                <img className=' sm:mt-3'  src="/images/g1.png "   />
-                <img className=' sm:mt-3'   src="/images/g2.png "  />
+                <Image width={100} height={100} alt='alt' className=' sm:mt-3'  src="/images/g1.png "   />
+                <Image width={100} height={100} alt='alt' className=' sm:mt-3'   src="/images/g2.png "  />
             </div>
             <div className=' md:flex justify-between imgBtom' >
-                 <img className=' sm:mt-3'  src="/images/g3.png "  />
-                 <img className=' sm:mt-3'   src="/images/g4.png " /> 
+                 <Image width={100} height={100} alt='alt' className=' sm:mt-3'  src="/images/g3.png "  />
+                 <Image width={100} height={100} alt='alt' className=' sm:mt-3'   src="/images/g4.png " /> 
             </div>    
         </div>
 
