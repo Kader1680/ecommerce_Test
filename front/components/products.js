@@ -11,7 +11,7 @@ function Products() {
 
         <div  className='discount absolute'>20 %</div>
         <Image alt='alt'  src={p1} width={300} height={460.03}  />
-        <div className='price  flex justify-between '>
+        <div className='price flex justify-between '>
             <div>name Product</div>
             <div className=' block '>
                 <div style={{ fontSize:"18px" }} className=' font-bold '>$50.00</div>
