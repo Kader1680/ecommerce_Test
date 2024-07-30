@@ -22,7 +22,7 @@ function Home() {
                     <Image  alt='alt' style={{ position:"absolute", top:"26px", right:"2%", zIndex: "2" }} className='direction' src="/images/white.png " width={71} height={
 70} />
 
-                    <Image  alt='alt'  className='direction' src= "../public/images/sll.png" width={648} height={
+                    <Image  alt='alt'  className='direction' src= "/sll.png" width={648} height={
                     258} />      
        
                </div>
