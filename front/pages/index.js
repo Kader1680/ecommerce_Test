@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Button, Link } from '@nextui-org/react';
 import GetApp from '@/components/getApp';
 import Products from '@/components/products';
-
+import pics from '../public/images/sll.png'
 function Home() {
      
    
@@ -22,7 +22,7 @@ function Home() {
                     <Image  alt='alt' style={{ position:"absolute", top:"26px", right:"2%", zIndex: "2" }} className='direction' src="/images/white.png " width={71} height={
 70} />
 
-                    <Image  alt='alt'  className='direction' src="/images/sll.png " width={648} height={
+                    <Image  alt='alt'  className='direction' src= {pics} width={648} height={
                     258} />      
        
                </div>
