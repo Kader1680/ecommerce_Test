@@ -21,6 +21,14 @@ body{
 /* ---------------- IPHONE SECTION ------------------- */
 
 @media(max-width: 767px){
+  .type{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .type img {
+    width: 88%;
+    margin: auto;
+}
   .searchBar{
     margin: 15px 0;
   }
@@ -128,9 +136,11 @@ body{
     width: 8rem;
 
   }
+
+  
   .type img{
     width: 135px;
-    height: 135px;
+    height: 95px;
   
   }
   .intro p {
@@ -181,6 +191,10 @@ body{
 
 
 @media(min-width: 991px){
+
+  .type img{
+    height: 135px;
+  }
   .intro h3 {
         width: 471px;
         font-size: 51px;

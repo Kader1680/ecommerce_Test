@@ -7,9 +7,9 @@ import React from 'react'
 function Category() {
   return (
     <div>
-        <h3   className=' font-bold'>Fashion for Women</h3>
-        <p className=' font-bold'>CATEGORIES</p>
-        <div className='type md:flex justify-center gap-2 '>
+        <h3 style={{ fontSize:"24px" }}  className=' font-bold'>Fashion for Women</h3>
+        <p className=' mt-2 mb-5 font-bold'>CATEGORIES</p>
+        <div className='type  md:flex justify-center gap-2 '>
             <div>
             
                 <Image width={100} height={100} alt='alt' src='/cat (1).png' />
