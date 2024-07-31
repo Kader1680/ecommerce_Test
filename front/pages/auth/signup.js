@@ -3,6 +3,10 @@ import React from "react";
 import Image from "next/image";
  
 import Link from "next/link";
+import googleIcon from "../../public/googleIcon.png"
+import facebook from "../../public/facebook.png"
+import Apple from "../../public/Apple.png"
+import leftimg from "../../public/leftimg.png"
 
 function SignUp() {
 
@@ -17,16 +21,16 @@ function SignUp() {
         <div className="authO" style={{ marginTop: "2rem" }}>
           <Button className="googleBtn">
   
-            <Image alt="alt" src="/images/googleIcon.png " width={20} height={20} /> 
+            <Image alt="alt" src={googleIcon} width={20} height={20} /> 
             Continuez avec Google
           </Button>
 
           <Button className="facebookBtn">
-            <Image alt="alt" src="/images/facebook.png " width={20} height={20} /> 
+            <Image alt="alt" src={facebook} width={20} height={20} /> 
             Continuez avec Facebook
           </Button>
           <Button className="appleBtn">
-            <Image alt="alt" src="/images/Apple.png " width={20} height={20} /> Continuez
+            <Image alt="alt" src={Apple} width={20} height={20} /> Continuez
             avec Appel
           </Button>
           <div className=" flex items-center	  justify-between">
@@ -67,7 +71,7 @@ function SignUp() {
         </div>
       </div>
       <div class="rightSideLogin" >
-        <Image alt="alt" width={648} height={819} src="/images/leftimg.png " />
+        <Image alt="alt" width={648} height={819} src={leftimg}/>
       </div>
     </div>
   );

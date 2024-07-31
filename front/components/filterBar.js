@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@nextui-org/react";
 import {Checkbox} from "@nextui-org/react";
 import Image from 'next/image';
-
+import filter from "../public/filter.png"
 function FilterCategory() {
   
 
@@ -72,7 +72,7 @@ function FilterCategory() {
 
         
 
-        <div className=' font-bold flex items-center'><Image width={25} height={38} src='/images/filter 01.png' alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-1 '>FILTER</h4>
+        <div className=' font-bold flex items-center'><Image width={25} height={38} src={filter} alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-1 '>FILTER</h4>
         </div>
        
        <div className="w-64 p-4 border rounded-lg mt-4">

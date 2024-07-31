@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import appstore  from '../public/appstore.png'
 import playstore from '../public/playstore.png'
-
+import creadiCart from "../public/footer-img.png"
 function Footer() {
   return (
    <div>
@@ -78,7 +78,7 @@ function Footer() {
         <hr style={{ width:"100%" }}></hr>
         <div className=' sm:text-center md:flex items-center justify-between pt-5 mb-5'>
             <div className='sm:text-center'>© 2024 KIFT, Inc. PrivacyTerms </div>
-            <Image alt='alt' height={30} width={30} className='sm:text-center' src='/images/footer-img.png.png' />
+            <Image alt='alt' height={30} width={30} className='sm:text-center' src={creadiCart} />
         </div>
    </div>
   )
