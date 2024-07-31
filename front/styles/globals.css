@@ -14,8 +14,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  width: 90%;
+html body{
+  
   margin: 0 auto;
 }
 /* ---------------- IPHONE SECTION ------------------- */
@@ -89,6 +89,7 @@ body{
   .leftSideLogin{
     background-color: rgb(255, 255, 255);
     height: 537px;
+    width: 100%;
    
   }
   .leftSideLogin{
@@ -96,13 +97,14 @@ body{
     height: 762px; */
 }
 .authO{
-    width: 90%;
+    width: 100%;
     height: 636px;
     margin: auto;
   }
 
-  .rightSideLogin{
-
+  .rightSideLogin  img{
+      width: 90%;
+      margin: auto;
   }
   .intro h3{
     font-size: 41px;
@@ -113,14 +115,23 @@ body{
   .type img{
     width: 135px;
     height: 135px;
-   
+  }
+
+  .btmTxt{
+    text-align: center;
+  }
+  .leftSideLogin h3, p {
+    text-align: center;
   }
 }
 
 
 
 /* ---------------- IPAD SECTION ------------------- */
-
+.leftSideLogin .dntHaveAccnt{
+   
+  Height: 24px;
+}
 
 @media(min-width: 768px){
   .profil .bio .img{
@@ -173,10 +184,9 @@ body{
     width: 359px;
     /* height: 762px; */
   }
-  .authO{
-    /* width: 90%; */
-    /* height: 636px; */
-  }
+  .authO {
+    width: 90%;
+}
   .Brands img{
     max-width: 6rem;
 
@@ -286,10 +296,7 @@ width: 100%;
       line-height: 40px;
       
 }
-.leftSideLogin .dntHaveAccnt{
-  Width: 244px;
-  Height: 24px;
-}
+
 .authO{
   font-weight: 400;
   background-color: rgb(255, 255, 255);
@@ -334,7 +341,6 @@ hr{
 
 .btmTxt{
   font-size: 14px;
-  width: 400px;
 }
 
 .selling{
