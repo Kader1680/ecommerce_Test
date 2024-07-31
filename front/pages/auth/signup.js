@@ -6,7 +6,7 @@ import Link from "next/link";
 import googleIcon from "../../public/googleIcon.png"
 import facebook from "../../public/facebook.png"
 import Apple from "../../public/Apple.png"
-// import leftimg from "../../public/leftimg.png"
+import leftimg from "../../public/leftimg.png"
 
 function SignUp() {
 
@@ -70,9 +70,9 @@ function SignUp() {
           </div>
         </div>
       </div>
-      {/* <div className="rightSideLogin" >
+      <div className="rightSideLogin" >
         <Image alt="alt" width={648} height={819} src={leftimg}/>
-      </div> */}
+      </div>
     </div>
   );
 }
