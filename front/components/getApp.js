@@ -2,6 +2,9 @@
 
 import Image from 'next/image'
 import React from 'react'
+import appstore from "../public/appelBorder.png"
+import google from "../public/googleBorder.png"
+import rect789 from "../public/Rectangle 798.png"
 
 function GetApp() {
   return (
@@ -11,14 +14,14 @@ function GetApp() {
             <p className=' sm:text-center'>Download the app for free on iPhone, iPad and Android.</p>
             <div  className=' flex items-center mt-3 mb-3 '>
            
-                        <Image alt='alt' height={100} width={100}  src="/App Store Blue Border.png" />
-                        <Image alt='alt' height={30}  className=' ms-5' width={100} src="/Google Play Blue Border.png" />
+                        <Image alt='alt' height={100} width={100}  src={appstore}/>
+                        <Image alt='alt' height={30}  className=' ms-5' width={100} src={google}/>
             </div>
         </div>
         <div className='imgDirc  '>
 
             
-            <Image alt='alt' height={30} width={33} className='relative'  src='/Rectangle 798.png' />
+            <Image alt='alt' height={30} width={33} className='relative'  src={rect789} />
             
 
 

@@ -2,7 +2,8 @@ import { Button, Link } from '@nextui-org/react'
 import React from 'react'
 import {Card, CardBody} from "@nextui-org/react";
 import Image from 'next/image';
-
+import { appstore } from '../public/appelBorder.png'
+import { playstore } from '../public/googleBorder.png.png'
 function bag() {
   return (
     <div className='bag '>
@@ -235,8 +236,8 @@ function bag() {
                     <p className=' mt-4'>List and shop and easier than on web </p>
                     <p className=' mt-4'>(and unlock the lastest features )</p>
                     <div  className=' flex items-center mt-3 mb-3 '>
-                        <Image width={200} height={200} alt='alt'   src="/App Store Blue Border.png" />
-                        <Image width={200} height={200}  alt='alt' className=' ms-5'  src="/Google Play Blue Border.png" />
+                        <Image width={200} height={200} alt='alt'   src={appstore} />
+                        <Image width={200} height={200}  alt='alt' className=' ms-5'  src={playstore} />
                     </div>
                 </div>
             </div>

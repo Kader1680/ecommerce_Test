@@ -1,6 +1,7 @@
 import React from 'react'
-import Counter from './counter'
 import Image from 'next/image'
+import { appstore } from '../public/appstore.png'
+import { playstore } from '../public/playstore.png'
 
 function Footer() {
   return (
@@ -17,8 +18,8 @@ function Footer() {
                     
                     <li style={{ fontWeight:"bolder" }}  className=' uppercase'>BUY AND SELL ON APP</li>
                     <div  className=' flex items-center mt-3 mb-3 '>
-                        <Image alt='alt' height={30} width={100}  src="/images/appstore.png " />
-                        <Image alt='alt' height={30} className=' ms-5' width={100} src="/images/playstore.png " />
+                        <Image alt='alt' height={30} width={100}  src={appstore} />
+                        <Image alt='alt' height={30} className=' ms-5' width={100} src={playstore} />
                     </div>
                     <li style={{ fontWeight:"bolder" }} className='uppercase'>CONNECT WITH US</li>
 

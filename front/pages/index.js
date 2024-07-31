@@ -21,15 +21,7 @@ import g1 from "../public/g1.png"
 import g2 from "../public/g2.png"
 import g3 from "../public/g3.png"
 import g4 from "../public/g4.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
-import white from "../public/white.png"
+
 function Home() {
      
    
