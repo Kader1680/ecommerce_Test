@@ -70,7 +70,7 @@ function SignUp() {
           </div>
         </div>
       </div>
-      <div class="rightSideLogin" >
+      <div className="rightSideLogin" >
         <Image alt="alt" width={648} height={819} src={leftimg}/>
       </div>
     </div>
