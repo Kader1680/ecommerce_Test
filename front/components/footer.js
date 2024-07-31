@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
-import { appstore } from '../public/appstore.png'
-import { playstore } from '../public/playstore.png'
+import appstore  from '../public/appstore.png'
+import playstore from '../public/playstore.png'
 
 function Footer() {
   return (
