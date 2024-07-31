@@ -5,7 +5,7 @@ import Link from "next/link";
 import googleIcon from "../../public/googleIcon.png"
 import facebook from "../../public/facebook.png"
 import Apple from "../../public/Apple.png"
-import rightImg from "../../public/rightImg.png"
+// import rightImg from "../../public/rightImg.png"
  
 function login() {
 
@@ -73,9 +73,9 @@ function login() {
           </div>
         </div>
       </div>
-      <div class="rightSideLogin" >
+      {/* <div class="rightSideLogin" >
         <Image alt="alt" width={648} height={819} src={rightImg} />
-      </div>
+      </div> */}
     </div>
     </div>
     
