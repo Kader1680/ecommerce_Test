@@ -7,7 +7,7 @@ function SearchBar() {
     <div>
 
       <Input
-      className=' bg-transparent'
+      className='searchBar bg-transparent'
         isClearable
         radius="lg"
         placeholder="search items"

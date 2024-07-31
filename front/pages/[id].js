@@ -5,7 +5,7 @@ import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
 import Products from '@/components/products';
 import GetApp from '@/components/getApp';
 import Image from 'next/image';
-function id() {
+function Id() {
   return (
     <div >
         <div className='singleProduct grid md:grid-cols-10  '>
@@ -123,4 +123,4 @@ function id() {
   )
 }
 
-export default id
+export default Id

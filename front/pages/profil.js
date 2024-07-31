@@ -6,20 +6,20 @@ import GetApp from '@/components/getApp'
 import SearchBar from '@/components/searchBar'
 import Image from 'next/image'
 
-function profil() {
+function Profil() {
   return (
     <div className='mt-8 profil'>
-        <div className='bio grid  sm:justify-center  lg:grid-cols-4 items-center '>
+        <div className='bio grid sm:justify-center md:grid-cols-2   lg:grid-cols-4 items-center '>
 
                 
-            <div className=' sm:mr-auto items-center'>
+            <div className='img sm:mr-auto items-center'>
                 <Image width={30} height={30} alt='alt'  src='/Ellipse 1178.png' />
             </div>
 
 
-            <div className=' lg:grid-span-1 items-center'>
-               <div className=' flex items-center'>
-                    <h3>Leslie Alexander</h3>
+            <div className='name lg:grid-span-1 items-center'>
+               <div className=' flex items-center '>
+                    <h3 className=' '>Leslie Alexander</h3>
                     <Image width={30} height={30} alt='alt' src='/Frame.png' />
                </div>
                <div className=' flex items-center'>
@@ -48,7 +48,7 @@ function profil() {
                 </div>
             </div>
 
-            <div className=' lg:grid-span-3 flex items-center justify-center gap-3'>
+            <div className=' follow lg:grid-span-3 flex items-center justify-center gap-3'>
             <Image width={30} height={30} alt='alt'  src='/mail.png' />
             <Button as={Link} className='font-bold  bg-black text-white rounded-full'   variant="flat">
             Follow
@@ -81,4 +81,4 @@ function profil() {
   )
 }
 
-export default profil
+export default Profil

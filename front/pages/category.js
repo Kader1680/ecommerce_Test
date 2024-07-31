@@ -4,7 +4,7 @@ import Products from '@/components/products'
 import Image from 'next/image'
 import React from 'react'
 
-function category() {
+function Category() {
   return (
     <div>
         <h3   className=' font-bold'>Fashion for Women</h3>
@@ -65,4 +65,4 @@ function category() {
   )
 }
 
-export default category
+export default Category

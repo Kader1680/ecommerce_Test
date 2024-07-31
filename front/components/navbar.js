@@ -61,7 +61,7 @@ const MyNavbar = () => {
       </div>
       <div>
       
-      
+{/*       
       <ul style={{ 'zIndex':'100' }} className= {`${isOpen ? 'sm:block md:block' : 'sm:hidden md:hidden'} absolute top-16 left-0 w-full bg-white flex flex-col items-center space-y-4  z-30`} >
         <li>
           <Link href="/">
@@ -93,7 +93,7 @@ const MyNavbar = () => {
                 Sell Now
              </Button>
           </div>
-        </ul>
+        </ul> */}
       </div>
      
       

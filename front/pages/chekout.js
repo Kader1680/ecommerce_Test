@@ -3,7 +3,7 @@ import {Breadcrumbs, BreadcrumbItem, Button, Link, Input} from "@nextui-org/reac
 import Summary from '@/components/summary';
 import Image from 'next/image';
 
-function chekout() {
+function Chekout() {
   return (
     <div>
     
@@ -108,4 +108,4 @@ function chekout() {
   )
 }
 
-export default chekout
+export default Chekout

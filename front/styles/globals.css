@@ -21,6 +21,32 @@ body{
 /* ---------------- IPHONE SECTION ------------------- */
 
 @media(max-width: 767px){
+  .searchBar{
+    margin: 15px 0;
+  }
+  .getApp div div{
+    justify-content: center;
+}
+
+.getApp p {
+  text-align: center;
+}
+  .filtring{
+    width: 100%;
+  }
+  .follow{
+    margin: 15px 0px 13px 0px;
+  }
+  .profil .bio{
+    padding: 1rem;
+  }
+  .profil .bio .img img{
+    width: 80%;
+    margin: auto;
+  }
+  .profil .bio .name{
+    margin: auto;
+  }
  .getApp .imgDirc img{
    width: 46%;
 }
@@ -32,7 +58,8 @@ body{
 
   .products {
     grid-template-columns: 50% 50%;
-    gap: 1rem;
+    gap: 5px;
+    width: 100%;
   }
   .Brands img {
     width: 100%;
@@ -88,7 +115,19 @@ body{
 
 
 @media(min-width: 768px){
+  .profil .bio .img{
+    margin: auto;
+  }
+  .filtring{
+    width: 98%;
+  }
+  .profil .bio{
+    padding: 1rem;
+  }
+  .profil .bio .img img{
+    width: 8rem;
 
+  }
   .type img{
     width: 135px;
     height: 135px;
@@ -169,6 +208,9 @@ body{
 
 
 @media(min-width: 1200px){
+  .filtring {
+    width: 81%;
+}
   .intro h3{
     width: 532px;
     height: 360px;

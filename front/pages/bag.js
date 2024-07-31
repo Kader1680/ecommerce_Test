@@ -4,7 +4,7 @@ import {Card, CardBody} from "@nextui-org/react";
 import Image from 'next/image';
 // import { appstore } from '../public/appelBorder.png'
 // import { playstore } from '../public/googleBorder.png'
-function bag() {
+function Bag() {
   return (
     <div className='bag '>
         <h2 className=' font-bold' style={{ fontSize:"48px" }}>
@@ -248,4 +248,4 @@ function bag() {
   )
 }
 
-export default bag
+export default Bag
