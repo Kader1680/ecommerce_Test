@@ -21,6 +21,25 @@ html body{
 /* ---------------- IPHONE SECTION ------------------- */
 
 @media(max-width: 767px){
+
+  .reviewImg{
+    width: 100%;
+    height: 380px;
+  }
+
+
+
+  .btmFooter{
+   
+     text-align: "center";
+  
+  }
+  .master{
+    width: 15rem;
+    margin: auto;
+    padding: 18px 0;
+  
+  }
   .type{
     display: grid;
     grid-template-columns: 50% 50%;
@@ -123,17 +142,37 @@ html body{
   .leftSideLogin h3, p {
     text-align: center;
   }
+  .reviews div div{
+      margin-bottom: 0.5rem;
+  }
+
+  .stars{
+    margin: 15px auto;
+  }
 }
 
 
 
 /* ---------------- IPAD SECTION ------------------- */
+
+
 .leftSideLogin .dntHaveAccnt{
    
   Height: 24px;
 }
 
+
+
 @media(min-width: 768px){
+
+  .reviewImg{
+    width: 200px;
+    height: 200px;
+   }
+  
+  .reviews{
+    width: 70%;
+  }
   .profil .bio .img{
     margin: auto;
   }
@@ -549,3 +588,11 @@ select:focus{
   font-weight: 700;
   font-family: "AT Pinko";
  }
+
+
+  
+.upload img, .add, .blabla{
+  text-align: center;
+  margin: 1rem auto;
+   
+}

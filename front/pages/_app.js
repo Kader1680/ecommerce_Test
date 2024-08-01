@@ -6,7 +6,9 @@ import '@/styles/globals.css';
 function MyApp({ Component, pageProps }) {
   return (
     <NextUIProvider>
+      <div >
       <Component {...pageProps} />
+      </div>
     </NextUIProvider>
   );
 }

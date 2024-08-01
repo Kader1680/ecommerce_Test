@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 function Chekout() {
   return (
-    <div>
+    <div style={{ width:"90%", margin:"auto" }}>
     
     <Breadcrumbs>
       <BreadcrumbItem>Home</BreadcrumbItem>
@@ -15,10 +15,8 @@ function Chekout() {
     
     <h3 style={{ fontSize:"48px" }} className='textDecor'>Checkout</h3>
         {/* style={{ backgroundColor:"#635bff" }} */}
-    <div className=' grid grid-cols-3 gap-5 '>
-        <div  className=' buying  col-span-2'>
-            
-            
+    <div className=' md:grid grid:cols-2 lg:grid-cols-3 gap-5 '>
+        <div  className='buying lg:col-span-2'>
             <div className='   border p-4'>
             <h3 className='textDecor' style={{ fontSize:"24px" }}>For Faster Checkout Experience</h3> 
               <div className=' gap-2 flex items-center'>
@@ -27,7 +25,7 @@ function Chekout() {
                         </Button>
                         <Button style={{  width:"50%" }}  as={Link} className=' mt-5 mb-5 bg-white text-white rounded-full border' href="#" variant="flat">
                         
-                            <Image width={30} height={30} alt='alt'  src='/PayPal 1.png' />
+                            <Image width={100} height={30} alt='alt'  src='/PayPal 1.png' />
                         </Button>
                       </div>
                       <p style={{ fontSize:"12px", color:"#b0b0b0" }}>By continuing, I confirm that I have read and accept the Terms and Conditions. and the Privacy Policy.</p>
@@ -91,7 +89,7 @@ function Chekout() {
             </div>
         </div>
         
-        <div className='   col-span-1'>
+        <div className='lg:col-span-1'>
             <Summary />
             <div className=' mt-3 p-4 rounded-lg ' style={{ backgroundColor:"#f2f2f2" }}>
                   <h3 style={{ fontSize:"24px" }} className='textDecor'>Voucher and promo</h3>
