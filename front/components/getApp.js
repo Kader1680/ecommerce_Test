@@ -8,7 +8,7 @@ import rect789 from "../public/Rectangle 798.png"
 
 function GetApp() {
   return (
-    <div className='getApp md:flex items-center justify-around relative'>
+    <div className='getApp mt-5 md:flex items-center justify-around relative'>
         <div className=' sm:text-center'>
             <h2>Get the app.</h2>
             <p className=' sm:text-center'>Download the app for free on iPhone, iPad and Android.</p>
@@ -21,7 +21,7 @@ function GetApp() {
         <div className='imgDirc  '>
 
             
-            <Image alt='alt' height={30} width={33} className='relative'  src={rect789} />
+            <Image alt='alt' height={210} width={133} className='relative'  src={rect789} />
             
 
 

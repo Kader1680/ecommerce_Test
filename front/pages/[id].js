@@ -7,7 +7,7 @@ import GetApp from '@/components/getApp';
 import Image from 'next/image';
 function Id() {
   return (
-    <div >
+    <div style={{ width:"90%", margin:"auto" }}>
         <div className='singleProduct grid md:grid-cols-10  '>
         <div className=' md:col-span-7 sm:col-span-10 '>
 

@@ -6,7 +6,7 @@ import Image from 'next/image';
 // import { playstore } from '../public/googleBorder.png'
 function Bag() {
   return (
-    <div className='bag '>
+    <div className='bag ' style={{ width:"90%", margin:"auto" }}>
         <h2 className=' font-bold' style={{ fontSize:"48px" }}>
             Bag
             </h2>

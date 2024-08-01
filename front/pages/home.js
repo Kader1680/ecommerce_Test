@@ -7,7 +7,7 @@ import Products from '@/components/products';
 function Home() {
    
   return (
-    <div className='homePub '>
+    <div className='homePub ' style={{ width:"90%", margin:"auto" }}>
 
     
         <div className='Selling md:flex md:items-center md:justify-between container'>

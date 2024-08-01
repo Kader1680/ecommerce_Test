@@ -8,7 +8,7 @@ import Image from 'next/image'
 
 function Profil() {
   return (
-    <div className='mt-8 profil'>
+    <div className='mt-8 profil' style={{ width:"90%", margin:"auto" }}>
         <div className='bio grid sm:justify-center md:grid-cols-2   lg:grid-cols-4 items-center '>
 
                 

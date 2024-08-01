@@ -26,7 +26,7 @@ function Index() {
      
    
   return (
-    <div className='homePub '>
+    <div className='homePub ' style={{ width:"90%", margin:"auto" }}>
 
     
         <div className='Selling md:flex md:items-center md:justify-between container'>
@@ -37,7 +37,7 @@ function Index() {
                 </div>
                 <div style={{ position:"relative" }} className='field2'>
                   
-                    <Image  alt='alt' style={{ position:"absolute", top:"26px", right:"2%", zIndex: "2" }} className='direction' src= {white} width={71} height={
+                    <Image  alt='alt' style={{ position:"absolute", top:"0px", right:"2%", zIndex: "2" }} className='direction' src= {white} width={71} height={
 70} />
 
                     <Image  alt='alt'  className='direction' src= {sll} width={648} height={
@@ -101,11 +101,11 @@ function Index() {
 
         <div className='clothes  mt-9 md:gap-3     '>
             <div className=' grid md:grid-cols-2 gap-2'>
-                <Image width={100} height={100} alt='alt' className=' sm:mt-3'  src={g1}   />
-                <Image width={100} height={100} alt='alt' className=' sm:mt-3'   src={g2}   />
+                <Image style={{ width: "100%" }} width={100} height={100} alt='alt' className=' sm:mt-3'  src={g1}   />
+                <Image style={{ width: "100%" }} width={100} height={100} alt='alt' className=' sm:mt-3'   src={g2}   />
             </div>
             <div className=' md:flex justify-between imgBtom' >
-                 <Image width={100} height={100} alt='alt' className=' sm:mt-3'  src={g3}   />
+                 <Image  width={100} height={100} alt='alt' className=' sm:mt-3'  src={g3}   />
                  <Image width={100} height={100} alt='alt' className=' sm:mt-3'   src={g4}  /> 
             </div>    
         </div>
