@@ -37,7 +37,7 @@ function Index() {
                 </div>
                 <div style={{ position:"relative" }} className='field2'>
                   
-                    <Image  alt='alt' style={{ position:"absolute", top:"0px", right:"2%", zIndex: "2" }} className='direction' src= {white} width={71} height={
+                    <Image  alt='alt' style={{ position:"absolute", top:"0px", right:"2%", zIndex: "2" }} className='direction women' src= {white} width={71} height={
 70} />
 
                     <Image  alt='alt'  className='direction' src= {sll} width={648} height={

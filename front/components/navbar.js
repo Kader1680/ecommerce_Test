@@ -1,104 +1,48 @@
-"use client";
-
-import React, { useState } from 'react';
+import React from 'react'
 import Link from 'next/link';
-import { Button, link } from '@nextui-org/react';
 import Image from 'next/image';
-
-
-
-
-const MyNavbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-
-  const open = () => {
-    setIsOpen(true)
-  }
+import { Button } from '@nextui-org/react';
+export default function Navbar() {
   return (
-    <div className="flex items-center justify-between p-4 bg-white">
+    <div>
+    
+    <nav class="navbar">
+    <div style={{ width:"90%", margin:"auto" }} class="flex items-center justify-between">
       <div className="text-2xl font-bold">KIFT</div>
-      <ul className="hidden lg:flex lg:gap-3  font-bold ">
-        <li>
-          <Link href="/">
-            Menswear
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            Womenswear
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            Brands
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-           Sale
-          </Link>
-        </li>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+
+      <ul class="nav">
+        <li class="nav-item"><a href="#">Menswear</a></li>
+        <li class="nav-item"><a href="#">Menswear</a></li>
+        <li class="nav-item"><a href="#">Menswear</a></li>
+        <li class="nav-item"><a href="#">Brands</a></li>
+        <li class="nav-item"><a href="#">Sale</a></li>
       </ul>
+
       <div className="flex space-x-4">
-      
-        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/srch.svg' /></div>
-        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/noti.svg' /></div>
-        <div className="text-lg"><Image alt='alt' height={30} width={30} src='/bg.svg' /></div>
+    
+          <div className="text-lg"><Image alt='alt' height={20} width={20} src='/srch.svg' /></div>
+          <div className="text-lg"><Image alt='alt' height={20} width={20} src='/noti.svg' /></div>
+          <div className="text-lg"><Image alt='alt' height={20} width={20} src='/bg.svg' /></div>
       </div>
-      <div className="hidden lg:flex space-x-4 ml-4">
-      <Button as={Link} className=' bg-white text-black rounded-full border' href="#" variant="flat">
-           Signup or sing in
-        </Button>
-        <Button  as={Link} className=' bg-black text-white rounded-full' href="#" variant="flat">
-        Sell Now
-        </Button>
+      <div className="hidden lg:flex space-x-2 ml-4">
+        <Button as={Link} className=' bg-white text-black rounded-full border' href="#" variant="flat">
+            Signup or sing in
+          </Button>
+          <Button  as={Link} className=' bg-black text-white rounded-full' href="#" variant="flat">
+          Sell Now
+          </Button>
       </div>
-      <div className="lg:hidden">
-          <button  onClick={open} className="text-2xl">
-              ☰
-          </button>
-      </div>
-      <div>
-      
-{/*       
-      <ul style={{ 'zIndex':'100' }} className= {`${isOpen ? 'sm:block md:block' : 'sm:hidden md:hidden'} absolute top-16 left-0 w-full bg-white flex flex-col items-center space-y-4  z-30`} >
-        <li>
-          <Link href="/">
-            Menswear
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            Menswear
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            Menswear
-          </Link>
-        </li>
-        <li>
-          <Link href="/">
-            Menswear
-          </Link>
-        </li>
-          <div className="flex flex-col space-y-4">
-            <Button as={Link} className=' bg-white text-black rounded-full border' href="#" variant="flat">
-                  Signup or sing in
-             </Button>
-
-            
-             <Button as={Link} className=' bg-black text-white rounded-full' href="#" variant="flat">
-                Sell Now
-             </Button>
-          </div>
-        </ul> */}
-      </div>
-     
-      
     </div>
-  );
-};
+  </nav>
+    
+    </div>
+  )
+}
 
-export default MyNavbar;

@@ -1,6 +1,6 @@
-"use client";
+"use strict";
 import { Html, Head, Main, NextScript } from "next/document";
-import MyNavbar from "@/components/navbar";
+import Navbar  from "@/components/navbar";
 import Footer from "@/components/footer";
 
 export default function Document() {
@@ -8,7 +8,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <MyNavbar />
+        <Navbar />
         <Main />
         <NextScript />
         <Footer />

@@ -1,13 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {Breadcrumbs, BreadcrumbItem, Button, Link, Input} from "@nextui-org/react";
 import GetApp from '@/components/getApp';
 import Image from 'next/image';
 
 
 function Review() {
+
+    const [n, setn] = useState(0);
   return (
     <div style={{ width:"90%", margin:"auto" }}> 
-        
+        <button onClick={()=>{setn(n + 19)}}>{n}</button>
         <Breadcrumbs>
             <BreadcrumbItem>Home</BreadcrumbItem>
             <BreadcrumbItem>Leslie Alexander</BreadcrumbItem>
@@ -66,7 +68,7 @@ function Review() {
                         </div>
 
                     </div>
-                    <Image alt='alt' className='stars' src='/stars.png' />
+                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
                 </div>
 
                 <div className=' mb-4 md:flex items-center justify-start gap-3'>
@@ -83,7 +85,7 @@ function Review() {
                         </div>
 
                     </div>
-                    <Image alt='alt' className='stars' src='/stars.png' />
+                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
                 </div>
 
 
@@ -101,7 +103,7 @@ function Review() {
                         </div>
 
                     </div>
-                    <Image alt='alt' className='stars' src='/stars.png' />
+                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
                 </div>
 
 
@@ -119,7 +121,7 @@ function Review() {
                         </div>
 
                     </div>
-                    <Image alt='alt' className='stars' src='/stars.png' />
+                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
                 </div>
 
 
@@ -137,7 +139,7 @@ function Review() {
                         </div>
 
                     </div>
-                    <Image alt='alt' className='stars' src='/stars.png' />
+                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
                 </div>
 
                 <div className=' mb-4 md:flex items-center justify-start gap-3'>
@@ -154,7 +156,7 @@ function Review() {
                         </div>
 
                     </div>
-                    <Image alt='alt' className='stars' src='/stars.png' />
+                    <Image width={100} height={100} alt='alt' className='stars' src='/stars.png' />
                 </div>
 
 
@@ -172,7 +174,7 @@ function Review() {
                         </div>
 
                     </div>
-                    <Image alt='alt' className='stars' style={{  width:"96px", height:"20px" }} src='/stars.png' />
+                    <Image width={100} height={100} alt='alt' className='stars' style={{  width:"96px", height:"20px" }} src='/stars.png' />
                 </div>
             </div>
 

@@ -21,7 +21,12 @@ html body{
 /* ---------------- IPHONE SECTION ------------------- */
 
 @media(max-width: 767px){
-
+  .women{
+    margin-top: 2rem;
+  }
+  .intro p{
+    margin: 2rem auto;
+  }
   .imgBtom img{
     width: 100%;
     height: 14rem;
@@ -30,13 +35,8 @@ html body{
     width: 100%;
     height: 380px;
   }
-
-
-
   .btmFooter{
-   
      text-align: "center";
-  
   }
   .master{
     width: 15rem;
@@ -79,14 +79,14 @@ html body{
     margin: auto;
   }
  .getApp .imgDirc img{
-   width: 46%;
+  width: 51%;
+  margin: auto;
 }
   .getApp h2{
     text-align: center;
     font-size: 30px;
     
 }
-
   .products {
     grid-template-columns: 50% 50%;
     gap: 5px;
@@ -152,6 +152,14 @@ html body{
 
   .stars{
     margin: 15px auto;
+  }
+  .footer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+  }
+  .copy{
+    text-align: center;
   }
 }
 
@@ -600,3 +608,115 @@ select:focus{
   margin: 1rem auto;
    
 }
+
+
+
+
+
+.navbar {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1rem;
+}
+
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  margin-left: 10px;
+}
+
+.nav-item a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+ 
+
+.menu-toggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menu-icon .bar {
+  height: 3px;
+  width: 25px;
+  color: black;
+  background-color: rgb(0, 0, 0);
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: flex;
+  }
+
+  .nav {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    z-index: 21;
+    top: 68px;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+ 
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-item a {
+    padding: 1rem;
+  }
+
+ 
+
+  .menu-toggle:checked + .menu-icon + .nav {
+    display: flex;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+

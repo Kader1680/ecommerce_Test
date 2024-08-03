@@ -42,7 +42,7 @@ function Profil() {
                     </div>
                     <div  style={{ fontSize:"24px" }}  className='  text-center  font-bold'>
                     200,615
-<p  style={{ fontSize:"16px", color:"#a4a5a5" }}  className=' font-normal'>Likes</p>
+                    <p  style={{ fontSize:"16px", color:"#a4a5a5" }}  className=' font-normal'>Likes</p>
                     </div>
 
                 </div>

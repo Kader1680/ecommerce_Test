@@ -77,7 +77,7 @@ function Footer() {
 
         <hr style={{ width:"100%" }}></hr>
         <div style={{ width:"90%", margin:"auto" }}  className='btmFooter sm:text-center md:flex items-center justify-between pt-5 mb-5'>
-            <div className='sm:text-center'>© 2024 KIFT, Inc. PrivacyTerms </div>
+            <div className='sm:text-center copy'>© 2024 KIFT, Inc. PrivacyTerms </div>
             <Image  alt='alt' height={100} width={150} className='sm:text-center master' src={creadiCart} />
         </div>
    </div>
