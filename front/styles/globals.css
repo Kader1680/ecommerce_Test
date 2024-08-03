@@ -13,8 +13,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'AT Pinko';
+
 }
 html body{
+  font-family: 'AT Pinko';
   
   margin: 0 auto;
 }
