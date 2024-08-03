@@ -92,7 +92,7 @@ function Id() {
                 <Image alt='alt' width={100} height={100} src='/Screenshot 2024-04-23 at 12.57 1.png'/>
 
                 <div className='safe flex items-center mt-3'>
-                    <Image alt='alt'  width={32} height={32} src='images/shield.png' />
+                    {/* <Image alt='alt'  width={32} height={32} src='/shield.png' /> */}
                     <div className=' ms-4'>Mercari keeps your payment information secure.
                     Mercari sellers never receive your credit card information.</div>
                 </div>

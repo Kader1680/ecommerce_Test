@@ -7,8 +7,9 @@ function SearchBar() {
     <div>
 
       <Input
+      style={{ backgroundColor:"transparent" }}
       className='searchBar bg-transparent'
-        isClearable
+        
         radius="lg"
         placeholder="search items"
         startContent={

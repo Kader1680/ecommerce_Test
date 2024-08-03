@@ -6,10 +6,9 @@ import Image from 'next/image';
 
 function Review() {
 
-    const [n, setn] = useState(0);
+ 
   return (
     <div style={{ width:"90%", margin:"auto" }}> 
-        <button onClick={()=>{setn(n + 19)}}>{n}</button>
         <Breadcrumbs>
             <BreadcrumbItem>Home</BreadcrumbItem>
             <BreadcrumbItem>Leslie Alexander</BreadcrumbItem>
