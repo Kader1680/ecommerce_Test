@@ -7,7 +7,7 @@ import Image from 'next/image';
 function Bag() {
   return (
     <div className='bag ' style={{ width:"90%", margin:"auto" }}>
-        <h2 className=' font-bold' style={{ fontSize:"48px" }}>
+        <h2 className='myfont font-bold' style={{ fontSize:"48px" }}>
             Bag
             </h2>
              <div className='embty mr-auto  items-center'>

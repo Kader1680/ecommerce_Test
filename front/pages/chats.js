@@ -17,7 +17,7 @@ function Chats() {
             <BreadcrumbItem>Leslie Alexander</BreadcrumbItem>
             <BreadcrumbItem className=' font-bold' >Messages</BreadcrumbItem> 
         </Breadcrumbs>
-        <h3 style={{ fontSize:"35px" }} className=' mt-4 mb-4 font-bold'>Messages</h3>
+        <h3 style={{ fontSize:"35px" }} className='myfont mt-4 mb-4 font-bold'>Messages</h3>
         <Image alt='alt' width={10} height={10} src={swip} />
         <div className=' md:grid md:grid-cols-5 gap-2'>
             <div className=' col-span-2 border p-4 rounded-xl'>

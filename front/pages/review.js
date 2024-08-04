@@ -14,7 +14,7 @@ function Review() {
             <BreadcrumbItem>Leslie Alexander</BreadcrumbItem>
             <BreadcrumbItem className=' font-bold' >Reviews</BreadcrumbItem> 
         </Breadcrumbs>
-        <h3 className=' mt-4 mb-4 font-bold'>Top compliments from reviews</h3>
+        <h3 className='myfont mt-4 mb-4 font-bold'>Top compliments from reviews</h3>
 
         <div  className=' reviews mb-4'>
             <div className=' md:flex items-center justify-start gap-2'>

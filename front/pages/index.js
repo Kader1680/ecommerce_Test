@@ -32,7 +32,7 @@ function Index() {
         <div className='Selling md:flex md:items-center md:justify-between container'>
             <div className=' '>
                 <div className='intro'>
-                    <h3>  Buy, sell, and discover fashion, home decor, beauty, and more</h3>
+                    <h3 className='myfont'>  Buy, sell, and discover fashion, home decor, beauty, and more</h3>
                     <p>Sign up now and join millions of people on the social marketplace for all things style</p>
                 </div>
                 <div style={{ position:"relative" }} className='field2'>

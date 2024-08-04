@@ -66,7 +66,7 @@ function SignUp() {
             </form>
 
 
-            <p className="btmTxt" >Already have an account? <Link className=" underline"  href="/" >Log in</Link></p>
+            <p className="btmTxt" >Already have an account? <Link className=" underline"  href="/auth/login" >Log in</Link></p>
           </div>
         </div>
       </div>

@@ -12,7 +12,7 @@ import add from "../public/add.png"
             <BreadcrumbItem className=' font-bold' >Sell an item</BreadcrumbItem> 
         </Breadcrumbs>
 
-        <h3 style={{ fontSize:"48px" }} className='textDecor '>Sell an item</h3>
+        <h3 style={{ fontSize:"48px" }} className='textDecor myfont'>Sell an item</h3>
 
         <div className=' grid md:grid-cols-6 gap-2 mt-4 mb-4'>
             <div style={{ backgroundColor:"#f3f3f3" }} className='rounded-lg p-3 col-span-4 '>

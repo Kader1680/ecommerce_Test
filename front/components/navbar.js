@@ -32,7 +32,7 @@ export default function Navbar() {
           <div className="text-lg"><Image alt='alt' height={20} width={20} src='/bg.svg' /></div>
       </div>
       <div className="hidden lg:flex space-x-2 ml-4">
-        <Button as={Link} className=' bg-white text-black rounded-full border' href="#" variant="flat">
+        <Button as={Link} className=' bg-white text-black rounded-full border' href="/auth/signup" variant="flat">
             Signup or sing in
           </Button>
           <Button  as={Link} className=' bg-black text-white rounded-full' href="#" variant="flat">

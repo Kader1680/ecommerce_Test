@@ -7,7 +7,7 @@ import React from 'react'
 function Category() {
   return (
     <div style={{ width:"90%", margin:"auto" }}>
-        <h3 style={{ fontSize:"24px" }}  className=' font-bold'>Fashion for Women</h3>
+        <h3 style={{ fontSize:"24px" }}  className='myfont font-bold'>Fashion for Women</h3>
         <p className=' mt-2 mb-5 font-bold'>CATEGORIES</p>
         <div className='type  md:flex justify-center gap-2 '>
             <div>

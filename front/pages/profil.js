@@ -19,7 +19,7 @@ function Profil() {
 
             <div className='name lg:grid-span-1 items-center'>
                <div className=' flex items-center '>
-                    <h3 className=' '>Leslie Alexander</h3>
+                    <h3 className=' myfont'>Leslie Alexander</h3>
                     <Image width={30} height={30} alt='alt' src='/Frame.png' />
                </div>
                <div className=' flex items-center'>

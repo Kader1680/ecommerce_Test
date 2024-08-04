@@ -17,7 +17,7 @@ function login() {
         <h3 className=" text-center	">Login to KIFT</h3>
         <p className=" dntHaveAccnt text-center	">
           Don&lsquo;t have an account?
-          <Link className=" font-bold text-center	" href="/sign">
+          <Link className=" font-bold text-center	" href="/auth/signup">
             Sign up
           </Link>
         </p>

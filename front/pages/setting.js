@@ -30,7 +30,7 @@ function Setting() {
             <BreadcrumbItem>Home</BreadcrumbItem>
             <BreadcrumbItem className=' font-bold' >Account Setting</BreadcrumbItem>
         </Breadcrumbs>
-        <h3 style={{ fontSize:"35px" }} className=' mt-4 mb-4  font-bold'>Account Setting</h3>
+        <h3 style={{ fontSize:"35px" }} className='myfont mt-4 mb-4  font-bold'>Account Setting</h3>
         <div className=' row grid md:grid-cols-3'>
             <div className=' col-span-1'>
         
