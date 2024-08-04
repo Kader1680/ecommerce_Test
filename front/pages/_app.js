@@ -1,14 +1,15 @@
 "use client";
 import { NextUIProvider } from '@nextui-org/react';
 import '../styles/globals.css';
- 
+import React from 'react'
+import Layout from '../components/layout';
+
 function MyApp({ Component, pageProps }) {
   return (
-    <NextUIProvider>
-       
-      <div >
-      <Component {...pageProps} />
-      </div>
+    <NextUIProvider> 
+         <Layout>
+            <Component {...pageProps} />
+        </Layout>
     </NextUIProvider>
   );
 }

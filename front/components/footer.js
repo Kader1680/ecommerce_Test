@@ -1,3 +1,6 @@
+"use client";
+
+
 import React from 'react'
 import Image from 'next/image'
 import appstore  from '../public/appstore.png'
@@ -6,7 +9,7 @@ import creadiCart from "../public/footer-img.png"
 function Footer() {
   return (
    <div>
-            <div style={{ width:"90%", margin:"auto", marginTop:"3rem" }} className='footer  grid sm:grid-cols-2 md:grid-cols-4 pb-8'>
+            <div  style={{ width:"90%", margin:"auto", marginTop:"3rem" }} className='footer  grid sm:grid-cols-2 md:grid-cols-4 pb-8'>
         
             <div className='infoContact text-black'>
                 <h2>KIFT</h2>

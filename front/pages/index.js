@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import { Button, Link } from '@nextui-org/react';
 import GetApp from '../components/getApp';
@@ -24,7 +24,7 @@ import g4 from "../public/g4.png"
 
 function Index() {
      
-   
+
   return (
     <div className='homePub ' style={{ width:"90%", margin:"auto" }}>
 
@@ -32,7 +32,8 @@ function Index() {
         <div className='Selling md:flex md:items-center md:justify-between container'>
             <div className=' '>
                 <div className='intro'>
-                    <h3 className='myfont'>  Buy, sell, and discover fashion, home decor, beauty, and more</h3>
+               
+                    <h3   className='myfont'>  Buy, sell, and discover fashion, home decor, beauty, and more</h3>
                     <p>Sign up now and join millions of people on the social marketplace for all things style</p>
                 </div>
                 <div style={{ position:"relative" }} className='field2'>

@@ -1,18 +1,16 @@
 "use client";
+import React from 'react'
+
 import { Html, Head, Main, NextScript } from "next/document";
-import Navbar  from "../components/navbar";
-import Footer from "../components/footer";
+ 
 
 export default function Document() {
   return (
     <Html >
       <Head />
       <body>
-        
-        <Navbar />
         <Main />
         <NextScript />
-        <Footer />
       </body>
     </Html>
   );
