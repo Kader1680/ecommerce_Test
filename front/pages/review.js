@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import {Breadcrumbs, BreadcrumbItem, Button, Link, Input} from "@nextui-org/react";
-import GetApp from '@/components/getApp';
+import GetApp from '../components/getApp';
 import Image from 'next/image';
 
 

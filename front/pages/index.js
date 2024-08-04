@@ -1,8 +1,8 @@
 import React from 'react'
 import Image from "next/image";
 import { Button, Link } from '@nextui-org/react';
-import GetApp from '@/components/getApp';
-import Products from '@/components/products';
+import GetApp from '../components/getApp';
+import Products from '../components/products';
 import white from "../public/white.png"
 import sll from "../public/sll.png"
 import picwomen from "../public/picwomen.png"

@@ -1,6 +1,6 @@
-import FilterCategory from '@/components/filterBar'
-import GetApp from '@/components/getApp'
-import Products from '@/components/products'
+import FilterCategory from '../components/filterBar'
+import GetApp from '../components/getApp'
+import Products from '../components/products'
 import Image from 'next/image'
 import React from 'react'
 

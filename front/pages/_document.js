@@ -1,7 +1,7 @@
 "use client";
 import { Html, Head, Main, NextScript } from "next/document";
-import Navbar  from "@/components/navbar";
-import Footer from "@/components/footer";
+import Navbar  from "../components/navbar";
+import Footer from "../components/footer";
 
 export default function Document() {
   return (

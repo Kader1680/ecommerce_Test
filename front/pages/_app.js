@@ -1,6 +1,6 @@
 "use client";
 import { NextUIProvider } from '@nextui-org/react';
-import '@/styles/globals.css';
+import '../styles/globals.css';
  
 
 function MyApp({ Component, pageProps }) {

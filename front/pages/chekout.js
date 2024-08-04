@@ -1,6 +1,6 @@
 import React from 'react'
 import {Breadcrumbs, BreadcrumbItem, Button, Link, Input} from "@nextui-org/react";
-import Summary from '@/components/summary';
+import Summary from '../components/summary';
 import Image from 'next/image';
 
 function Chekout() {

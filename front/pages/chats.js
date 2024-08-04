@@ -1,11 +1,11 @@
 import React from 'react'
 import {Breadcrumbs, BreadcrumbItem, Button, Link, Input, Image} from "@nextui-org/react";
-import Users from '@/components/users';
-import Item from '@/components/item';
+import Users from '../components/users';
+import Item from '../components/item';
 import rec from "../public/Frame 1000005677.png"
 import swip from "../public/p1.png"
-import SearchBar from '@/components/searchBar';
-import FriendText from '@/components/friendText';
+import SearchBar from '../components/searchBar';
+import FriendText from '../components/friendText';
 import send from "../public/Group 39564.png"
 function Chats() {
   return (
@@ -18,7 +18,7 @@ function Chats() {
             <BreadcrumbItem className=' font-bold' >Messages</BreadcrumbItem> 
         </Breadcrumbs>
         <h3 style={{ fontSize:"35px" }} className=' mt-4 mb-4 font-bold'>Messages</h3>
-        <Image width={10} height={10} src={swip} />
+        <Image alt='alt' width={10} height={10} src={swip} />
         <div className=' md:grid md:grid-cols-5 gap-2'>
             <div className=' col-span-2 border p-4 rounded-xl'>
                 <div className=' m-3 flex justify-between'>
@@ -31,7 +31,7 @@ function Chats() {
                         </Button>
                    </div>
                    <div className=' flex items-center'>
-                       <Image width={10} height={10} src={rec} />
+                       <Image alt='alt' width={10} height={10} src={rec} />
                         
                    </div>
                 </div>
