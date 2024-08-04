@@ -39,7 +39,7 @@ function ProfilDetail() {
     //     });
   return (
     <div className=' p-5'>
-        <h4 className=' font-bold'>Profile details</h4>
+        <h3 className='myfont font-bold'>Profile details</h3>
         <div className=' mt-3 flex items-center justify-between'>
             <h5 className=' font-bold'>Your photo</h5>
             <div className=' flex items-center justify-between'>
@@ -49,7 +49,7 @@ function ProfilDetail() {
           </Button>
             </div>
         </div>
-        <hr className='w-full mt-2 mb-2'></hr>
+        <hr className='w-full  mt-7 mb-7'></hr>
 
         <div className=' flex items-center justify-between'>
             <h5 className=' font-bold'>About you</h5>
@@ -64,7 +64,7 @@ function ProfilDetail() {
             />
         </div>
 
-        <hr className='w-full mt-2 mb-2'></hr>
+        <hr className='w-full mt-7 mb-7'></hr>
 
 
         <div className=' flex items-center justify-between mt-4 mb-4'>
