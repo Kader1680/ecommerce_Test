@@ -5,15 +5,13 @@ import Image from 'next/image';
 import filter from "../public/filter.png"
 
 import bellow from "../public/bellow.png"
+import "./products"
 function FilterCategory() {
   
-
  
-    const [selectedBrand, setSelectedBrand] = useState([]);
-    const [selectedSize, setSelectedSize] = useState([]);
     const [minPrice, setMinPrice] = useState('');
     const [maxPrice, setMaxPrice] = useState('');
-    const [selectedColor, setSelectedColor] = useState([]);
+ 
 
 
     const brands = [
@@ -42,7 +40,7 @@ function FilterCategory() {
  
       <div>
  
-
+      
 
 
         <div className=' font-bold flex items-center'><Image width={25} height={38} src={filter} alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-1 '>FILTER</h4>
@@ -61,13 +59,13 @@ function FilterCategory() {
                   </div>
                   <div class="absolute w-full  z-50  top-full bg-white origine-top opacity-0 hidden flex-col group-hover/bouton:flex group-hover/bouton:opacity-100 transition-all">
                     <div className=' flex items-center p-2'>
-                      <input type='radio' /><p className=' ms-3'>Any</p>
+                      <input type='radio'  /><p className=' ms-3'>Any</p>
                     </div>
                     <div className=' flex items-center p-2'>
                       <input type='radio' /><p className=' ms-3'>For sale </p>
                     </div>
                     <div className=' flex items-center p-2'>
-                      <input type='radio' /><p className=' ms-3'>Sold</p>
+                      <input type='radio' onClick={()=>alert("dd")} /><p className=' ms-3'>Sold</p>
                     </div>
                     
 
