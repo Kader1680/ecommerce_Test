@@ -3,7 +3,7 @@ import { Button, Link } from '@nextui-org/react'
 import FilterCategory from '../components/filterBar'
 import Products from '../components/products'
 import GetApp from '../components/getApp'
-import SearchBar from '../components/searchBar'
+import SearchBar from '../components/search'
 import Image from 'next/image'
 
 function Profil() {

@@ -3,16 +3,12 @@ import {Dropdown, DropdownTrigger, DropdownMenu, DropdownItem, Button} from "@ne
 import {Checkbox} from "@nextui-org/react";
 import Image from 'next/image';
 import filter from "../public/filter.png"
+
+import bellow from "../public/bellow.png"
 function FilterCategory() {
   
 
-
-  const [taz, setfilter] = useState(false);
-
-    const dsplay = () =>{
-          setfilter(!taz)
-    }
-
+ 
     const [selectedBrand, setSelectedBrand] = useState([]);
     const [selectedSize, setSelectedSize] = useState([]);
     const [minPrice, setMinPrice] = useState('');
@@ -30,110 +26,170 @@ function FilterCategory() {
         { name: 'Aragona', count: 270 },
       ];
     
-      const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL'];
+      const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', "3XL", "4XL", "5XL", "One size"];
     
       const colors = [
         'gray', 'black', 'white', 'brown', 'pink', 'blue', 
         'red', 'orange', 'yellow', 'green', 'purple', 'multicolor'
       ];
     
-      const handleBrandChange = (brand) => {
-        setSelectedBrand((prev) =>
-          prev.includes(brand)
-            ? prev.filter((item) => item !== brand)
-            : [...prev, brand]
-        );
-      };
-    
-      const handleSizeChange = (size) => {
-        setSelectedSize((prev) =>
-          prev.includes(size)
-            ? prev.filter((item) => item !== size)
-            : [...prev, size]
-        );
-      };
-    
-      const handleColorChange = (color) => {
-        setSelectedColor((prev) =>
-          prev.includes(color)
-            ? prev.filter((item) => item !== color)
-            : [...prev, color]
-        );
-      };
+ 
 
       
   return (
     <>
       
-      {/* <button className=' md:hidden' onClick={dsplay}><img src='images/menu.png' /></button> */}
+ 
+      <div>
+ 
 
-{/* className= {`${taz ? 'sm:block' : 'sm:hidden'} md:block`} */}
-      <div   >
 
-        
 
         <div className=' font-bold flex items-center'><Image width={25} height={38} src={filter} alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-1 '>FILTER</h4>
         </div>
        
-       <div className="filtring w-64 p-4 border rounded-lg mt-4">
-      <div className="mb-4">
-        <h3 className="font-semibold">Status</h3>
-        <div className="mt-2">
-          <label className="block">
-            <input type="radio" name="status" className="mr-2" />
-            Any
-          </label>
-          <label className="block">
-            <input type="radio" name="status" className="mr-2" />
-            For sale
-          </label>
-          <label className="block">
-            <input type="radio" name="status" className="mr-2" />
-            Sold
-          </label>
-        </div>
-      </div>
-      <div className="mb-4">
-        <h3 className="font-semibold">Brand</h3>
-        <div className="mt-2">
-          <input
-            type="text"
-            placeholder="Search brand"
-            className="w-full p-2 border rounded-lg mb-2"
-          />
-          <div className="h-40 overflow-y-scroll">
-            {brands.map((brand, index) => (
-              <label key={index} className="block">
-                <input
-                  type="checkbox"
-                  className="mr-2"
-                  checked={selectedBrand.includes(brand.name)}
-                  onChange={() => handleBrandChange(brand.name)}
-                />
-                {brand.name} ({brand.count})
-              </label>
-            ))}
+           <div className="filtring w-64 p-4 border rounded-lg  ">
+
+
+
+          <div className="mb-4">
+              <div class="relative w-full   mx-auto max-w-screen-sm">
+                  <div id="bouton" class="relative group/bouton w-full">
+                  <div className=' flex items-center justify-between'>
+                    <p className=' font-bold'>Status</p>
+                    <Image src={bellow} alt='alt' width={20} height={20}  />
+                  </div>
+                  <div class="absolute w-full  z-50  top-full bg-white origine-top opacity-0 hidden flex-col group-hover/bouton:flex group-hover/bouton:opacity-100 transition-all">
+                    <div className=' flex items-center p-2'>
+                      <input type='radio' /><p className=' ms-3'>Any</p>
+                    </div>
+                    <div className=' flex items-center p-2'>
+                      <input type='radio' /><p className=' ms-3'>For sale </p>
+                    </div>
+                    <div className=' flex items-center p-2'>
+                      <input type='radio' /><p className=' ms-3'>Sold</p>
+                    </div>
+                    
+
+                
+                  </div>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
+
+
+
+
+
+
+
+
       <div className="mb-4">
-        <h3 className="font-semibold">Size</h3>
-        <div className="mt-2">
-          {sizes.map((size, index) => (
-            <label key={index} className="block">
-              <input
-                type="checkbox"
-                className="mr-2"
-                checked={selectedSize.includes(size)}
-                onChange={() => handleSizeChange(size)}
-              />
-              {size}
-            </label>
-          ))}
-        </div>
+          <div class="relative w-full   mx-auto max-w-screen-sm">
+              <div id="bouton" class="relative group/bouton w-full">
+              <div className=' flex items-center justify-between'>
+                    <p className=' font-bold'>Size</p>
+                    <Image src={bellow} alt='alt' width={20} height={20}  />
+                  </div>
+              <div class="absolute w-full  z-50  top-full bg-white origine-top opacity-0 hidden flex-col group-hover/bouton:flex group-hover/bouton:opacity-100 transition-all">
+                
+
+               <h5 className=' font-bold mt-3 mb-3'>Tops</h5>
+                <div className=' flex flex-wrap gap-1 '>
+                  {
+                    sizes.map(item => (
+                      <div  key={item} className='w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2'> {item} </div>
+                    ))
+                  }
+                </div>
+              
+
+                <h5 className=' font-bold mt-3 mb-3'>BOTTOMS</h5>  
+
+              <div className=' flex flex-wrap gap-1 '>
+                  {
+                    sizes.map(item => (
+                      <div  key={item} className='w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2'> {item} </div>
+                    ))
+                  }
+                </div>
+
+                
+
+            
+              </div>
+              </div>
+          </div>
       </div>
+ 
+
+
+
+
+
+
+
+
+
+
       <div className="mb-4">
-        <h3 className="font-semibold">Price</h3>
+          <div class="relative w-full   mx-auto max-w-screen-sm">
+              <div id="bouton" class="relative group/bouton w-full">
+              <div className=' flex items-center justify-between'>
+                    <p className=' font-bold'>Condition</p>
+                    <Image src={bellow} alt='alt' width={20} height={20}  />
+                  </div>
+              <div class="absolute w-full  z-50  top-full bg-white origine-top opacity-0 hidden flex-col group-hover/bouton:flex group-hover/bouton:opacity-100 transition-all">
+                <div className=' flex items-center p-2'>
+                  <input type="checkbox" /><p className=' ms-3'>Excellent (243)</p>
+                </div>
+                <div className=' flex items-center p-2'>
+                  <input type='checkbox' /><p className=' ms-3'>Very Good (670)</p>
+                </div>
+                
+
+            
+              </div>
+              </div>
+          </div>
+      </div>
+ 
+
+
+
+       {/* Price  */}
+
+    
+        <div className="mb-4">
+   
+        <div class="relative w-full  z-40  mx-auto max-w-screen-sm">
+    <div id="bouton" class="relative group/bouton w-full">
+    <div className=' flex items-center justify-between'>
+                    <p className=' font-bold'>Price</p>
+                    <Image src={bellow} alt='alt' width={20} height={20}  />
+                  </div>
+      <div class="absolute w-full   top-full bg-white origine-top opacity-0 hidden flex-col group-hover/bouton:flex group-hover/bouton:opacity-100 transition-all">
+        <div className=' flex items-center p-2'>
+          <input type='radio' /><p className=' ms-3'>Any</p>
+        </div>
+        <div className=' flex items-center p-2'>
+          <input type='radio' /><p className=' ms-3'>Under $25</p>
+        </div>
+        <div className=' flex items-center p-2'>
+          <input type='radio' /><p className=' ms-3'>$25 to $50</p>
+        </div>
+        <div className=' flex items-center p-2'>
+          <input type='radio' /><p className=' ms-3'>$50 to $100</p>
+        </div>
+
+        <div className=' flex items-center p-2'>
+          <input type='radio' /><p className=' ms-3'>$100 to $200</p>
+        </div>
+
+        <div className=' flex items-center p-2'>
+          <input type='radio' /><p className=' ms-3'>$200 to $UP</p>
+        </div>
+
         <div className="mt-2 flex space-x-2">
           <input
             type="number"
@@ -151,24 +207,82 @@ function FilterCategory() {
           />
         </div>
       </div>
-      <div className="mb-4">
-        <h3 className="font-semibold">Color</h3>
-        <div className="mt-2 flex flex-wrap gap-2">
-          {colors.map((color, index) => (
-            <label key={index} className="inline-block">
-              <input
-                type="checkbox"
-                className="mr-2"
-                checked={selectedColor.includes(color)}
-                onChange={() => handleColorChange(color)}
-              />
-              <span
-                className={`inline-block w-6 h-6 rounded-full border border-gray-300 bg-${color}-500`}
-              ></span>
-            </label>
-          ))}
-        </div>
+    </div>
       </div>
+      </div>
+      
+   
+
+
+
+
+
+
+      {/* Color */}
+      <div className="mb-4">
+          <div class="relative w-full   mx-auto max-w-screen-sm">
+              <div id="bouton" class="relative group/bouton w-full">
+              <div className=' flex items-center justify-between'>
+                    <p className=' font-bold'>Price</p>
+                    <Image src={bellow} alt='alt' width={20} height={20}  />
+                  </div>
+
+
+
+
+
+
+
+
+
+
+          <div class="absolute w-full z-40  top-full bg-white origine-top opacity-0 hidden flex-col group-hover/bouton:flex group-hover/bouton:opacity-100 transition-all">
+            <div className='  '>
+                <h5 className=' font-bold mt-3 mb-3'>Tops</h5>
+                <div className=' flex flex-wrap gap-1 '>
+                  {
+                    colors.map(item => (
+                      <div key={item} style={{ backgroundColor: item, width:"25px", height:"25px" }} className={`  p-2 border ${item}  rounded-full   gap-2`}></div>
+                    ))
+                  }
+                </div>
+              
+
+               
+            </div>
+            
+
+        
+              </div>
+              </div> 
+          </div>
+      </div>
+
+      {/* shipping */}
+
+      <div className="mb-4">
+          <div class="relative w-full   mx-auto max-w-screen-sm">
+              <div id="bouton" class="relative group/bouton w-full">
+              <div className=' flex items-center justify-between'>
+                    <p className=' font-bold'>Shipping</p>
+                    <Image src={bellow} alt='alt' width={20} height={20}  />
+                  </div>
+              <div class="absolute w-full  z-50  top-full bg-white origine-top opacity-0 hidden flex-col group-hover/bouton:flex group-hover/bouton:opacity-100 transition-all">
+                <div className=' flex items-center p-2'>
+                  <input type="checkbox" /><p className=' ms-3'>All (243)</p>
+                </div>
+                <div className=' flex items-center p-2'>
+                  <input type='checkbox' /><p className=' ms-3'>Free Shipping (670)</p>
+                </div>
+            
+                
+
+            
+              </div>
+              </div>
+          </div>
+      </div>
+ 
     </div>
 
     </div>
@@ -178,3 +292,11 @@ function FilterCategory() {
 }
 
 export default FilterCategory
+
+
+
+
+
+
+
+ 

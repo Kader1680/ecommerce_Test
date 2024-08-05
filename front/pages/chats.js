@@ -4,7 +4,7 @@ import Users from '../components/users';
 import Item from '../components/item';
 import rec from "../public/Frame 1000005677.png"
 import swip from "../public/p1.png"
-import SearchBar from '../components/searchBar';
+import SearchBar from '../components/search';
 import FriendText from '../components/friendText';
 import send from "../public/Group 39564.png"
 function Chats() {

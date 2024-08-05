@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Image} from "@nextui-org/react";
+import Search from "./search";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -16,6 +17,16 @@ export default function App() {
     "Help & Feedback",
     "Log Out",
   ];
+
+
+  
+
+  const [searchBar, setsearchBar] = useState(false);
+  
+  const addSearchBar = () => {
+    setsearchBar(!searchBar)
+  }
+
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -58,7 +69,10 @@ export default function App() {
         <NavbarItem className="hidden lg:flex">
         <div className="flex space-x-4">
     
-          <div style={{ width:"40px" }}   className="text-lg"><Image alt='alt' style={{ width:"40px" }} height={50} width={50} src='/srch.svg' /></div>
+          <div className="displaySeach" style={{ display: searchBar ? "block" : "none" }}>
+              <Search />
+          </div>
+          <div onClick={addSearchBar} style={{ width:"40px" }}   className="text-lg"><Image alt='alt' style={{ width:"40px" }} height={50} width={50} src='/srch.svg' /></div>
           <div className="text-lg"><Image alt='alt' style={{ width:"40px" }} height={50} width={50} src='/noti.svg' /></div>
           <div className="text-lg"><Image alt='alt' style={{ width:"40px" }} height={50} width={50} src='/bg.svg' /></div>
         </div>  

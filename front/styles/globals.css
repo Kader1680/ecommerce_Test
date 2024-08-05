@@ -164,6 +164,9 @@ html body{
   .copy{
     text-align: center;
   }
+  .formSubmit{
+    width: 100%;
+  }
 }
 
 
@@ -180,6 +183,13 @@ html body{
 
 @media(min-width: 768px){
 
+
+  .formSubmit{
+    width: 93%;
+  }
+  .productImage ,.comment{
+    width: 93%;
+  }
   .reviewImg{
     width: 200px;
     height: 200px;
@@ -700,7 +710,13 @@ select:focus{
 }
 
 
-
+.displaySeach {
+    position: absolute;
+    top: 14px;
+    width: 56%;
+    left: 10%;
+    z-index: 1111;
+}
 
 
 

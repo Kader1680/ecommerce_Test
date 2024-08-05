@@ -5,14 +5,16 @@ import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
 import Products from '../components/products';
 import GetApp from '../components/getApp';
 import Image from 'next/image';
+import Comments from '../components/comments';
 function Id() {
   return (
     <div style={{ width:"90%", margin:"auto" }}>
         <div className='singleProduct grid md:grid-cols-10  '>
         <div className=' md:col-span-7 sm:col-span-10 '>
 
-            <Image alt='alt'  style={{ borderRadius:"30px" }} width={759} height={674} src= '/singleProduct.png' />
+            <Image className='productImage' alt='alt'  style={{ borderRadius:"30px" }} width={759} height={674} src= '/singleProduct.png' />
 
+            <Comments />
         </div>
 
 

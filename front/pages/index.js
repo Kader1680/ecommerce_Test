@@ -27,7 +27,9 @@ function Index() {
 
   return (
     <div className='homePub ' style={{ width:"90%", margin:"auto" }}>
-
+ 
+   
+ 
     
         <div className='Selling md:flex md:items-center md:justify-between container'>
             <div className=' '>

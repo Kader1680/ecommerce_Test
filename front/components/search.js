@@ -2,7 +2,7 @@ import React from 'react'
 import {Input} from "@nextui-org/react";
 import Image from 'next/image';
 
-function SearchBar() {
+function Search() {
   return (
     <div>
 
@@ -20,4 +20,4 @@ function SearchBar() {
   )
 }
 
-export default SearchBar
+export default Search
