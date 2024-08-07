@@ -40,7 +40,7 @@ function Category() {
         setfiltProduct(filtProduct.filter(el => el.discount > 40))
          
       },
-      [filtProduct],
+      [filterMenu],
     )
     
    
@@ -67,7 +67,7 @@ function Category() {
             break;
         }
       },
-      [filtProduct],
+      [filterMenu],
     )
     
     function allProduct() {
@@ -79,7 +79,7 @@ function Category() {
       setfiltProduct(filtProduct)
         
 
-    }, [filtProduct]);
+    }, [filterMenu]);
 
    
 
@@ -112,7 +112,7 @@ function Category() {
             break;
         }
       },
-      [filtProduct],
+      [filterMenu],
     )
     
     
