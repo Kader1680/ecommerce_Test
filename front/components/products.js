@@ -16,25 +16,18 @@ import products from "../pages/product"
 function Products() {
 
 
-    const [filtProduct, setfiltProduct] = useState(products);
-
-    function filter() {
-
-        setfiltProduct(filtProduct.filter(el => el.discount > 40))
-       
-    }
-
+    
     
         
     
   
   return (
     <div  className='products  md:gap-4 grid sm:grid-cols-2 md:grid-cols-4'>
-        <button onClick={()=>{filter()}} >filter now</button>
+   
       
         {
-            filtProduct.map(item => (
-                <div className='relative car'>
+            products.map(item => (
+                <div key={item.id} className='relative car'>
                     <div  className='discount absolute'>{item.discount} $</div>
                     <div style={{ top:"3rem", width:"fit-content", backgroundColor:"#cc0d39" }} className='discount absolute'>{item.featured}</div>
                     <Image alt='alt'  src={item.image} width={300} height={460.03}  />
@@ -42,7 +35,7 @@ function Products() {
                         <div>{item.name}</div>
                         <div className=' block '>
                             <div style={{ fontSize:"18px" }} className=' font-bold '>{item.oldPrice}</div>
-                            <div style={{ fontSize:"12px" }}>{item.newPrice}</div>
+                            <div style={{ fontSize:"12px" }}>{item.newOld}</div>
                         </div>
                     </div>
                 </div>

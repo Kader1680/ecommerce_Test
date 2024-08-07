@@ -19,7 +19,10 @@ const products = [
         "newOld" : 30.99,
         "featured" : "featured",
         "discount" : 40,
-        "image": p1
+        "image": p1,
+        "size" : "XL",
+        "shipping" : "free",
+        "color" : "gray"
     },
     {
         "id" : 1,
@@ -28,7 +31,10 @@ const products = [
         "newOld" : 30.99,
         
         "discount" : 49,
-        "image": p2
+        "image": p2,
+        "size" : "S",
+        "shipping" : "free",
+        "color" : "green"
 
     },
     {
@@ -38,7 +44,10 @@ const products = [
         "newOld" : 30.99,
         "featured" : "featured",
         "discount" : 66,
-        "image": p3
+        "image": p3,
+        "size" : "L",
+        "shipping" : "free",
+        "color" : "blue"
 
     },
     {
@@ -46,10 +55,10 @@ const products = [
         "name" : "prodcut",
         "oldPrice" : 83.89,
         "newOld" : 30.99,
-        
         "discount" : 55,
-        "image": p4
-
+        "image": p4,
+        "size" : "XXL",
+        "color" : "black"
     },
     {
         "id" : 4,
@@ -58,8 +67,9 @@ const products = [
         "newOld" : 30.99,
         "featured" : "featured",
         "discount" : 33,
-        "image": p5
-
+        "image": p5,
+        "size" : "S",
+        "color" : "blue"
     },
     {
         "id" : 5,
@@ -68,7 +78,9 @@ const products = [
         "newOld" : 30.99,
         "featured" : "",
         "discount" : 40,
-        "image": p6
+        "image": p6,
+        "size" : "XXL",
+        "color" : "pink"
     },
     {
         "id" : 6,
@@ -77,7 +89,9 @@ const products = [
         "newOld" : 30.99,
         "featured" : "",
         "discount" : 40,
-        "image": p7
+        "image": p7,
+        "size" : "M",
+        "color" : "black"
     }, {
         "id" : 7,
         "name" : "prodcut",
@@ -85,7 +99,9 @@ const products = [
         "newOld" : 30.99,
         "featured" : "",
         "discount" : 10,
-        "image": p8
+        "image": p8,
+        "size" : "S",
+        "color" : "white"
     }, {
         "id" : 8,
         "name" : "prodcut",
@@ -93,7 +109,9 @@ const products = [
         "newOld" : 30.99,
         "featured" : "",
         "discount" : 10,
-        "image": p9
+        "image": p9,
+        "size" : "XL",
+        "color" : "brown"
     }, {
         "id" : 9,
         "name" : "prodcut",
@@ -101,7 +119,9 @@ const products = [
         "newOld" : 30.99,
         "featured" : "",
         "discount" : 33,
-        "image": p10
+        "image": p10,
+        "size" : "XS",
+        "color" : "white"
     }
 ]
 

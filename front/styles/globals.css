@@ -24,6 +24,12 @@ html body{
 /* ---------------- IPHONE SECTION ------------------- */
 
 @media(max-width: 767px){
+
+  
+  .show-filter-bar{
+    display: none;
+  
+  }
   .women{
     margin-top: 2rem;
   }
@@ -48,8 +54,8 @@ html body{
   
   }
   .type{
-    display: grid;
-    grid-template-columns: 50% 50%;
+    display: none;
+     
   }
   .type img {
     width: 88%;
@@ -67,6 +73,7 @@ html body{
 }
   .filtring{
     width: 100%;
+  
   }
   .follow{
     margin: 15px 0px 13px 0px;
@@ -98,17 +105,13 @@ html body{
   .Brands img {
     width: 100%;
 }
-  .products div img{
-    /* width: 100%; */
-  }
+  
   .Brands .markes {
     display: grid;
     grid-template-columns: 50% 50%;
     margin: auto;
 }
-  .Authentication{
-   
-  }
+  
   .Authentication .loginPart{
     display: block;
   }
@@ -118,10 +121,7 @@ html body{
     width: 100%;
    
   }
-  .leftSideLogin{
-    /* width: 429px;
-    height: 762px; */
-}
+   
 .authO{
     width: 100%;
     height: 636px;
@@ -255,9 +255,7 @@ html body{
     max-width: 6rem;
 
   }
-    .rightSideLogin{
-
-    }
+    
 } 
 
 /* ---------------- LARGE SECTION ------------------- */
@@ -308,21 +306,11 @@ html body{
 }
   .leftSideLogin{
     background-color: rgb(255, 255, 255);
-    /* width: 429px;
-    height: 762px; */
-    /* margin-top: 133px;
-    margin-left: 175px; */
+ 
   
   }
-  .leftSideLogin{
-    /* width: fit-content;
-    height: 762px; */
-}
-
-.authO{
-   /* width: 90%;
-    height: 636px; */
-  }
+ 
+ 
 
 .authO .googleBtn, .facebookBtn, .appleBtn, .LoginIcon{
 width: 100%;
@@ -394,41 +382,25 @@ hr{
 .authO button:nth-child(3){
   background-color: black;
 }
-
-.loginInput form div:nth-child(1){
-  
-}
-.loginInput form div:nth-child(2){
-  
-
-}
+ 
 
 .btmTxt{
   font-size: 14px;
 }
 
-.selling{
-
-}
+ 
 .selling .direction Image{
    position: absolute;
     top: 5rem;
     left: 36rem;
     
 }
-.selling .women{
-   
-}
+ 
 .intro h3{
     font-weight: 700;
     font-family: "AT Pinko";
 }
 
-
-
-.Brands .markes{
-  /* max-width: 1,344px; */
-}
 
 .Brands h3{
   font-size: 40px;
@@ -471,11 +443,7 @@ hr{
   font-weight: 700;
   font-family: "AT Pinko";
 }
-
-.clothes{
-  
-  
-} 
+ 
 
 .footer div h3{
   font-size: 20px;
@@ -495,13 +463,7 @@ hr{
   color: #0f0f0f7d;
   line-height: 28px;
 }
-.footer div:nth-child(3){
-
-}
-.footer div:nth-child(4){
-
-}
-
+ 
 .footer{
   margin-top: 3rem;
 }
@@ -528,16 +490,12 @@ hr{
   height: 56px;
 
 }
-.imgDirc{
-  
-}
+ 
 .imgDirc img{
   border-radius: 30px;
 }
 
-.imgDirc img{
-  
-}
+ 
 .scndImg {
   left: 51rem;
   top: 131px;
@@ -719,23 +677,31 @@ select:focus{
 }
 
 
+/* components/ImageSlider.module.css */
+.sliderContainer {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
 
+.slide {
+  text-align: center;
+}
 
+.slide img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
 
+.slide p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
+.slick-prev:before, .slick-next:before {
+  color: black;
+}

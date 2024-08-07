@@ -10,7 +10,7 @@ module.exports = {
     './node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}',
     './src/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/flowbite/**/*.js',
-
+    'node_modules/preline/dist/*.js',
     "./pages/**/*.{js,ts,jsx,tsx}",
     // Add NextUI content paths
     "./node_modules/@nextui-org/react/**/*.js"
@@ -25,5 +25,5 @@ module.exports = {
     },
   },
   darkMode: "class",
-  plugins: [nextui()],
+  plugins: [nextui(),  require('preline/plugin'),],
 }
