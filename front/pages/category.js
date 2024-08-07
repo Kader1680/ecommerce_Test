@@ -79,7 +79,7 @@ function Category() {
       setfiltProduct(filtProduct)
         
 
-    }, [filtProduct]);
+    },[filtProduct]);
 
    
 
