@@ -40,7 +40,7 @@ function Category() {
         setfiltProduct(filtProduct.filter(el => el.discount > 40))
          
       },
-      [filterMenu],
+      [filtProduct],
     )
     
    
@@ -67,7 +67,7 @@ function Category() {
             break;
         }
       },
-      [filterMenu],
+      [filtProduct],
     )
     
     function allProduct() {
@@ -79,7 +79,7 @@ function Category() {
       setfiltProduct(filtProduct)
         
 
-    }, [filterMenu]);
+    }, [filtProduct]);
 
    
 
@@ -112,7 +112,7 @@ function Category() {
             break;
         }
       },
-      [filterMenu],
+      [filtProduct],
     )
     
     
@@ -145,7 +145,7 @@ function Category() {
     <div style={{ width:"90%", margin:"auto" }}>
         <h3 style={{ fontSize:"24px" }}  className='myfont font-bold'>Fashion for Women</h3>
 
-        <i class="cil-energy icon icon-xxl"></i>
+        <i className="cil-energy icon icon-xxl"></i>
 
         <p className=' mt-2 mb-5 font-bold'>CATEGORIES</p>
 
@@ -223,8 +223,8 @@ function Category() {
 
 
                     <div className="mb-4">
-                        <div class="relative w-full   mx-auto max-w-screen-sm">
-                            <div id="bouton" class="relative group/bouton w-full">
+                        <div className="relative w-full   mx-auto max-w-screen-sm">
+                            <div id="bouton" className="relative group/bouton w-full">
                             <div onClick={displayMenu} className=' flex items-center justify-between'>
                               <p className=' font-bold'>Status</p>
                                   <Image src={bellow} alt='alt' width={20} height={20}  />
@@ -250,7 +250,7 @@ function Category() {
 
                     <div className="mb-4">
                         <div className="relative w-full   mx-auto max-w-screen-sm">
-                            <div id="bouton" class="relative group/bouton w-full">
+                            <div id="bouton" className="relative group/bouton w-full">
                             <div className=' flex items-center justify-between'>
                                   <p className=' font-bold'>Size</p>
                                   <Image src={bellow} alt='alt' width={20} height={20}  />
