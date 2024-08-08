@@ -11,132 +11,72 @@ import Slider from '../components/imageSlider'
 import ImageSlider from '../components/imageSlider'
 function Category() {
 
-    const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', "3XL", "4XL", "5XL", "One size"];
+  const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', "3XL", "4XL", "5XL", "One size"];
     
-    const colors = [
-      'gray', 'black', 'white', 'brown', 'pink', 'blue', 
-      'red', 'orange', 'yellow', 'green', 'purple', 'multicolor'
-    ];
-    const [minPrice, setMinPrice] = useState('');
-    const [maxPrice, setMaxPrice] = useState('');
+  const colors = [
+    'gray', 'black', 'white', 'brown', 'pink', 'blue', 
+    'red', 'orange', 'yellow', 'green', 'purple', 'multicolor'
+  ];
+  const [minPrice, setMinPrice] = useState('');
+  const [maxPrice, setMaxPrice] = useState('');
+  
+
+  const [filterMenu, setfilterMenu] = useState(false);
+
+  function displayMenu() {
+    setfilterMenu(!filterMenu)
+  }
+  const [displayFilterBar, setdisplayFilterBar] = useState(false);
+
+  function setFilterBar() {
+    setdisplayFilterBar(!displayFilterBar)
+  }
     
 
-    const [filterMenu, setfilterMenu] = useState(false);
+  const [filtProduct, setfiltProduct] = useState(products);
 
-    function displayMenu() {
-      setfilterMenu(!filterMenu)
-    }
-    const [displayFilterBar, setdisplayFilterBar] = useState(false);
-
-    function setFilterBar() {
-      setdisplayFilterBar(!displayFilterBar)
-    }
-      
-
-    const [filtProduct, setfiltProduct] = useState(products);
+  const filter =  () => {
+        setfiltProduct(products.filter(el => el.discount > 40))
+       
+    } 
+  
  
-    const filter = useCallback(
-      () => {
-        setfiltProduct(filtProduct.filter(el => el.discount > 40))
-         
-      },
-      [filtProduct],
-    )
-    
-   
 
-    const filterSize = useCallback(
-      (size) => {
-        switch (size) {
-          case "XL":
-              setfiltProduct(filtProduct.filter(el => el.size === size))
-            break;
-          case "S":
-              setfiltProduct(filtProduct.filter(el => el.size === size))
-            break;
-          case "M":
-              setfiltProduct(filtProduct.filter(el => el.size === size))
-            break;
-          case "L":
-              setfiltProduct(filtProduct.filter(el => el.size === size))
-            break;
-          case "XXL":
-              setfiltProduct(filtProduct.filter(el => el.size === size))
-            break;
-          default:
-            break;
+  const filterSize = (size) => {
+        if (size) {
+          setfiltProduct(products.filter(el => el.size === size))
+          
+        }else{
+          setfiltProduct(products)
+
         }
-      },
-      [filtProduct],
-    )
-    
-    function allProduct() {
-        setfiltProduct(products)
-    }
+        
+       
+  }
+ 
+  
+  function allProduct() {
+      setfiltProduct(products)
+  }
 
-    useEffect(() => {
+  useEffect(() => {
+    
+    setfiltProduct(filtProduct)
       
-      setfiltProduct(filtProduct)
-        
 
-    },[filtProduct]);
+  },[filtProduct]);
 
-   
+ 
 
-    const filterColor = useCallback(
-      (color) => {
-        switch (color) {
-          case "brown":
-              setfiltProduct(filtProduct.filter(el => el.color === color))
-            break;
-          case "black":
-              setfiltProduct(filtProduct.filter(el => el.color === color))
-            break;
-          case "blue":
-              setfiltProduct(filtProduct.filter(el => el.color === color))
-            break;
-          case "pink":
-              setfiltProduct(filtProduct.filter(el => el.color === color))
-            break;
-          case "green":
-              setfiltProduct(filtProduct.filter(el => el.color === color))
-            break;
-          case "white":
-              setfiltProduct(filtProduct.filter(el => el.color === color))
-            break;
-          case "gray":
-              setfiltProduct(filtProduct.filter(el => el.color === color))
-            break;
-        
-          default:
-            break;
-        }
-      },
-      [filtProduct],
-    )
-    
-    
-    
-
-  const catImages = [
-    "/cat (1).png", 
-    "/cat (2).png", 
-    "/cat (3).png", 
-    "/cat (4).png", 
-    "/cat (5).png", 
-    "/cat (6).png", 
-    "/cat (7).png", 
-    "/cat (8).png", 
-    "/cat (9).png", 
-    "/cat (10).png", 
-  ]
-
-
-
-
-
-
-
+  const filterColor = (color) => {
+    if (color) {
+        setfiltProduct(products.filter(el => el.color === color));
+    } else {
+        setfiltProduct(products);
+    }
+};
+  
+  
 
 
   return (
@@ -308,7 +248,7 @@ function Category() {
                         </div>
                     </div>
             
-                  {/* Price  */}
+                     {/* Price  */}
             
                     <div className="mb-4">
               
