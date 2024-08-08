@@ -705,3 +705,11 @@ select:focus{
 .slick-prev:before, .slick-next:before {
   color: black;
 }
+
+
+.notfound{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(50%, 50%);
+}

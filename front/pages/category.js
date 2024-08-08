@@ -9,21 +9,57 @@ import filterIcon from "../public/filterIcon.png"
 import bellow from "../public/bellow.png"
 import Slider from '../components/imageSlider'
 import ImageSlider from '../components/imageSlider'
+import NotFoundProduct from './notFoundProduct'
+import Search  from '../components/search'
+import { Input } from '@nextui-org/react'
 function Category() {
 
   const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', "3XL", "4XL", "5XL", "One size"];
-    
+  const brand = ["Brandy Melville", "Forever 21", "Caddis", "Nike", "New Balance", "Aragona"]
   const colors = [
     'gray', 'black', 'white', 'brown', 'pink', 'blue', 
     'red', 'orange', 'yellow', 'green', 'purple', 'multicolor'
   ];
+  const prices = [
+    10.00, 30.00, 50.00, 130.00, 200.00,
+  ];
+
+  const names = [
+    "Embellished Flare Leg Jeans 90s",
+    "Daisy Romantic Sweet Flower",
+    "women's crocs flats",
+    "nike women shoes",
+    "Maurice's shorts",
+    "prodcut",
+    "Watermelon Soda Plus Size 1X Utility Skirt",
+    "Boxed Large Slim Card Holder",
+    "Pink FashionNova Set",
+    "Casual Corner Vintage Linen Blazer Chartreuse",
+  
+  ]
+ 
+
+  function targerInput(e) {
+
+    const filteredProducts = products.filter(product =>
+      names.some(name => product.name === name && e === name)
+    );
+    setfiltProduct(filteredProducts);
+      
+  }  
+
+    
   const [minPrice, setMinPrice] = useState('');
   const [maxPrice, setMaxPrice] = useState('');
   
 
   const [filterMenu, setfilterMenu] = useState(false);
 
+
+
   function displayMenu() {
+
+    
     setfilterMenu(!filterMenu)
   }
   const [displayFilterBar, setdisplayFilterBar] = useState(false);
@@ -40,20 +76,18 @@ function Category() {
        
     } 
   
- 
-
   const filterSize = (size) => {
         if (size) {
           setfiltProduct(products.filter(el => el.size === size))
           
-        }else{
-          setfiltProduct(products)
-
         }
+        
+       
         
        
   }
  
+  
   
   function allProduct() {
       setfiltProduct(products)
@@ -67,18 +101,30 @@ function Category() {
   },[filtProduct]);
 
  
+  
 
-  const filterColor = (color) => {
-    if (color) {
-        setfiltProduct(products.filter(el => el.color === color));
-    } else {
-        setfiltProduct(products);
-    }
+  const filterBrand = (brand) => {
+    if (brand) {
+      setfiltProduct(products.filter(el => el.brand === brand));
+    } 
+  }
+  const filterPrice = (price) => {
+    if (price) {
+      setfiltProduct(products.filter(el => el.newOld > price ));
+    }  
+  }
+  
+const shippingFilter = (shipping) => {
+   
+     setfiltProduct(products.filter(el => el.shipping === shipping))
+}
+const filterColor = (color) => {
+  if (color) {
+      setfiltProduct(products.filter(el => el.color === color));
+  } else {
+      setfiltProduct(products);
+  }
 };
-  
-  
-
-
   return (
 
 
@@ -90,7 +136,10 @@ function Category() {
         <p className=' mt-2 mb-5 font-bold'>CATEGORIES</p>
 
 
+        {/* {myproducts.map(i => (
+            <div> {i.name} </div>
 
+        ))} */}
 
 
 
@@ -161,11 +210,12 @@ function Category() {
            <div  className= {`filtring w-64 p-4 border rounded-lg ${displayFilterBar ? '' : 'show-filter-bar'}`}>
 
 
+                    {/* Status */}
 
                     <div className="mb-4">
                         <div className="relative w-full   mx-auto max-w-screen-sm">
                             <div id="bouton" className="relative group/bouton w-full">
-                            <div onClick={displayMenu} className=' flex items-center justify-between'>
+                            <div  onClick={displayMenu} className=' flex items-center justify-between'>
                               <p className=' font-bold'>Status</p>
                                   <Image src={bellow} alt='alt' width={20} height={20}  />
                             </div>
@@ -187,6 +237,53 @@ function Category() {
                             </div>
                         </div>
                     </div>
+
+                    {/* Brands */}
+                    <div className="mb-4">
+                          <div className="relative w-full   mx-auto max-w-screen-sm">
+                              <div id="bouton" className="relative group/bouton w-full">
+                              <div className=' flex items-center justify-between'>
+                                    <p className=' font-bold'>Brands</p>
+                                    <Image src={bellow} alt='alt' width={20} height={20}  />
+                                  </div>
+                                  <div className=' mt-3 mb-3'>
+                                  
+                              
+                                  <Input
+                                        style={{ backgroundColor:"transparent" }}
+                                        className='searchBar bg-transparent'
+                                          onChange={(e)=>{targerInput(e.target.value)}}
+                                          radius="lg"
+                                          placeholder="search items"
+                                          startContent={
+                                            <Image alt='alt' width={20} height={20} src='/searchicon.png' />
+                                          }
+                                />
+                                  
+                                  </div>
+                              
+                              {
+                             
+                                brand.map(i => (
+                                  
+                                  <div key={i} style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                                    <div onClick={()=>{filterBrand(i)}}   className=' flex items-center p-2'>
+                                      <input type="checkbox" /><p className=' ms-3'>{i}</p>
+                                    </div>
+                                
+                            
+                                    </div>
+                                 ))
+                              }
+
+
+                              </div>
+                          </div>
+                    </div>
+
+
+                    {/* Size */}
+
 
                     <div className="mb-4">
                         <div className="relative w-full   mx-auto max-w-screen-sm">
@@ -258,28 +355,23 @@ function Category() {
                                   <p className=' font-bold'>Price</p>
                                   <Image src={bellow} alt='alt' width={20} height={20}  />
                                 </div>
-                    <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
-                      <div className=' flex items-center p-2'>
-                        <input type='radio' /><p className=' ms-3'>Any</p>
-                      </div>
-                      <div className=' flex items-center p-2'>
-                        <input type='radio' /><p className=' ms-3'>Under $25</p>
-                      </div>
-                      <div className=' flex items-center p-2'>
-                        <input type='radio' /><p className=' ms-3'>$25 to $50</p>
-                      </div>
-                      <div className=' flex items-center p-2'>
-                        <input type='radio' /><p className=' ms-3'>$50 to $100</p>
-                      </div>
+                    <div style={{ display: filterMenu ? "block" : "none" }} 
+                    
+                    className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                     <div  className=' flex items-center p-2'>
+                        <input onClick={()=>setfiltProduct(products)} type='radio' /><p className=' ms-3'>Any </p>
+                        </div>
 
-                      <div className=' flex items-center p-2'>
-                        <input type='radio' /><p className=' ms-3'>$100 to $200</p>
-                      </div>
+                    {
+                      prices.map(p => (
+                        <div  key={p} onClick={()=>{filterPrice(p)}} className=' flex items-center p-2'>
+                        <input type='radio' /><p className=' ms-3'>{p} $</p>
+                        </div>
 
-                      <div className=' flex items-center p-2'>
-                        <input type='radio' /><p className=' ms-3'>$200 to $UP</p>
-                      </div>
-
+                      ))
+                    }
+                     
+                    
                       <div className="mt-2 flex space-x-2">
                         <input
                           type="number"
@@ -313,10 +405,10 @@ function Category() {
                                   <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                                     <div className='  '>
                                         <h5 className=' font-bold mt-3 mb-3'>Tops</h5>
-                                        <div className=' flex flex-wrap gap-1 '>
+                                        <div className=' flex flex-wrap gap-8 '>
                                           {
                                             colors.map(item => (
-                                              <div onClick={() => filterColor(item)} key={item} style={{ backgroundColor: item, width:"25px", height:"25px" }} className={`  p-2 border ${item}  rounded-full   gap-2`}></div>
+                                              <div onClick={() => filterColor(item)} key={item} style={{ backgroundColor: item, width:"35px", height:"35px" }} className={`    p-2 border ${item}  rounded-full   gap-2`}></div>
                                             ))
                                           }
                                         </div>
@@ -342,11 +434,11 @@ function Category() {
                                     <Image src={bellow} alt='alt' width={20} height={20}  />
                                   </div>
                               <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
-                                <div className=' flex items-center p-2'>
+                                <div onClick={allProduct}  className=' flex items-center p-2'>
                                   <input type="checkbox" /><p className=' ms-3'>All (243)</p>
                                 </div>
-                                <div className=' flex items-center p-2'>
-                                  <input type='checkbox' /><p className=' ms-3'>Free Shipping (670)</p>
+                                <div onClick={()=>{shippingFilter("free")}} className=' flex items-center p-2'>
+                                  <input type='checkbox' /><p className=' ms-3' >Free Shipping (670)</p>
                                 </div>
                             
                                 
@@ -362,70 +454,51 @@ function Category() {
         </div>
 
 
+                
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+           
 
 
             <div className=' md:col-span-7'>
-            <div  className='products  md:gap-4 grid sm:grid-cols-2 md:grid-cols-4'>
+            <div  className='products  md:gap-4 grid sm:grid-cols-4 md:grid-cols-3'>
             {
-            filtProduct.map(item => (
-                <div key={item.id} className='relative car'>
-                    <div  className='discount absolute'>{item.discount} $</div>
-                    <div style={{ top:"3rem", width:"fit-content", backgroundColor:"#cc0d39" }} className='discount absolute'>{item.featured}</div>
-                    <Image alt='alt'  src={item.image} width={300} height={460.03}  />
-                    <div className='price flex justify-between '>
-                        <div>{item.name}</div>
-                        <div className=' block '>
-                            <div style={{ fontSize:"18px" }} className=' font-bold '>{item.oldPrice}</div>
-                            <div style={{ fontSize:"12px" }}>{item.newOld}</div>
-                        </div>
-                    </div>
-                </div>
-                ))
-        }
 
+              filtProduct.length > 0 ? (
 
-        </div>
+                   
+                      filtProduct.map(item => (
+                      <div key={item.id} className='relative car'>
+                          <div style={{ backgroundColor:"black" }} className='discount bg-black absolute'>{item.discount} $</div>
+                          <div style={{ top:"3rem", width:"fit-content", backgroundColor:"#cc0d39" }} className='discount absolute'>{item.featured}</div>
+                          <Image alt='alt'  src={item.image} width={300} height={460.03}  />
+                          <div className='price flex justify-between '>
+                              <div style={{ fontSize:"13px" }}>{item.name}</div>
+                              <div className=' block '>
+                                  <div style={{ fontSize:"12px" }} className='   line-through'>{item.oldPrice}$</div>
+                                  <div className=' font-bold' style={{ fontSize:"15px" }}>{item.newOld}$</div>
+                              </div>
+                          </div>
+
+                          
+                      </div>
+                      ))
+                  
+
+                    ) :  <div  className=' relative' >
+                           
+                          
+                          <Image className=' notfound' alt='alt'  src="/product-not-found.jpg" width={300} height={460.03}  />  
+                         
+
+                          
+                      </div>
+                
+            }
+            
+              
+
+             </div>
 
 
                 {/* <Products products={filtProduct} /> */}

@@ -1,23 +1,54 @@
-import React from 'react'
-import {Input} from "@nextui-org/react";
-import Image from 'next/image';
+  import React, { useState } from 'react'
+  import {Input} from "@nextui-org/react";
+  import Image from 'next/image';
+  import products from "../pages/product.json"
+import Category from '../pages/category';
+  function Search() {
+    const names = [
+      "Embellished Flare Leg Jeans 90s",
+      "Daisy Romantic Sweet Flower",
+      "women's crocs flats",
+      "nike women shoes",
+      "Maurice's shorts",
+      "prodcut",
+      "Watermelon Soda Plus Size 1X Utility Skirt",
+      "Boxed Large Slim Card Holder",
+      "Pink FashionNova Set",
+      "Casual Corner Vintage Linen Blazer Chartreuse",
+    
+    ]
+    const [filtProduct, setfiltProduct] = useState(products);
 
-function Search() {
-  return (
-    <div>
+    function targerInput(e) {
 
-      <Input
-      style={{ backgroundColor:"transparent" }}
-      className='searchBar bg-transparent'
-        
-        radius="lg"
-        placeholder="search items"
-        startContent={
-          <Image alt='alt' width={20} height={20} src='/searchicon.png' />
+      for (let index = 0; index < names.length; index++) {
+        const element = names[index];
+          if(e === element){
+            setfiltProduct(products.filter(e => e.name === element))
         }
-      />
-  </div>
-  )
-}
+      }
+        
+    }  
+    return (
 
-export default Search
+
+      <div>
+
+        <Input
+        style={{ backgroundColor:"transparent" }}
+        className='searchBar bg-transparent'
+          onChange={(e)=>{targerInput(e.target.value)}}
+          radius="lg"
+          placeholder="search items"
+          startContent={
+            <Image alt='alt' width={20} height={20} src='/searchicon.png' />
+          }
+        />
+
+         
+      
+    </div>
+    )
+  }
+
+  export default Search
