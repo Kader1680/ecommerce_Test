@@ -16,10 +16,10 @@ function Category() {
 
   const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', "3XL", "4XL", "5XL", "One size"];
   const brand = ["Brandy Melville", "Forever 21", "Caddis", "Nike", "New Balance", "Aragona"]
-  const colors = [
-    'gray', 'black', 'white', 'brown', 'pink', 'blue', 
-    'red', 'orange', 'yellow', 'green', 'purple', 'multicolor'
-  ];
+  // const colors = [
+  //   'gray', 'black', 'white', 'brown', 'blue', 
+  //    'green' 
+  // ];
   const prices = [
     10.00, 30.00, 50.00, 130.00, 200.00,
   ];
@@ -125,6 +125,16 @@ const filterColor = (color) => {
       setfiltProduct(products);
   }
 };
+
+
+const newItems = [];
+// get the items color from each prodcuts 
+for (let index = 0; index < products.length; index++) {
+  const element = products[index].color;
+      newItems.push(element)
+}
+
+const colors = [...new  Set(newItems)]
   return (
 
 
@@ -202,8 +212,8 @@ const filterColor = (color) => {
 
                 
 
-        <div className=' font-bold flex items-center mt-3 mb-3 '>
-        <Image width={17} height={17} src={filterIcon} onClick={setFilterBar} alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-2 '>FILTER</h4>
+        <div  onClick={setFilterBar} className=' font-bold flex items-center mt-3 mb-3 '>
+        <Image width={17} height={17} src={filterIcon} alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-2 '>FILTER</h4>
         
         </div>
        
@@ -295,7 +305,7 @@ const filterColor = (color) => {
                             <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                               
 
-                            <h5 className=' font-bold mt-3 mb-3'>Tops</h5>
+                            <h5   className=' font-bold mt-3 mb-3'>Tops</h5>
                               <div className=' flex flex-wrap gap-1 '>
                                 {
                                   sizes.map(item => (
@@ -398,13 +408,17 @@ const filterColor = (color) => {
                           <div className="relative w-full   mx-auto max-w-screen-sm">
                               <div id="bouton" className="relative group/bouton w-full">
                               <div className=' flex items-center justify-between'>
-                                    <p className=' font-bold'>Color</p>
+                                    <p className=' font-bold mb-5'>Color</p>
                                     <Image src={bellow} alt='alt' width={20} height={20}  />
                                   </div>
 
                                   <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                                     <div className='  '>
-                                        <h5 className=' font-bold mt-3 mb-3'>Tops</h5>
+                                         
+
+ 
+
+ 
                                         <div className=' flex flex-wrap gap-8 '>
                                           {
                                             colors.map(item => (
