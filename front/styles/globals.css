@@ -13,8 +13,12 @@
   box-sizing: border-box;
  
 }
+html{
+  font-family: 'AT Pinko';
+
+}
 html body{
-   
+  font-family: 'AT Pinko';
   margin: 0 auto;
 }
 
