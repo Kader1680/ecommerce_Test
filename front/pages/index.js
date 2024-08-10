@@ -26,7 +26,7 @@ function Index() {
      
 
   return (
-    <div className='homePub ' style={{ width:"90%", margin:"auto" }}>
+    <div className='homePub myfont ' style={{ width:"90%", margin:"auto" }}>
  
    
  
