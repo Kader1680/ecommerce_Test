@@ -7,7 +7,12 @@ import { Html, Head, Main, NextScript } from "next/document";
 export default function Document() {
   return (
     <Html >
-      <Head />
+      <Head>
+      <link
+          href="https://example.com/path-to-at-pinko-font.css"
+          rel="stylesheet"
+        />
+      </Head>
      
       <body>
         <Main />
