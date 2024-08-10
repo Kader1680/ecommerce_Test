@@ -135,22 +135,40 @@ for (let index = 0; index < products.length; index++) {
 }
 
 const colors = [...new  Set(newItems)]
+
+
+const [item, setitem] = useState(["red", "green", "blue"]);
+
+const FilterItem = ({ title, children }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleItem = () => {
+    setIsOpen(!isOpen);
+  };
+
+  return (
+    <div className="filter-item">
+      <div className="filter-header flex items-center justify-between" onClick={toggleItem}>
+        <div>{title}</div>
+        <div>{isOpen ?  <Image alt='alt' width={20} height={20} src="/bellow.png" /> : <Image alt='alt' width={20} height={20} src="/bellow.png" />}</div>
+      </div>
+      {isOpen && <div className="filter-content">{children}</div>}
+    </div>
+  );
+};
+
+
   return (
 
 
     <div style={{ width:"90%", margin:"auto" }}>
         <h3 style={{ fontSize:"24px" }}  className='myfont font-bold'>Fashion for Women</h3>
-
+        
         <i className="cil-energy icon icon-xxl"></i>
 
         <p className=' mt-2 mb-5 font-bold'>CATEGORIES</p>
 
-
-        {/* {myproducts.map(i => (
-            <div> {i.name} </div>
-
-        ))} */}
-
+       
 
 
 
@@ -208,6 +226,10 @@ const colors = [...new  Set(newItems)]
 
 
 
+              <div>
+
+              </div>
+
                 {/* <FilterCategory   /> */}
 
                 
@@ -219,18 +241,20 @@ const colors = [...new  Set(newItems)]
        
            <div  className= {`filtring w-64 p-4 border rounded-lg ${displayFilterBar ? '' : 'show-filter-bar'}`}>
 
-
+            
+           <div className="filter">
+                
                     {/* Status */}
-
+                       
                     <div className="mb-4">
                         <div className="relative w-full   mx-auto max-w-screen-sm">
                             <div id="bouton" className="relative group/bouton w-full">
-                            <div  onClick={displayMenu} className=' flex items-center justify-between'>
-                              <p className=' font-bold'>Status</p>
-                                  <Image src={bellow} alt='alt' width={20} height={20}  />
-                            </div>
- 
-                            <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                            <div   className=' flex items-center justify-between'>
+                            <FilterItem title="Status">
+                                {/* <p className=' font-bold'>Status</p> */}
+                                {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+
+                                <div   className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                               <div className=' flex items-center p-2'  >
                                 <input type='radio' /><p className=' ms-3' onClick={allProduct}>Any</p>
                               </div>
@@ -244,54 +268,68 @@ const colors = [...new  Set(newItems)]
 
                           
                             </div>
+                            </FilterItem>
+                              
+                            </div>
+ 
+                         
                             </div>
                         </div>
                     </div>
 
-                    {/* Brands */}
+
+                  {/* Brands */}
                     <div className="mb-4">
-                          <div className="relative w-full   mx-auto max-w-screen-sm">
-                              <div id="bouton" className="relative group/bouton w-full">
-                              <div className=' flex items-center justify-between'>
-                                    <p className=' font-bold'>Brands</p>
-                                    <Image src={bellow} alt='alt' width={20} height={20}  />
-                                  </div>
-                                  <div className=' mt-3 mb-3'>
-                                  
-                              
-                                  <Input
-                                        style={{ backgroundColor:"transparent" }}
-                                        className='searchBar bg-transparent'
-                                          onChange={(e)=>{targerInput(e.target.value)}}
-                                          radius="lg"
-                                          placeholder="search items"
-                                          startContent={
-                                            <Image alt='alt' width={20} height={20} src='/searchicon.png' />
-                                          }
-                                />
-                                  
-                                  </div>
-                              
-                              {
-                             
-                                brand.map(i => (
-                                  
-                                  <div key={i} style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
-                                    <div onClick={()=>{filterBrand(i)}}   className=' flex items-center p-2'>
-                                      <input type="checkbox" /><p className=' ms-3'>{i}</p>
-                                    </div>
-                                
-                            
-                                    </div>
-                                 ))
-                              }
+                              <div className="relative w-full   mx-auto max-w-screen-sm">
+                                        <div id="bouton" className="relative group/bouton w-full">
+                                        <div className=' flex items-center justify-between'>
+                                        <FilterItem title="brabs">
+                                                {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+
+                                                <div className=' mt-3 mb-3'>
+                                            
+                                        
+                                            <Input
+                                                  style={{ backgroundColor:"transparent" }}
+                                                  className='searchBar bg-transparent'
+                                                    onChange={(e)=>{targerInput(e.target.value)}}
+                                                    radius="lg"
+                                                    placeholder="search items"
+                                                    startContent={
+                                                      <Image alt='alt' width={20} height={20} src='/searchicon.png' />
+                                                    }
+                                          />
+                                            
+                                            </div>
+                                        
+                                                  {
+                                                
+                                                    brand.map(i => (
+                                                      
+                                                      <div key={i}  className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                                                        <div onClick={()=>{filterBrand(i)}}   className=' flex items-center p-2'>
+                                                          <input type="checkbox" /><p className=' ms-3'>{i}</p>
+                                                        </div>
+                                                    
+                                                
+                                                        </div>
+                                                    ))
+                                                  }
 
 
-                              </div>
+
+                                        </FilterItem>
+                                              
+                                            
+                                        </div>
+                                    
+
+                                </div>
                           </div>
                     </div>
 
 
+                   
                     {/* Size */}
 
 
@@ -299,48 +337,58 @@ const colors = [...new  Set(newItems)]
                         <div className="relative w-full   mx-auto max-w-screen-sm">
                             <div id="bouton" className="relative group/bouton w-full">
                             <div className=' flex items-center justify-between'>
-                                  <p className=' font-bold'>Size</p>
-                                  <Image src={bellow} alt='alt' width={20} height={20}  />
+                                   
+                                  
+                                  <FilterItem title="Size">
+                                        {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+
+                                        <div   className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                              
+
+                              <h5   className=' font-bold mt-3 mb-3'>Tops</h5>
+                                <div className=' flex flex-wrap gap-1 '>
+                                  {
+                                    sizes.map(item => (
+                                      <div onClick={()=>{filterSize(item)}}  key={item} className='w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2'> {item} </div>
+                                    ))
+                                  }
                                 </div>
-                            <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                               
-
-                            <h5   className=' font-bold mt-3 mb-3'>Tops</h5>
+  
+                                <h5 className=' font-bold mt-3 mb-3'>BOTTOMS</h5>  
+  
                               <div className=' flex flex-wrap gap-1 '>
-                                {
-                                  sizes.map(item => (
-                                    <div onClick={()=>{filterSize(item)}}  key={item} className='w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2'> {item} </div>
-                                  ))
-                                }
-                              </div>
+                                  {
+                                    sizes.map(item => (
+                                      <div  key={item} className='w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2'> {item} </div>
+                                    ))
+                                  }
+                                </div>
+  
+                                
+  
                             
-
-                              <h5 className=' font-bold mt-3 mb-3'>BOTTOMS</h5>  
-
-                            <div className=' flex flex-wrap gap-1 '>
-                                {
-                                  sizes.map(item => (
-                                    <div  key={item} className='w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2'> {item} </div>
-                                  ))
-                                }
                               </div>
+                                    </FilterItem>
+                             </div>
 
-                              
 
-                          
-                            </div>
+                           
                             </div>
                         </div>
                     </div>
 
+                    {/* Conditions */}
+
                     <div className="mb-4">
                         <div clasclassNames="relative w-full   mx-auto max-w-screen-sm">
                             <div id="bouton" className="relative group/bouton w-full">
-                            <div className=' flex items-center justify-between'>
-                                  <p className=' font-bold'>Condition</p>
-                                  <Image src={bellow} alt='alt' width={20} height={20}  />
-                                </div>
-                            <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                            <div className=' flex items-center justify-between  mt-5 mb-5 '>
+
+                            <FilterItem title="Condition">
+                            {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+
+                            <div  className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                               <div className=' flex items-center p-2'>
                                 <input type="checkbox" /><p className=' ms-3'>Excellent (243)</p>
                               </div>
@@ -351,68 +399,75 @@ const colors = [...new  Set(newItems)]
 
                           
                             </div>
+                            </FilterItem>
+                                  
+                                </div>
+                           
                             </div>
                         </div>
                     </div>
-            
+               
                      {/* Price  */}
             
-                    <div className="mb-4">
+                     <div className="mb-4">
               
-                        <div className="relative w-full  z-40  mx-auto max-w-screen-sm">
-                  <div id="bouton" className="relative group/bouton w-full">
-                  <div className=' flex items-center justify-between'>
-                                  <p className=' font-bold'>Price</p>
-                                  <Image src={bellow} alt='alt' width={20} height={20}  />
-                                </div>
-                    <div style={{ display: filterMenu ? "block" : "none" }} 
-                    
-                    className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
-                     <div  className=' flex items-center p-2'>
-                        <input onClick={()=>setfiltProduct(products)} type='radio' /><p className=' ms-3'>Any </p>
-                        </div>
-
-                    {
-                      prices.map(p => (
-                        <div  key={p} onClick={()=>{filterPrice(p)}} className=' flex items-center p-2'>
-                        <input type='radio' /><p className=' ms-3'>{p} $</p>
-                        </div>
-
-                      ))
-                    }
-                     
-                    
-                      <div className="mt-2 flex space-x-2">
-                        <input
-                          type="number"
-                          placeholder="Min"
-                          className="w-full p-2 border rounded-lg"
-                          value={minPrice}
-                          onChange={(e) => setMinPrice(e.target.value)}
-                        />
-                        <input
-                          type="number"
-                          placeholder="Max"
-                          className="w-full p-2 border rounded-lg"
-                          value={maxPrice}
-                          onChange={(e) => setMaxPrice(e.target.value)}
-                        />
+                      <div className="relative w-full  z-40  mx-auto max-w-screen-sm">
+                <div id="bouton" className="relative group/bouton w-full ">
+                <div className=' flex items-center justify-between  mt-5 mb-5'>
+                        <FilterItem title="Price">
+                        {/* <Image src={bellow} alt='alt' width={20} height={20}  />
+                         */}
+                        <div  
+                  
+                  className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                  <div  className=' flex items-center p-2'>
+                      <input onClick={()=>setfiltProduct(products)} type='radio' /><p className=' ms-3'>Any </p>
                       </div>
+
+                  {
+                    prices.map(p => (
+                      <div  key={p} onClick={()=>{filterPrice(p)}} className=' flex items-center p-2'>
+                      <input type='radio' /><p className=' ms-3'>{p} $</p>
+                      </div>
+
+                    ))
+                  }
+                  
+                  
+                    <div className="mt-2 flex space-x-2">
+                      <input
+                        type="number"
+                        placeholder="Min"
+                        className="w-full p-2 border rounded-lg"
+                        value={minPrice}
+                        onChange={(e) => setMinPrice(e.target.value)}
+                      />
+                      <input
+                        type="number"
+                        placeholder="Max"
+                        className="w-full p-2 border rounded-lg"
+                        value={maxPrice}
+                        onChange={(e) => setMaxPrice(e.target.value)}
+                      />
                     </div>
                   </div>
-                        </div>
-                    </div>
+                        </FilterItem> 
+                            
+                              </div>
                   
+                </div>
+                      </div>
+
+
                       {/* Color */}
                     <div className="mb-4">
                           <div className="relative w-full   mx-auto max-w-screen-sm">
                               <div id="bouton" className="relative group/bouton w-full">
-                              <div className=' flex items-center justify-between'>
-                                    <p className=' font-bold mb-5'>Color</p>
-                                    <Image src={bellow} alt='alt' width={20} height={20}  />
-                                  </div>
-
-                                  <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                              <div className=' mt-5 mb-5 flex items-center justify-between'>
+                            
+                              <FilterItem title="Color">
+                                   {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+                                   <div   className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                                     <div className='  '>
                                          
 
@@ -420,6 +475,7 @@ const colors = [...new  Set(newItems)]
 
  
                                         <div className=' flex flex-wrap gap-8 '>
+                                         
                                           {
                                             colors.map(item => (
                                               <div onClick={() => filterColor(item)} key={item} style={{ backgroundColor: item, width:"35px", height:"35px" }} className={`    p-2 border ${item}  rounded-full   gap-2`}></div>
@@ -434,20 +490,26 @@ const colors = [...new  Set(newItems)]
 
                         
                               </div>
+                                </FilterItem>
+                            
+                                  </div>
+
+                                 
                               </div> 
                           </div>
                     </div>
 
+
+
                       {/* shipping */}
 
-                    <div className="mb-4">
+                      <div className="mb-4">
                           <div className="relative w-full   mx-auto max-w-screen-sm">
                               <div id="bouton" className="relative group/bouton w-full">
-                              <div className=' flex items-center justify-between'>
-                                    <p className=' font-bold'>Shipping</p>
-                                    <Image src={bellow} alt='alt' width={20} height={20}  />
-                                  </div>
-                              <div style={{ display: filterMenu ? "block" : "none" }} className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
+                              <div className=' flex items-center  mt-5 mb-5 justify-between'>
+                              <FilterItem title="Shipping">
+                              {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+                              <div  className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                                 <div onClick={allProduct}  className=' flex items-center p-2'>
                                   <input type="checkbox" /><p className=' ms-3'>All (243)</p>
                                 </div>
@@ -459,9 +521,35 @@ const colors = [...new  Set(newItems)]
 
                             
                               </div>
+                             </FilterItem>
+                                  
+                                  </div>
+                            
                               </div>
                           </div>
                     </div>
+
+
+          </div>          
+               
+               
+               
+            </div>
+
+
+
+
+
+
+                  
+
+                   
+            
+                    
+                  
+                    
+
+                    
  
             </div>
 
