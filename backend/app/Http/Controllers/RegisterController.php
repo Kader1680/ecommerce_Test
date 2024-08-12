@@ -50,4 +50,13 @@ class RegisterController extends Controller
             'message' => 'Successfully logged out',
         ]);
     }
+
+    public function getuser(){
+        $users = User::all();
+
+        return  response()->json([
+            'status' => true,
+            'users' => $users,
+        ],200);
+    }
 }
