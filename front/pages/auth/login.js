@@ -10,7 +10,7 @@ import axios from "axios";
 import Failed from "../../components/failed";
 // import rightImg from "../../public/rightImg.png"
  
-function login() {
+function Login() {
 
   
   
@@ -140,4 +140,4 @@ function login() {
   );
 }
 
-export default login;
+export default Login;
