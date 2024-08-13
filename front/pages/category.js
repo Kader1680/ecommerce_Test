@@ -53,15 +53,8 @@ function Category() {
   const [maxPrice, setMaxPrice] = useState('');
   
 
-  const [filterMenu, setfilterMenu] = useState(false);
-
-
-
-  function displayMenu() {
-
-    
-    setfilterMenu(!filterMenu)
-  }
+   
+ 
   const [displayFilterBar, setdisplayFilterBar] = useState(false);
 
   function setFilterBar() {
@@ -137,8 +130,7 @@ for (let index = 0; index < products.length; index++) {
 const colors = [...new  Set(newItems)]
 
 
-const [item, setitem] = useState(["red", "green", "blue"]);
-
+ 
 const FilterItem = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 

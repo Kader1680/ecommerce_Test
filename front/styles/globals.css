@@ -31,7 +31,10 @@ html body{
 
 @media(max-width: 767px){
 
-  
+  .Authentication{
+      width: 80%;
+      margin: auto;
+  }
   .show-filter-bar{
     display: none;
   
@@ -136,7 +139,7 @@ html body{
 
   .rightSideLogin  img{
       width: 90%;
-      margin: auto;
+      margin: 2rem auto;
   }
   .intro h3{
     font-size: 41px;
