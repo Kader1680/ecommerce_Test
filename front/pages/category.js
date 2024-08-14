@@ -6,7 +6,6 @@ import React, { useCallback, useEffect, useState } from 'react'
 import products from "../pages/product"
 import filterIcon from "../public/filterIcon.png"
 
-import bellow from "../public/bellow.png"
 import Slider from '../components/imageSlider'
 import ImageSlider from '../components/imageSlider'
 import NotFoundProduct from './notFoundProduct'
@@ -140,11 +139,11 @@ const FilterItem = ({ title, children }) => {
 
   return (
     <div className="filter-item">
-      <div className="filter-header flex items-center justify-between" onClick={toggleItem}>
-        <div>{title}</div>
-        <div>{isOpen ?  <Image alt='alt' width={20} height={20} src="/bellow.png" /> : <Image alt='alt' width={20} height={20} src="/bellow.png" />}</div>
-      </div>
-      {isOpen && <div className="filter-content">{children}</div>}
+          <div className="filter-header flex items-center justify-between" onClick={toggleItem}>
+                  <div>{title}</div>
+                  <div>{isOpen ?  <Image alt='alt' width={20} height={20} src="/bellow.png" /> : <Image alt='alt' width={20} height={20} src="/bellow.png" />}</div>
+            </div>
+          {isOpen && <div className="filter-content">{children}</div>}
     </div>
   );
 };
