@@ -7,18 +7,36 @@ import add from "../public/add.png"
 import {Radio} from "@nextui-org/react";
 
  function SelItems() {
+
+
+
+  const [text, settext] = useState();
+
+
+
+
+
+
+
+
   const hiddenBrowseButton =  useRef(null)
 
   const [bold, setbold] = useState(false);
+  const [italic, setitalic] = useState();
 
-  const changeStyle = (e) => {
+  const changeBold = () => {
     
-    setbold(e)
+    setbold(!bold)
+
+  }
+  const changeItalic = () => {
+    
+    setitalic(!italic)
 
   }
   const AddProduct = ({title, children}) => {
   
-    const [isOpen, setIsOpen] = useState(false);
+    const [isOpen, setIsOpen] = useState(true);
 
 
     const toggleItem = () => {
@@ -133,9 +151,9 @@ import {Radio} from "@nextui-org/react";
                         
                        <textarea
                        
-                        value={bold}
-                        placeholder='Describe your item' className='rounded-t-lg outline-none p-3 rounded-b-lg h-40 w-full' 
-                        style={{fontFamily: bold ? 'bolder' : "", border:"1px solid rgb(243,243,243)" }}
+                        
+                        placeholder='Describe your item' className=' rounded-t-lg outline-none p-3 rounded-b-lg h-40 w-full' 
+                        style={{ border:"1px solid rgb(243,243,243)", fontWeight: bold ? "bolder" : "", fontStyle: italic ? "italic" : "" }}
                         
 
                         />
@@ -144,8 +162,8 @@ import {Radio} from "@nextui-org/react";
 
                        
                        <div style={{ backgroundColor:"#f3f3f3" }}  className=' rounded-b-lg absolute bottom-1 w-full h-10 flex items-center ps-4'>
-                        <Image onClick={changeStyle} alt='alt' src='/bold.png' width={20} height={20} />
-                        <Image className=' ms-3' alt='alt' src='/italic.png' width={20} height={20} />
+                        <Image onClick={changeBold} alt='alt' src='/bold.png' width={20} height={20} />
+                        <Image onClick={changeItalic}  className=' ms-3' alt='alt' src='/italic.png' width={20} height={20} />
                        </div>
                   </div>
 
