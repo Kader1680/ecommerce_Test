@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Image} from "@nextui-org/react";
 import Search from "./search";
+import MegaMenu from "./megaMenu";
+import WomenSawar from "./womenSawar";
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -27,9 +29,23 @@ export default function App() {
     setsearchBar(!searchBar)
   }
 
-
+  const [menswear, setmenswear] = useState(false);
+  const [womenSawar, setwomenSawar] = useState(false);
+  const displayMenswear = () => {
+      setmenswear(!menswear)
+  }
+  const displayWomenSawar = () => {
+    setwomenSawar(!womenSawar)
+}
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
+
+      <div className="menswear" style={{ display: menswear ? "block" : "none"  }}>
+          <MegaMenu />
+      </div>
+      <div className="womenSawar" style={{ display: womenSawar ? "block" : "none"  }}>
+          <WomenSawar />
+      </div>
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
@@ -41,21 +57,18 @@ export default function App() {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarContent className="hidden sm:flex gap-4" justify="start">
-        <NavbarItem>
-          <Link color="foreground" href="#">
-            Menswear
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="#" aria-current="page">
-            Menswear
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="#">
+      <NavbarContent className="hidden sm:flex gap-4 font-bold" justify="start">
+        <NavbarItem >
+          <div onClick={displayMenswear} color="foreground" >
           Menswear
-          </Link>
+          </div>
+        </NavbarItem>
+         
+        <NavbarItem>
+          <div onClick={displayWomenSawar} color="foreground" >
+              Womenswear
+            </div>
+          
         </NavbarItem>
 
         <NavbarItem>
@@ -63,7 +76,11 @@ export default function App() {
           Brands
           </Link>
         </NavbarItem>
-        
+        <NavbarItem>
+          <Link  className=" text-red-600" href="#">
+          Sale
+          </Link>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">

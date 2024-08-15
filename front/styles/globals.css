@@ -1,13 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
+/* @font-face {
   font-family: 'AT Pinko';
   src: 
        url("../public/font/AT-Pinko/ATPinko-Regular.ttf")
   ;
 }
-
+ */
 
 *{
   margin: 0;
@@ -726,4 +726,25 @@ select:focus{
 
 
 
+.menswear{
+  width: 100%;
+  position: absolute;
+  top: 18rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 
+.womenSawar{
+  width: 100%;
+  position: absolute;
+  top: 18rem;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line{
+  height: 1px;
+    color: #dedede;
+    border: 1px solid;
+    width: 100%;
+}

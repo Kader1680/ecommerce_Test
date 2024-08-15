@@ -2,11 +2,16 @@ import { Button, Link } from '@nextui-org/react'
 import React from 'react'
 import {Card, CardBody} from "@nextui-org/react";
 import Image from 'next/image';
+import MegaMenu from '../components/megaMenu';
+import WomenSawar from '../components/womenSawar';
 // import { appstore } from '../public/appelBorder.png'
 // import { playstore } from '../public/googleBorder.png'
 function Bag() {
   return (
     <div className='bag ' style={{ width:"90%", margin:"auto" }}>
+
+    <MegaMenu />
+    <WomenSawar />  
         <h2 className='myfont font-bold' style={{ fontSize:"48px" }}>
             Bag
             </h2>
