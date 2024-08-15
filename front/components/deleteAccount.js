@@ -13,7 +13,7 @@ function DeleteAccount() {
                     <Image  width={18} height={18} alt='close' src='/close.png' />
 
                 </div>
-            </div>
+    </div>
     <p className="text-gray-600 mb-4">
       This will permanently delete your account. This action cannot be undone. Are you sure you want to continue?
     </p>
