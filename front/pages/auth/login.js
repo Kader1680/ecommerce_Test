@@ -7,7 +7,6 @@ import facebook from "../../public/facebook.png"
 import Apple from "../../public/Apple.png"
 import { useRouter } from "next/router";
 import axios from "axios";
-import Failed from "../../components/failed";
 // import rightImg from "../../public/rightImg.png"
  
 function Login() {
