@@ -1,13 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-/* @font-face {
+@font-face {
   font-family: 'AT Pinko';
   src: 
-       url("../public/font/AT-Pinko/ATPinko-Regular.ttf")
-  ;
+       url("../public/font/AT-Pinko/ATPinko-Regular.ttf");
 }
- */
+
 
 *{
   margin: 0;
@@ -747,4 +746,9 @@ select:focus{
     color: #dedede;
     border: 1px solid;
     width: 100%;
+}
+
+.status div:hover{
+  background-color: black;
+  color: white;
 }
