@@ -26,7 +26,7 @@ function Index() {
      
 
   return (
-    <div className='homePub myfont ' style={{ width:"90%", margin:"auto" }}>
+    <div className='homePub font-poppins ' style={{ width:"90%", margin:"auto" }}>
  
    
  
@@ -35,7 +35,7 @@ function Index() {
             <div className=' '>
                 <div className='intro'>
                
-                    <h3   className='myfont'>  Buy, sell, and discover fashion, home decor, beauty, and more</h3>
+                    <h3   className='font-poppins'>  Buy, sell, and discover fashion, home decor, beauty, and more</h3>
                     <p>Sign up now and join millions of people on the social marketplace for all things style</p>
                 </div>
                 <div style={{ position:"relative" }} className='field2'>
@@ -102,7 +102,7 @@ function Index() {
 
 
 
-        <div className='clothes  mt-9 md:gap-3     '>
+        <div className='clothes   mt-9 md:gap-3     '>
             <div className=' grid md:grid-cols-2 gap-2'>
                 <Image style={{ width: "100%" }} width={100} height={100} alt='alt' className=' sm:mt-3'  src={g1}   />
                 <Image style={{ width: "100%" }} width={100} height={100} alt='alt' className=' sm:mt-3'   src={g2}   />
@@ -117,8 +117,8 @@ function Index() {
 
 
 
-        <div className='filter Brands : md:flex md:items-center md:justify-between'>
-            <h3>Popular This Week</h3>    
+        <div className='filter Brands : md:flex md:items-center  md:justify-between'>
+            <h3 className='font-poppins'>Popular This Week</h3>    
             <div className='filterBar '>
                 <Button as={Link} className=' me-1 bg-black text-white rounded-full' href="#" variant="flat">
                 All Products (21)

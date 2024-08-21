@@ -9,7 +9,7 @@ import creadiCart from "../public/footer-img.png"
 function Footer() {
   return (
    <div>
-            <div  style={{ width:"90%", margin:"auto", marginTop:"3rem" }} className='footer  grid sm:grid-cols-2 md:grid-cols-4 pb-8'>
+            <div  style={{ width:"90%", margin:"auto", marginTop:"3rem" }} className='footer font-poppins  grid sm:grid-cols-2 md:grid-cols-4 pb-8'>
         
             <div className='infoContact text-black'>
                 <h2>KIFT</h2>
@@ -28,8 +28,8 @@ function Footer() {
 
                 </ul>
             </div>
-            <div className='itms'>
-                <h3>SHOP CATEGORIES</h3>
+            <div className='itms font-poppins'>
+                <h3 className='font-poppins'>SHOP CATEGORIES</h3>
                 <ul>
                     <li>Women </li>
                     <li>Men </li>
@@ -79,7 +79,7 @@ function Footer() {
         </div>
 
         <hr style={{ width:"100%" }}></hr>
-        <div style={{ width:"90%", margin:"auto" }}  className='btmFooter sm:text-center md:flex items-center justify-between pt-5 mb-5'>
+        <div style={{ width:"90%", margin:"auto" }}  className='btmFooter sm:text-center md:flex items-center justify-between pt-5 pb-5'>
             <div className='sm:text-center copy'>© 2024 KIFT, Inc. PrivacyTerms </div>
             <Image  alt='alt' height={100} width={150} className='sm:text-center master' src={creadiCart} />
         </div>

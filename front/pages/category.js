@@ -1,24 +1,19 @@
-import FilterCategory from '../components/filterBar'
+ 
 import GetApp from '../components/getApp'
-import Products from '../components/products'
+
 import Image from 'next/image'
 import React, { useCallback, useEffect, useState } from 'react'
 import products from "../pages/product"
 import filterIcon from "../public/filterIcon.png"
-
-import Slider from '../components/imageSlider'
+ 
 import ImageSlider from '../components/imageSlider'
-import NotFoundProduct from './notFoundProduct'
-import Search  from '../components/search'
+ 
 import { Input } from '@nextui-org/react'
 function Category() {
 
   const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', "3XL", "4XL", "5XL", "One size"];
   const brand = ["Brandy Melville", "Forever 21", "Caddis", "Nike", "New Balance", "Aragona"]
-  // const colors = [
-  //   'gray', 'black', 'white', 'brown', 'blue', 
-  //    'green' 
-  // ];
+ 
   const prices = [
     10.00, 30.00, 50.00, 130.00, 200.00,
   ];
@@ -130,7 +125,7 @@ const colors = [...new  Set(newItems)]
 
 
  
-const FilterItem = ({ title, children }) => {
+  const FilterItem = ({ title, children }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleItem = () => {
@@ -225,10 +220,10 @@ const FilterItem = ({ title, children }) => {
 
                 
 
-        <div  onClick={setFilterBar} className=' font-bold flex items-center mt-3 mb-3 '>
-        <Image width={17} height={17} src={filterIcon} alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-2 '>FILTER</h4>
-        
-        </div>
+                <div  onClick={setFilterBar} className=' font-bold flex items-center mt-3 mb-3 '>
+                <Image width={17} height={17} src={filterIcon} alt='alt' /><h4 style={{ fontSize:"20px" }} className=' ms-2 '>FILTER</h4>
+                
+                </div>
        
            <div  className= {`filtring w-64 p-4 border rounded-lg ${displayFilterBar ? '' : 'show-filter-bar'}`}>
 
@@ -242,8 +237,7 @@ const FilterItem = ({ title, children }) => {
                             <div id="bouton" className="relative group/bouton w-full">
                             <div   className=' flex items-center justify-between'>
                             <FilterItem title="Status">
-                                {/* <p className=' font-bold'>Status</p> */}
-                                {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+                           
 
                                 <div   className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                               <div className=' flex items-center p-2'  >
@@ -275,7 +269,7 @@ const FilterItem = ({ title, children }) => {
                                         <div id="bouton" className="relative group/bouton w-full">
                                         <div className=' flex items-center justify-between'>
                                         <FilterItem title="brabs">
-                                                {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+                                                
 
                                                 <div className=' mt-3 mb-3'>
                                             
@@ -331,7 +325,7 @@ const FilterItem = ({ title, children }) => {
                                    
                                   
                                   <FilterItem title="Size">
-                                        {/* <Image src={bellow} alt='alt' width={20} height={20}  /> */}
+                                        
 
                                         <div   className={`w-full  z-50  top-full bg-white origine-top  flex-col  `}>
                               
@@ -346,7 +340,9 @@ const FilterItem = ({ title, children }) => {
                                 </div>
                               
   
-                                <h5 className=' font-bold mt-3 mb-3'>BOTTOMS</h5>  
+                                <h5 className=' font-bold mt-3 mb-3'>
+                                BOTTOMS
+                                </h5>  
   
                               <div className=' flex flex-wrap gap-1 '>
                                   {

@@ -22,6 +22,10 @@ module.exports = {
       container: {
         center: true,
       },
+
+      fontFamily: {
+        poppins: ['Poppins', 'sans-serif'],
+      },
     },
   },
   darkMode: "class",

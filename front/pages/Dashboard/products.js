@@ -12,7 +12,7 @@ function Products() {
     { id: 'DJI mavic mini 2 4K Drone Fly More', buyer: 'Alice Johnson', seller: 'Michael Brown', date: '2023-02-15', status: 'Completed', brand: 'Brand1', totalAmount: '$75.00', view: view, edit, edit },
     
     { id: 'Embellished Flare Leg Jeans 90s', buyer: 'Sarah Lee', seller: 'Chris Thompson', date: '2023-03-20', status: 'As Draft', brand: 'DJI', totalAmount: '$50.00', view: view, edit, edit },
-    { id: 'Embellished Flare Leg Jeans 90s', buyer: 'David Wang', seller: 'Emily Davis', date: '2023-04-10', status: 'Completed', brand: 'Brand1', totalAmount: '$120.00, view: view, edit, edit' },
+    { id: 'Embellished Flare Leg Jeans 90s', buyer: 'David Wang', seller: 'Emily Davis', date: '2023-04-10', status: 'Completed', brand: 'Brand1', totalAmount: '$120.00' },
     { id: 'Embellished Flare Leg Jeans 90s', buyer: 'Olivia Garcia', seller: 'Daniel Wilson', date: '2023-05-05', status: 'Inactive', brand: 'Brand1', totalAmount: '$90.00', view: view, edit, edit },
     { id: 'Embellished Flare Leg Jeans 90s', buyer: 'Sophia Martinez', seller: 'Ethan Moore', date: '2023-06-30', status: 'Completed', brand: 'DJI', totalAmount: '$85.00', view: view, edit, edit },
 

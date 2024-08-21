@@ -21,7 +21,7 @@ function Orders() {
     { id: 12345, buyer: 'John Doe', seller: 'Jane Smith', date: '2023-01-01', status: 'Pending', paymentMethod: 'Credit Card', totalAmount: '$100.00', view: view, edit, edit },
     { id: 67890, buyer: 'Alice Johnson', seller: 'Michael Brown', date: '2023-02-15', status: 'Completed', paymentMethod: 'PayPal', totalAmount: '$75.00', view: view, edit, edit },
     { id: 24680, buyer: 'Sarah Lee', seller: 'Chris Thompson', date: '2023-03-20', status: 'Pending', paymentMethod: 'Bank Transfer', totalAmount: '$50.00', view: view, edit, edit },
-    { id: 13579, buyer: 'David Wang', seller: 'Emily Davis', date: '2023-04-10', status: 'Completed', paymentMethod: 'Cash', totalAmount: '$120.00, view: view, edit, edit' },
+    { id: 13579, buyer: 'David Wang', seller: 'Emily Davis', date: '2023-04-10', status: 'Completed', paymentMethod: 'Cash', totalAmount: '$120.00' },
     { id: 86420, buyer: 'Olivia Garcia', seller: 'Daniel Wilson', date: '2023-05-05', status: 'In Process', paymentMethod: 'Debit Card', totalAmount: '$90.00', view: view, edit, edit },
     { id: 97531, buyer: 'Sophia Martinez', seller: 'Ethan Moore', date: '2023-06-30', status: 'Pending', paymentMethod: 'Bitcoin', totalAmount: '$85.00', view: view, edit, edit },
     { id: 54321, buyer: 'Ava Anderson', seller: 'Matthew White', date: '2023-07-25', status: 'In Process', paymentMethod: 'E-wallet', totalAmount: '$110.00', view: view, edit, edit },
