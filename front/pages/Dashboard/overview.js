@@ -33,10 +33,10 @@ function Overview() {
            
                 {
                     headerStatic.map(it =>(
-                        <div className='bg-white p-3 rounded-lg w-full'>
+                        <div key={it.number} className='bg-white p-3 rounded-lg w-full'>
   
         <div className=' mt-2 mb-2 p-3 rounded-full w-fit'  style={{ backgroundColor:"#c4dcff" }}>
-                            <Image width={30} height={30} src={it.pics} />
+                            <Image alt='alt' width={30} height={30} src={it.pics} />
                             </div>
                             <h3 className=' font-bold text-xl'> {it.number} </h3>
                             <p className=' text-sm text-gray-400'>{it.total}</p>
@@ -52,7 +52,7 @@ function Overview() {
                 <h3 className=' font-bold mt-3 mb-3 ms-4'>Top Categories</h3>
                     {
                         CategoryProgress.map(el=>(
-                            <ul>
+                            <ul key={el.color}>
                                 <li className='flex pe-4 ps-4 pt-1 pb-1  items-center justify-between gap-3  '>
                                 <p className=' text-xs '>{el.category}</p>
                                 <Progress style={{ width:"100%" }} color={el.color} aria-label="Loading..." value={el.progress} />

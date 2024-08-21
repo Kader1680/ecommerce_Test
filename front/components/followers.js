@@ -53,7 +53,7 @@ function Followers() {
         <div className=' mt-5'>
             {
                 followers.map(follower => (
-                    <div  className=' flex items-center justify-between  p-2  mb-3 rounded-lg'>
+                    <div key={follower.name}  className=' flex items-center justify-between  p-2  mb-3 rounded-lg'>
                         <div className=' flex items-center '>
                             <Image alt='alt' height={40} width={40} src= {follower.pics} />
                             <div className=' ms-2'>

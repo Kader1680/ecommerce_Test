@@ -73,7 +73,7 @@ function Customer() {
             
               {
                 itemCustomer.map(it=>(
-                  <div onClick={()=>setitem(it.name)}  className='rounded-lg  w-fit bg-black text-white font-medium flex items-center pt-1 pb-1 ps-2 pe-2  gap-1 ' >
+                  <div key={it} onClick={()=>setitem(it.name)}  className='rounded-lg  w-fit bg-black text-white font-medium flex items-center pt-1 pb-1 ps-2 pe-2  gap-1 ' >
                 
                     <Image alt='alt' width={20} height={20} src={it.pic} />
                     <span>{it.name}</span>
@@ -152,61 +152,7 @@ function Customer() {
         </div>
 
  
-        {/* <table className="min-w-full bg-white  p-3">
-        <thead>
-          <tr style={{ backgroundColor:"#f3f3f3" }}>
-            <th className="py-2 px-4 border-b-2 border-gray-200">
-              <input type="checkbox" className="w-4 h-4" />
-            </th>
-            <th className="p-4  border-b-2 border-gray-200">Name Groupe</th>
-            <th className="p-4  border-b-2 border-gray-200">Customers in groupe</th>
-            
-          </tr>
-        </thead>
-        <tbody>
-          {orders.map((order) => (
-            <tr key={order.id} className="text-center">
-              <td className="py-2 px-4 border-b border-gray-200">
-                <input type="checkbox" className="w-4 h-4" />
-              </td>
-
-              <td className="p-4  border-b border-gray-200">
-                <span style={{ backgroundColor: order.status === 'VIP' ? '#fffdc8' : order.status === 'Regular' ? '#f3f3f3' : order.status === 'New' ? '#c4dcff' : '#ffdce0' 
-                
-              
-                
-                 }} className={` p-2 text-sm font-medium rounded-full    `}>
-                  {order.status}
-                </span>
-              </td>
-
-              <td className="p-4 border-b border-gray-200">{order.brand}</td>
-               
-             
-              
-            
-              <td className="py-2 px-4 border-b border-gray-200">
-                <div className="flex justify-center space-x-2 gap-2">
-                  <button className="text-gray-600 hover:text-gray-800">
-                    <img src="/view.png" />
-                  </button>
-                  <button className="text-gray-600 hover:text-gray-800">
-                  <img src="/edit.png" />
-                  </button>
-                  <button className="text-gray-600 hover:text-gray-800">
-                  <img src="/trash.png" />
-                  </button>
-                </div>
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table> */}
-
-     
-      {/* <CustomerSegement /> */}
-      {/* <Reward /> */}
-
+       
       
       {handelCustomerItem()}
  

@@ -43,7 +43,7 @@ function MakeOffer() {
             </div>
     </div>
     <p className="text-gray-600 mb-4 text-sm">
-    Interested in this product? Tell us what you're willing to pay! Fill out the form below with your offer amount and any additional comments
+    Interested in this product? Tell us what you &apos; re willing to pay! Fill out the form below with your offer amount and any additional comments
     </p>
 
     <Button className=' mt-3 mb-3 bg-white border-1 border-gray-300 text-gray-300 w-full rounded-full' href="#" variant="flat">
@@ -53,7 +53,7 @@ function MakeOffer() {
     <div className=' flex items-center justify-between gap-2 text-center mb-5'>
         {
             offers.map(offer => (
-                <div  className=' w-full  p-2 border-1 border-gray-200 rounded-lg'>
+                <div key={offer.price}  className=' w-full  p-2 border-1 border-gray-200 rounded-lg'>
                     <p>{offer.discount}%OFF</p>
                     <div className=' font-bold'>US$ {offer.price}.00</div>
                 </div>

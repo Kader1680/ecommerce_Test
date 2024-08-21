@@ -1,10 +1,12 @@
-import { Switch } from '@nextui-org/react';
+import { Image, Switch } from '@nextui-org/react';
 import React from 'react'
   function LoyaltyProgramCard({ program }) {
     return (
       <div className="border rounded-lg shadow-md p-4 w-64 ">
         <div className="flex justify-between items-center mb-4">
-          <img
+          <Image
+          width={30}
+          height={30}
             src={program.image}
             alt={program.name}
             className="w-12 h-12"

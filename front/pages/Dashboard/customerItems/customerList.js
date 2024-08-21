@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
   
-import {Image, Input, Link, Select, SelectItem} from "@nextui-org/react";
+import {Image} from "@nextui-org/react";
 function CustomerList() {
 
     const orders = [
@@ -78,13 +78,13 @@ function CustomerList() {
               <td className="py-2 px-4 border-b border-gray-200">
                 <div className="flex justify-center space-x-2 gap-2">
                   <button className="text-gray-600 hover:text-gray-800">
-                    <img src="/view.png" />
+                    <Image alt = 'alt' width={30} height={30} src="/view.png" />
                   </button>
                   <button className="text-gray-600 hover:text-gray-800">
-                  <img src="/edit.png" />
+                  <Image alt = 'alt' width={30} height={30} src="/edit.png" />
                   </button>
                   <button className="text-gray-600 hover:text-gray-800">
-                  <img src="/trash.png" />
+                  <Image alt = 'alt' width={30} height={30} src="/trash.png" />
                   </button>
                 </div>
               </td>

@@ -1,9 +1,10 @@
+import { Image } from '@nextui-org/react';
 import React from 'react'
 // components/CustomerListItem.js
 function CustomerListItem({ name, avatar }) {
     return (
       <div className="flex items-center p-2 hover:bg-gray-100 rounded-md cursor-pointer">
-        <img
+        <Image  width={30} height={30}
           src={avatar}
           alt={name}
           className="w-8 h-8 rounded-full mr-3"
@@ -44,7 +45,7 @@ function CustomerSegement() {
             <h3 className="text-lg font-semibold mb-4">Customer List</h3>
             <div >
               {customers.map((customer, index) => (
-                <div className=' border-1 rounded-lg'>
+                <div key={customer.name} className=' border-1 rounded-lg'>
                 <CustomerListItem
                   key={index}
                   name={customer.name}
@@ -102,10 +103,10 @@ function CustomerSegement() {
                   key={index}
                   className="flex justify-start gap-2 items-center p-2 hover:bg-gray-100 rounded-md border-1"
                 >
-                  <img width={30} height={30} alt='alt' src={participant.avatar} />
+                  <Image alt = 'alt' width={30} height={30}    src={participant.avatar} />
                   <span className="font-medium">{participant.name}</span>
                   <button className="text-gray-600 hover:text-black">
-                  <img width={10} height={10} alt='alt'src="/close.png" />
+                  <Image alt = 'alt' width={30} height={30}  src="/close.png" />
                   </button>
                 </div>
               ))}
