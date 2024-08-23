@@ -18,16 +18,56 @@ const OrderHeader = ({orderId}) => {
 function Orders() {
 
   const orders = [
-    { id: 12345, buyer: 'John Doe', seller: 'Jane Smith', date: '2023-01-01', status: 'Pending', paymentMethod: 'Credit Card', totalAmount: '$100.00', view: view, edit, edit },
-    { id: 67890, buyer: 'Alice Johnson', seller: 'Michael Brown', date: '2023-02-15', status: 'Completed', paymentMethod: 'PayPal', totalAmount: '$75.00', view: view, edit, edit },
-    { id: 24680, buyer: 'Sarah Lee', seller: 'Chris Thompson', date: '2023-03-20', status: 'Pending', paymentMethod: 'Bank Transfer', totalAmount: '$50.00', view: view, edit, edit },
-    { id: 13579, buyer: 'David Wang', seller: 'Emily Davis', date: '2023-04-10', status: 'Completed', paymentMethod: 'Cash', totalAmount: '$120.00' },
-    { id: 86420, buyer: 'Olivia Garcia', seller: 'Daniel Wilson', date: '2023-05-05', status: 'In Process', paymentMethod: 'Debit Card', totalAmount: '$90.00', view: view, edit, edit },
-    { id: 97531, buyer: 'Sophia Martinez', seller: 'Ethan Moore', date: '2023-06-30', status: 'Pending', paymentMethod: 'Bitcoin', totalAmount: '$85.00', view: view, edit, edit },
-    { id: 54321, buyer: 'Ava Anderson', seller: 'Matthew White', date: '2023-07-25', status: 'In Process', paymentMethod: 'E-wallet', totalAmount: '$110.00', view: view, edit, edit },
-    { id: 98765, buyer: 'Liam Clark', seller: 'Grace Baker', date: '2023-08-10', status: 'Pending', paymentMethod: 'Cash App', totalAmount: '$95.00', view: view, edit, edit },
-    { id: 10293, buyer: 'Chloe Hall', seller: 'Andrew King', date: '2023-09-15', status: 'In Process', paymentMethod: 'Venmo', totalAmount: '$70.00', view: view, edit, edit },
-    { id: 45678, buyer: 'Mia Scott', seller: 'William Taylor', date: '2023-10-05', status: 'Cancelled', paymentMethod: 'Credit Card', totalAmount: '$130.00', view: view, edit, edit },
+    { id: 12345, buyer: 'John Doe', seller: 'Jane Smith', date: '2023-01-01', status: 'Pending', paymentMethod: [
+      
+      'master', '/ms.png'
+    
+    ], totalAmount: '$100.00', view: view, edit, edit },
+    { id: 67890, buyer: 'Alice Johnson', seller: 'Michael Brown', date: '2023-02-15', status: 'Completed', paymentMethod: [
+      
+      'master', '/ms.png'
+    
+    ], totalAmount: '$75.00', view: view, edit, edit },
+    { id: 24680, buyer: 'Sarah Lee', seller: 'Chris Thompson', date: '2023-03-20', status: 'Pending', paymentMethod: [
+      
+      'master', '/vs.png'
+    
+    ], totalAmount: '$50.00', view: view, edit, edit },
+    { id: 13579, buyer: 'David Wang', seller: 'Emily Davis', date: '2023-04-10', status: 'Completed', paymentMethod: [
+      
+      'master', '/py.png'
+    
+    ], totalAmount: '$120.00' },
+    { id: 86420, buyer: 'Olivia Garcia', seller: 'Daniel Wilson', date: '2023-05-05', status: 'In Process', paymentMethod: [
+      
+      'master', '/py.png'
+    
+    ], totalAmount: '$90.00', view: view, edit, edit },
+    { id: 97531, buyer: 'Sophia Martinez', seller: 'Ethan Moore', date: '2023-06-30', status: 'Pending', paymentMethod: [
+      
+      'master', '/am.png'
+    
+    ], totalAmount: '$85.00', view: view, edit, edit },
+    { id: 54321, buyer: 'Ava Anderson', seller: 'Matthew White', date: '2023-07-25', status: 'In Process', paymentMethod: [
+      
+      'master', '/am.png'
+    
+    ], totalAmount: '$110.00', view: view, edit, edit },
+    { id: 98765, buyer: 'Liam Clark', seller: 'Grace Baker', date: '2023-08-10', status: 'Pending', paymentMethod: [
+      
+      'master', '/vs.png'
+    
+    ], totalAmount: '$95.00', view: view, edit, edit },
+    { id: 10293, buyer: 'Chloe Hall', seller: 'Andrew King', date: '2023-09-15', status: 'In Process', paymentMethod: [
+      
+      'master', '/ms.png'
+    
+    ], totalAmount: '$70.00', view: view, edit, edit },
+    { id: 45678, buyer: 'Mia Scott', seller: 'William Taylor', date: '2023-10-05', status: 'Cancelled', paymentMethod: [
+      
+      'master', '/ms.png'
+    
+    ], totalAmount: '$130.00', view: view, edit, edit },
   ];
   const status = [
     { "state":"all",
@@ -141,14 +181,14 @@ function Orders() {
             <th className="py-2 px-4 border-b-2 border-gray-200">
               <input type="checkbox" className="w-4 h-4" />
             </th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Order ID</th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Buyer</th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Seller</th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Date</th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Status</th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Payment Method</th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Total Amount</th>
-            <th className="py-2 px-4 border-b-2 border-gray-200">Actions</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Order ID</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Buyer</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Seller</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Date</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Status</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Payment Method</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Total Amount</th>
+            <th className="py-2 px-4 border-b-2 border-gray-200 fontLg">Actions</th>
           </tr>
         </thead>
         <tbody>
@@ -156,41 +196,49 @@ function Orders() {
 
           {orders.map((order) => (
              
-            <tr onClick={()=>{setdetail(order.id)}} key={order.id} className="text-center" >
+            <tr onClick={()=>{setdetail(order.id)}} key={order.id} className="text-center fontmd" >
 
             
               <td className="py-2 px-4 border-b border-gray-200">
                 <input type="checkbox" className="w-4 h-4" />
               </td>
 
-              <td onClick={()=> setdetail(!detail)} className="py-2 px-4 border-b border-gray-200"> 
+              <td    onClick={()=> setdetail(!detail)} className="py-2 px-4 border-b border-gray-200"> 
               
-              <Link href={`dashboard/${order.id}`}>
+              <Link  className='fontmd' href={`dashboard/${order.id}`}>
               {order.id} 
               </Link>
               
               </td>
-              <td className="py-2 px-4 border-b border-gray-200" >{order.buyer}</td>
-              <td className="py-2 px-4 border-b border-gray-200">{order.seller}</td>
-              <td className="py-2 px-4 border-b border-gray-200">{order.date}</td>
-              <td className="py-2 px-4 border-b border-gray-200">
-                <span style={{ backgroundColor: order.status === 'Pending' ? '#ffedd8' : order.status === 'Completed' ? '#cbffec' : order.status === 'In Process' ? '#e9dcff' : '#ffdce0',
+              <td style={{ fontSize:"12px" }} className="py-2 px-4 border-b fontmd border-gray-200" >{order.buyer}</td>
+              <td style={{ fontSize:"12px" }} className="py-2 px-4 border-b fontmd border-gray-200">{order.seller}</td>
+              <td style={{ fontSize:"12px" }} className="py-2 px-4 border-b fontmd border-gray-200">{order.date}</td>
+              <td style={{ fontSize:"12px" }} className="py-2 px-4 border-b fontmd border-gray-200">
+                <span  style={{ backgroundColor: order.status === 'Pending' ? '#ffedd8' : order.status === 'Completed' ? '#cbffec' : order.status === 'In Process' ? '#e9dcff' : '#ffdce0', fontSize:"12px" ,
                 
                 color: order.status === 'Pending' ? '#ff7b03' : order.status === 'Completed' ? '#10a76f' : order.status === 'In Process' ? '#6100ff' : '#f80925'
                 
-                 }} className={`py-1 px-3 rounded-md font-medium  `}>
+                 }} className={`py-1 px-3 rounded-md fontmd  `}>
                   {order.status}
                 </span>
               </td>
-              <td className="py-2 px-4 border-b border-gray-200">{order.paymentMethod}</td>
-              <td className="py-2 px-4 border-b border-gray-200">{order.totalAmount}</td>
-              <td className="py-2 px-4 border-b border-gray-200">
+              
+              <td style={{ fontSize:"12px" }} className="py-2 px-4  border-b    border-gray-200">
+              
+              <p className=' flex'>
+                <img alt='alt'  src={order.paymentMethod[1]} />
+                <span>{order.paymentMethod[0]} </span>
+              </p>
+              
+              </td>
+              <td style={{ fontSize:"12px" }} className="py-2 px-4 fontmd border-b border-gray-200">{order.totalAmount}</td>
+              <td style={{ fontSize:"12px" }} className="py-2 px-4 border-b  border-gray-200">
                 <div className="flex justify-center space-x-2 gap-2">
                   <button className="text-gray-600 hover:text-gray-800">
-                    <Image alt = 'alt' width={30} height={30} src="/view.png" />
+                    <Image alt = 'alt' width={24} height={24} src="/view.png" />
                   </button>
                   <button className="text-gray-600 hover:text-gray-800">
-                  <Image alt = 'alt' width={30} height={30} src="/edit.png" />
+                  <Image alt = 'alt' width={24} height={24} src="/edit.png" />
                   </button>
                 </div>
               </td>

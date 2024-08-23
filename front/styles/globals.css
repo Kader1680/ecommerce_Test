@@ -755,3 +755,20 @@ select:focus{
   background-color: black;
   color: white;
 }
+
+.imgDshabord{
+  width: 32px;
+  height: 32px;
+}
+.textHeadDashboard{
+  font-size: 20px;
+  font-weight: 700;
+}
+.fontLg{
+  font-size: 12px;
+  font-weight: 700;
+}
+.fontmd{
+  font-size: 14px;
+  font-weight: 400;
+}

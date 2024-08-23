@@ -10,17 +10,36 @@ import Customer from './Dashboard/customer';
 import Analytics from './Dashboard/analytics';
 function Dashboard() {
 
-  const itemsDahsboard = [
-    "Overview",
-    "Orders",
-    "Products",
-    "Customer",
-    "Inventory",
-    "Shipping and Fulfillment",
-    "Financials",
-    "Analytics and Reporting", 
-    "Marketing and Promotions",
-  ]
+  const itemsDahsboard = 
+//    { item : ["Overview", "/ovr.png"] } ,
+  
+    [
+       { title : "Overview",
+        img : "/ovr.png"},
+        { title : "Products",
+            img : "/prd.png"},
+            { title : "Customer",
+                img : "/cust.png"},
+                { title : "Inventory",
+                    img : "/invt.png"},
+                    { title : "Shipping and Fulfillment",
+                        img : "/shipp.png"},
+                            { title : "Financials",
+                                img : "/fina.png"},
+                                { title : "Analytics and Reporting",
+                                    img : "/ana.png"},
+                                    { title : "Marketing and Promotions",
+                                        img : "/marke.png"}
+    ]
+    // "Orders" ,
+    // "Products",
+    // "Customer",
+    // "Inventory",
+    // "Shipping and Fulfillment",
+    // "Financials",
+    // "Analytics and Reporting", 
+    // "Marketing and Promotions",}
+   
   const [items, setitems] = useState("Overview");
   const handelPage = () => {
     switch (items) {
@@ -73,10 +92,10 @@ function Dashboard() {
                             
                                 {
                                     itemsDahsboard.map(items =>(
-                                        <li key={items} 
-                                        class="flex items-center p-2 text-base font-normal text-gray-900 rounded-lg dark:text-white hover:bg-black hover:text-white" onClick={()=>{setitems(items)}}>
-                                   
-                                        <span class="ml-3">{items}</span>
+                                        <li key={items.title} 
+                                        class="flex items-center p-2  fontmd  text-base   text-gray-900 rounded-lg dark:text-white hover:bg-black hover:text-white" onClick={()=>{setitems(items.title)}}>
+                                        <img src={items.img} />
+                                        <span class="ml-3 fontmd">{items.title}</span>
 
                                   
                                  
