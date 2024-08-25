@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-
-import { Image, Input, Link, Select, SelectItem } from "@nextui-org/react";
+import {DateInput} from "@nextui-org/react";
+import {CalendarDate, parseDate} from "@internationalized/date";
+import { Image } from "@nextui-org/react";
 import CustomerSegement from "./finance/customerSegement";
 import CustomerList from "./finance/customerList";
 import GroupeCustomer from "./finance/groupeCustomer";
@@ -33,7 +34,7 @@ function Financial() {
   };
   return (
     <div className="overflow-x-auto  p-3">
-      <h4 className="fontLg   ">Financial Management</h4>
+      <h4 className="fontLg">Financial Management</h4>
 
       <div className=" flex rounded-xl mt-4 mb-4  w-fit p-1">
         <div className="p-2 flex items-center bg-white gap-2 rounded-xl">
@@ -74,6 +75,74 @@ function Financial() {
             </div>
           ))}
         </div>
+      </div>
+
+      <div className="flex justify-start gap-2">
+        <div>
+          <form class="max-w-sm mx-auto">
+            <select
+              style={{ border: "1px solid #e8e8e8" }}
+              id="countries"
+              class="bg-white border   text-gray-900 text-sm rounded-md   block w-full p-2.5 "
+            >
+              <option selected>Status</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </form>
+        </div>
+
+        <div>
+          <form class="max-w-sm mx-auto">
+            <select
+              style={{ border: "1px solid #e8e8e8" }}
+              id="countries"
+              class="bg-white border   text-gray-900 text-sm rounded-md   block w-full p-2.5 "
+            >
+              <option selected>Brand</option>
+              <option value="US">United States</option>
+              <option value="CA">Canada</option>
+              <option value="FR">France</option>
+              <option value="DE">Germany</option>
+            </select>
+          </form>
+        </div>
+
+        {/* <div>
+        <DateInput
+          label="Date Input"
+          defaultValue={parseDate("2024-04-04")}
+          placeholderValue={new CalendarDate(1995, 11, 6)}
+          labelPlacement="outside"
+          startContent={
+            <CalendarDate className="text-2xl text-default-400 pointer-events-none flex-shrink-0" />
+          }
+        />
+
+        </div> */}
+        <form class="max-w-md float-end ">
+          <label
+            for="default-search"
+            class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+          >
+            Search
+          </label>
+
+          <div class="relative">
+            <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+              <Image alt="alt" width={15} height={15} src="/searchicon.png" />
+            </div>
+            <input
+              type="search"
+              id="default-search"
+              class="block  p-2 ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white outline-none "
+              placeholder="Search orders,buyer,seller"
+              required
+            />
+          </div>
+        </form>
       </div>
 
       {handelCustomerItem()}

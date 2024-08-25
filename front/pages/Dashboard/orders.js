@@ -4,16 +4,10 @@ import edit from "../../public/edit.png"
 import Search  from '../../components/search';
 import {Image, Link} from "@nextui-org/react";
 import OrderDetail from './orderDetail';
+import IdOrder from './[IdOrder]';
 
 
-
-const OrderHeader = ({orderId}) => {
-  <div className="flex justify-between items-center mb-4">
-  <h2 className="text-2xl font-bold">Order {orderId}</h2>
-  
-</div>
-}
-
+ 
 
 function Orders() {
 
@@ -85,8 +79,7 @@ function Orders() {
 
   
 
-  const [detail, setdetail] = useState();
-  
+   
   return (
     <div className="overflow-x-auto  p-3">
       <h4 className='  font-bold text-xl'>Orders</h4>
@@ -205,7 +198,7 @@ function Orders() {
 
               <td    onClick={()=> setdetail(!detail)} className="py-2 px-4 border-b border-gray-200"> 
               
-              <Link  className='fontmd' href={`dashboard/${order.id}`}>
+              <Link  className='fontmd' href={`Dashboard/${order.id}`}>
               {order.id} 
               </Link>
               
@@ -226,7 +219,7 @@ function Orders() {
               <td style={{ fontSize:"12px" }} className="py-2 px-4  border-b    border-gray-200">
               
               <p className=' flex'>
-                <img alt='alt'  src={order.paymentMethod[1]} />
+                <Image width={24} height={24} alt='alt'  src={order.paymentMethod[1]} />
                 <span>{order.paymentMethod[0]} </span>
               </p>
               
@@ -249,9 +242,11 @@ function Orders() {
 
 
 
-      <OrderDetail />
+      {/* <OrderDetail /> */}
       
-     
+      <IdOrder />
+    
+    
     </div>
   )
 }

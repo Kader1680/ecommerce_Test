@@ -8,6 +8,7 @@ import Inventory from './Dashboard/inventory';
 import Financial from './Dashboard/financial';
 import Customer from './Dashboard/customer';
 import Analytics from './Dashboard/analytics';
+import { Image } from '@nextui-org/react';
 function Dashboard() {
 
   const itemsDahsboard = 
@@ -16,6 +17,8 @@ function Dashboard() {
     [
        { title : "Overview",
         img : "/ovr.png"},
+        { title : "Orders",
+            img : "/ovr.png"},
         { title : "Products",
             img : "/prd.png"},
             { title : "Customer",
@@ -31,21 +34,16 @@ function Dashboard() {
                                     { title : "Marketing and Promotions",
                                         img : "/marke.png"}
     ]
-    // "Orders" ,
-    // "Products",
-    // "Customer",
-    // "Inventory",
-    // "Shipping and Fulfillment",
-    // "Financials",
-    // "Analytics and Reporting", 
-    // "Marketing and Promotions",}
-   
+ 
   const [items, setitems] = useState("Overview");
   const handelPage = () => {
     switch (items) {
         case "Shipping and Fulfillment":
             return <Shipping />
            
+        case "Orders":
+                return <Orders />
+
         case "Products":
             return <Products />
           
@@ -94,7 +92,7 @@ function Dashboard() {
                                     itemsDahsboard.map(items =>(
                                         <li key={items.title} 
                                         class="flex items-center p-2  fontmd  text-base   text-gray-900 rounded-lg dark:text-white hover:bg-black hover:text-white" onClick={()=>{setitems(items.title)}}>
-                                        <img src={items.img} />
+                                        <Image width={20} heigth = {20} alt="alt" src={items.img} />
                                         <span class="ml-3 fontmd">{items.title}</span>
 
                                   

@@ -203,7 +203,7 @@ function CustomerList() {
                 className="py-2 px-4 border-b border-gray-200"
               >
                  <p className='flex'>
-                    <img alt='alt'  src={order.buyer[1]} />
+                    <Image width={20} height={20} alt='alt'  src={order.buyer[1]} />
                     <span>{order.buyer[0]} </span>
                  </p>
               </td>
