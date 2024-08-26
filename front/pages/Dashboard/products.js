@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import view from "../../public/view.png"
 import edit from "../../public/edit.png"
 import Search  from '../../components/search';
 import {Image} from "@nextui-org/react";
+import PriceRange from '../../components/priceRange';
 function Products() {
 
   const orders = [
@@ -41,6 +42,10 @@ function Products() {
 
   ]
 
+  const [price, setprice] = useState(false);
+  const displayPrice = () => {
+    setprice(!price)
+  }
   
   return (
     <div className="overflow-x-auto  p-3">
@@ -66,16 +71,13 @@ function Products() {
             <div className=' col-span-4 flex justify-start gap-2'>
   
               <div>
-                  <form class="max-w-sm mx-auto">
-                
-                    <select style={{ border:"1px solid #e8e8e8" }} id="countries" class="bg-white border   text-gray-900 text-sm rounded-md   block w-full p-2.5 ">
-                        <option selected>Status</option>
-                        <option value="US">United States</option>
-                        <option value="CA">Canada</option>
-                        <option value="FR">France</option>
-                        <option value="DE">Germany</option>
-                    </select>
-                  </form>
+                  <div style={{ width:"5rem" }}>
+                    <div onClick={displayPrice} className=' border p-2 rounded-lg cursor-pointer flex items-center justify-between '><p>Price</p> <Image width={20} height={20} alt='alt' src='/down.png' /></div>
+                    <div className=' absolute z-50 mt-5' style={{ display : price ?  "block" : "none" }}>
+                    <PriceRange />
+                    </div>
+                    
+                  </div>
                 </div>
 
                 
@@ -97,10 +99,10 @@ function Products() {
                   
                   <select style={{ border:"1px solid #e8e8e8" }}  id="countries" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
                     <option selected>Price Range</option>
-                    <option value="US">United States</option>
-                    <option value="CA">Canada</option>
-                    <option value="FR">France</option>
-                    <option value="DE">Germany</option>
+                    
+                            
+                    
+                      
                   </select>
                   </form> 
                </div>

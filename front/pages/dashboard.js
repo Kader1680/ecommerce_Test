@@ -9,6 +9,7 @@ import Financial from './Dashboard/financial';
 import Customer from './Dashboard/customer';
 import Analytics from './Dashboard/analytics';
 import { Image } from '@nextui-org/react';
+import PriceRange from '../components/priceRange';
 function Dashboard() {
 
   const itemsDahsboard = 
@@ -74,8 +75,7 @@ function Dashboard() {
 
   return (
     <div style={{ width:"90%", margin:"auto" }} >
- 
-            
+        
         <h3 style={{ fontSize:"35px" }} className='myfont mt-4 mb-4  font-bold'>Account Setting</h3>
    
         <div className=' gap-4 row grid md:grid-cols-5'>
