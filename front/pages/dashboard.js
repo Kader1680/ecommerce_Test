@@ -85,14 +85,14 @@ function Dashboard() {
 
                     <aside className='aside'  aria-label="Sidebar">
                         <div class="px-3 py-4 overflow-y-auto rounded   ">
-                            <ul class="space-y-2">
+                            <ul class="space-y-2  md:block">
 
                             
                                 {
                                     itemsDahsboard.map(items =>(
                                         <li key={items.title} 
                                         class="flex items-center p-2  fontmd  text-base   text-gray-900 rounded-lg dark:text-white hover:bg-black hover:text-white" onClick={()=>{setitems(items.title)}}>
-                                        <Image width={20} heigth = {20} alt="alt" src={items.img} />
+                                        <Image width={30} heigth = {30} alt="alt" src={items.img} />
                                         <span class="ml-3 fontmd">{items.title}</span>
 
                                   
@@ -107,7 +107,7 @@ function Dashboard() {
 
                 </div>
             </div>
-            <div style={{ backgroundColor:"#f3f3f3" }} className=' col-span-4 border rounded-xl'>
+            <div style={{ backgroundColor:"#f3f3f3" }} className=' sm:overflow-hidden dashTable col-span-4 border rounded-xl'>
                 {handelPage()}
             </div>
 

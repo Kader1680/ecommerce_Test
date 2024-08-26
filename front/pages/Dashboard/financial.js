@@ -36,7 +36,7 @@ function Financial() {
     <div className="overflow-x-auto  p-3">
       <h4 className="fontLg">Financial Management</h4>
 
-      <div className=" flex rounded-xl mt-4 mb-4  w-fit p-1">
+      <div className="  flex rounded-xl mt-4 mb-4  w-fit p-1">
         <div className="p-2 flex items-center bg-white gap-2 rounded-xl">
           {staticData.map((el) => (
             <div

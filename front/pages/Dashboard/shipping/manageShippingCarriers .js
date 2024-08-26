@@ -18,7 +18,7 @@ const ManageShippingCarriers = () => {
     return (
       <div>
         <div className="flex justify-between items-center mb-4">
-          <h3 className="fontLg">Manage Shipping Carriers</h3>
+          <h3  style={{ fontSize:"16px" }}  className="fontLg">Manage Shipping Carriers</h3>
           <button className="bg-black  text-white fontmd px-2 py-1 rounded">+ Add New Shipping</button>
         </div>
         <ul>

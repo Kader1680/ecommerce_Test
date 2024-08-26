@@ -79,7 +79,7 @@ function Overview() {
       <div className="col-span-3">
 
 
-            <div className=" text-center md:flex items-center justify-between gap-3">
+            <div className=" grid grid-cols-2 text-center md:flex items-center justify-between gap-3">
                 {headerStatic.map((it) => (
                 <div key={it.number} className="bg-white p-3 rounded-lg w-full">
                     <div
@@ -94,7 +94,7 @@ function Overview() {
                 ))}
             </div>
 
-            <div className="md:flex items-center gap-4 mt-3 ">
+            <div className="md:flex items-center gap-4 md:mt-0 mt-3 ">
                 <div className="topCategory  w-full bg-white rounded-xl p-3">
                 <div className=" ">
                     <h3 className=" font-bold mt-3 mb-3 ms-4">Top Categories</h3>
@@ -117,7 +117,7 @@ function Overview() {
                 </div>
                 </div>
                 
-                <div className="w-full rounded-xl ">
+                <div className="w-full rounded-xl sm:mt-3 ">
                 <div className="  flex items-center  rounded-xl  justify-between bg-white p-4  mb-3">
                     <div className=" flex items-center gap-2">
                     <Image src={packagez} alt="alt" width={30} height={30} />
@@ -180,7 +180,7 @@ function Overview() {
 
       </div>
 
-      <div className=" sm:mt-4 col-span-2 w-full max-w-sm p-4 sm:w-full bg-white rounded-lg shadow">
+      <div className=" md:mt-0 mt-4 col-span-2 w-full max-w-sm p-4 sm:w-full bg-white rounded-lg shadow">
       <h2 className="text-lg font-semibold mb-4">Recent Activity Feed</h2>
       <div className="flex space-x-4 text-sm font-medium text-gray-600 mb-4">
         <a href="#" className="text-black underline">

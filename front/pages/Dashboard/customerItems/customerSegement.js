@@ -11,21 +11,21 @@ function CustomerListItem({ name, avatar }) {
         alt={name}
         className="w-8 h-8 rounded-full mr-3"
       />
-      <span className="font-medium">{name}</span>
+      <span className="font-medium ms-2">{name}</span>
     </div>
   );
 }
 
 function CustomerSegement() {
   const customers = [
-    { name: "Lucy Johnson", avatar: "/followers (2).png" },
-    { name: "Oliver Smith", avatar: "/followers (3).png" },
-    { name: "Emma Brown", avatar: "/followers (4).png" },
-    { name: "Oliver Smith", avatar: "/followers (2).png" },
-    { name: "Lucy Johnson", avatar: "/followers (3).png" },
-    { name: "Emma Brown", avatar: "/followers (4).png" },
-    { name: "Oliver Smith", avatar: "/followers (3).png" },
-    { name: "Emma Brown", avatar: "/followers (2).png" },
+    { name: " Lucy Johnson", avatar: "/followers (2).png" },
+    { name: " Oliver Smith", avatar: "/followers (3).png" },
+    { name: " Emma Brown", avatar: "/followers (4).png" },
+    { name: " Oliver Smith", avatar: "/followers (2).png" },
+    { name: " Lucy Johnson", avatar: "/followers (3).png" },
+    { name: " Emma Brown", avatar: "/followers (4).png" },
+    { name: " Oliver Smith", avatar: "/followers (3).png" },
+    { name: " Emma Brown", avatar: "/followers (2).png" },
   ];
 
   const participants = [
@@ -43,9 +43,9 @@ function CustomerSegement() {
       {/* Customer List */}
       <div className="w-1/4 border-r border-gray-200 p-4">
         <h3 className="text-lg font-semibold mb-4">Customer List</h3>
-        <div className=" bg-green-300">
+        <div className="  ">
           {customers.map((customer, index) => (
-            <div key={customer.name} className=" border-1 rounded-lg fontmd  flex items-center">
+            <div key={customer.name} className=" border-1 rounded-lg fontmd  flex items-center   mb-2">
               <Image width={20} height={20} alt="alt" src="/menus.png" />
               <CustomerListItem
                 key={index}
@@ -105,15 +105,18 @@ function CustomerSegement() {
           {participants.map((participant, index) => (
             <div
               key={index}
-              className="flex justify-start gap-2 items-center p-2 hover:bg-gray-100 rounded-md border-1"
+              className="flex justify-between gap-2 items-center p-2 hover:bg-gray-100 rounded-md border-1"
             >
-              <Image
-                alt="alt"
-                width={30}
-                height={30}
-                src={participant.avatar}
-              />
-              <span className="fontmd">{participant.name}</span>
+              <div className=" flex items-center">
+                <Image
+                  alt="alt"
+                  width={30}
+                  height={30}
+                  src={participant.avatar}
+                />
+                <span className="fontmd ms-2">{participant.name}</span>
+
+                </div>
               <button className="text-gray-600 hover:text-black">
                 <Image alt="alt" width={23} height={23} src="/close.png" />
               </button>

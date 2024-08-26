@@ -81,12 +81,12 @@ function Orders() {
 
    
   return (
-    <div className="overflow-x-auto  p-3">
+    <div className="overflow-x-auto    p-3">
       <h4 className='  font-bold text-xl'>Orders</h4>
 
 
 
-      <div className=' flex rounded-xl mt-4 mb-4 bg-white w-fit p-1'>
+      <div className=' sm:flex-wrap md:flex rounded-xl mt-4 mb-4 bg-white w-fit p-1'>
       
         {
           status.map(s => (
@@ -166,7 +166,7 @@ function Orders() {
  
 
 
-      <table className="min-w-full bg-white  p-3">
+      <table className="  orderTable min-w-full bg-white  p-3">
         <thead>
 
          
@@ -242,7 +242,7 @@ function Orders() {
 
 
 
-      {/* <OrderDetail /> */}
+       
       
       <IdOrder />
     

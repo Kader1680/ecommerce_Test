@@ -33,6 +33,15 @@ html body{
 
 @media(max-width: 767px){
 
+  .dashTable{
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .orderTable{
+    overflow-x: scroll;
+    
+
+  }
   .Authentication{
       width: 80%;
       margin: auto;
