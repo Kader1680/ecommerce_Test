@@ -21,7 +21,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/imageSlider.js"  ],
+, "components/imageSlider.js", "i18n.js", "middleware.js"  ],
   "exclude": [
     "node_modules"
   ]

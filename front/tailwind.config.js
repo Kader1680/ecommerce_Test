@@ -4,6 +4,8 @@ import {nextui} from '@nextui-org/theme'
 module.exports = {
 
  
+   
+
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
@@ -12,10 +14,8 @@ module.exports = {
     './node_modules/flowbite/**/*.js',
     'node_modules/preline/dist/*.js',
     "./pages/**/*.{js,ts,jsx,tsx}",
-    // Add NextUI content paths
     "./node_modules/@nextui-org/react/**/*.js"
   ],
-
 
   theme: {
     extend: {

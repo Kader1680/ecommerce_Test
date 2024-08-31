@@ -13,16 +13,38 @@ const poppins = Poppins({
   style: ['normal', 'italic'], // Include styles if needed
 });
 
-function MyApp({ Component, pageProps }) {
-  return (
-    <NextUIProvider> 
-         <Layout>
-         <div className={poppins.className}>
-              <Component {...pageProps} />
 
-         </div>
-        </Layout>
-    </NextUIProvider>
+
+import { useRouter } from 'next/router'
+import { IntlProvider } from 'react-intl'
+import en from '../locales/ar.json'
+import ar from '../locales/en.json';
+ 
+const messages = {
+  ar: ar,
+  en: en,
+}
+
+ 
+function getDirection() {
+  return "Itr";
+}
+
+function MyApp({ Component, pageProps }) {
+const {locale} = useRouter();
+
+  return (
+    <IntlProvider locale={locale}  messages={messages [locale]}>
+      <NextUIProvider> 
+          <Layout>
+          <div className={poppins.className}>
+                <Component {...pageProps} dir={getDirection(locale)} />
+
+          </div>
+          </Layout>
+      </NextUIProvider>
+    </IntlProvider>
+   
   );
 }
 

@@ -1,5 +1,19 @@
 import React, { useState } from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button, Image} from "@nextui-org/react";
+
+import { useIntl } from "react-intl";
+
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+  Button,
+  Image,
+} from "@nextui-org/react";
 import Search from "./search";
 import MegaMenu from "./megaMenu";
 import WomenSawar from "./womenSawar";
@@ -20,31 +34,38 @@ export default function App() {
     "Log Out",
   ];
 
-
-  
-
   const [searchBar, setsearchBar] = useState(false);
-  
+
   const addSearchBar = () => {
-    setsearchBar(!searchBar)
-  }
+    setsearchBar(!searchBar);
+  };
 
   const [menswear, setmenswear] = useState(false);
   const [womenSawar, setwomenSawar] = useState(false);
   const displayMenswear = () => {
-      setmenswear(!menswear)
-  }
+    setmenswear(!menswear);
+  };
+ 
+
   const displayWomenSawar = () => {
-    setwomenSawar(!womenSawar)
-}
+    setwomenSawar(!womenSawar);
+  };
+
+  const intl = useIntl();
+
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
-
-      <div className="menswear" style={{ display: menswear ? "block" : "none"  }}>
-          <MegaMenu />
+      <div
+        className="menswear"
+        style={{ display: menswear ? "block" : "none" }}
+      >
+        <MegaMenu />
       </div>
-      <div className="womenSawar" style={{ display: womenSawar ? "block" : "none"  }}>
-          <WomenSawar />
+      <div
+        className="womenSawar"
+        style={{ display: womenSawar ? "block" : "none" }}
+      >
+        <WomenSawar />
       </div>
       <NavbarContent>
         <NavbarMenuToggle
@@ -52,55 +73,122 @@ export default function App() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <h2 style={{ fontSize:"30px" }} className="font-bold 
-          ">KIFT</h2>
+          <h2
+            style={{ fontSize: "30px" }}
+            className="font-bold 
+          "
+          >
+            {intl.formatMessage({ id: "logo" })}
+          </h2>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4 font-bold" justify="start">
-        <NavbarItem >
-          <div onClick={displayMenswear} color="foreground" >
-          Menswear
+        <NavbarItem>
+          <div onClick={displayMenswear} color="foreground">
+          {intl.formatMessage({ id: "navbar.Menswear" })}
           </div>
         </NavbarItem>
-         
+
         <NavbarItem>
-          <div onClick={displayWomenSawar} color="foreground" >
-              Womenswear
-            </div>
-          
+          <div onClick={displayWomenSawar} color="foreground">
+          {intl.formatMessage({ id: "navbar.Womenswear" })}
+
+          </div>
         </NavbarItem>
 
         <NavbarItem>
           <Link color="foreground" href="#">
-          Brands
+          {intl.formatMessage({ id: "navbar.Brands" })}
+
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link  className=" text-red-600" href="#">
-          Sale
+          <Link className=" text-red-600" href="#">
+          {intl.formatMessage({ id: "navbar.Sale" })}
+
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-        <div className="flex space-x-4">
-    
-          <div className="displaySeach" style={{ display: searchBar ? "block" : "none" }}>
+          <div className="flex space-x-4">
+            <div
+              className="displaySeach"
+              style={{ display: searchBar ? "block" : "none" }}
+            >
               <Search />
+            </div>
+            <div
+              onClick={addSearchBar}
+              style={{ width: "40px" }}
+              className="text-lg"
+            >
+              <Image
+                alt="alt"
+                style={{ width: "40px" }}
+                height={50}
+                width={50}
+                src="/srch.svg"
+              />
+            </div>
+            <div className="text-lg">
+              <Image
+                alt="alt"
+                style={{ width: "40px" }}
+                height={50}
+                width={50}
+                src="/noti.svg"
+              />
+            </div>
+            <div className="text-lg">
+              <Image
+                alt="alt"
+                style={{ width: "40px" }}
+                height={50}
+                width={50}
+                src="/bg.svg"
+              />
+            </div>
           </div>
-          <div onClick={addSearchBar} style={{ width:"40px" }}   className="text-lg"><Image alt='alt' style={{ width:"40px" }} height={50} width={50} src='/srch.svg' /></div>
-          <div className="text-lg"><Image alt='alt' style={{ width:"40px" }} height={50} width={50} src='/noti.svg' /></div>
-          <div className="text-lg"><Image alt='alt' style={{ width:"40px" }} height={50} width={50} src='/bg.svg' /></div>
-        </div>  
         </NavbarItem>
         <NavbarItem>
-          <Button as={Link} className=' bg-white text-black rounded-full border' href="/auth/signup" variant="flat">
-            Signup or sing in
+          <Button
+            as={Link}
+            className=" bg-white text-black rounded-full border"
+            href="/auth/signup"
+            variant="flat"
+          >
+          {intl.formatMessage({ id: "navbar.sign" })}
+
           </Button>
-          <Button  as={Link} className=' bg-black text-white rounded-full' href="#" variant="flat">
-          Sell Now
+          <Button
+            as={Link}
+            className=" bg-black text-white rounded-full"
+            href="#"
+            variant="flat"
+          >
+          {intl.formatMessage({ id: "navbar.sell" })}
+
           </Button>
+
+          <Button
+            as={Link}
+            className=" bg-black text-white rounded-full"
+            href="/"
+            variant="flat"
+          >
+            English
+          </Button>
+          <Button
+            as={Link}
+            className=" bg-black text-white rounded-full"
+            href="/ar"
+            variant="flat"
+          >
+            Arabic
+          </Button>
+
         </NavbarItem>
       </NavbarContent>
       <NavbarMenu>
@@ -108,7 +196,11 @@ export default function App() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2
+                  ? "primary"
+                  : index === menuItems.length - 1
+                  ? "danger"
+                  : "foreground"
               }
               className="w-full"
               href="#"

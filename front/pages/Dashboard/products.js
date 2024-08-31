@@ -47,8 +47,18 @@ function Products() {
     setprice(!price)
   }
   
+
+  const list  =  [
+    {id : 5, name: "pFro"},
+    {id : 25, name: "prSo"},
+    {id : 245, name: "pJJJJSEro"},
+    {id : 44, name: "prJJGo"},
+    {id : 35, name: "prVVo"},
+  ]
   return (
     <div className="overflow-x-auto  p-3">
+
+        
       <h4 className='  font-bold text-xl'>Orders</h4>
 
  

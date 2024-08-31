@@ -5,13 +5,18 @@ import React from 'react'
 import appstore from "../public/appelBorder.png"
 import google from "../public/googleBorder.png"
 import rect789 from "../public/Rectangle 798.png"
+import { useIntl } from "react-intl";
 
 function GetApp() {
+  const intl = useIntl();
+
   return (
     <div  className='getApp mt-5 md:flex items-center justify-around relative'>
         <div className=' sm:text-center'>
-            <h2   className='myfont'>Get the app.</h2>
-            <p className=' sm:text-center'>Download the app for free on iPhone, iPad and Android.</p>
+            <h2   className=' ms-0'>{intl.formatMessage({ id: "getapp" })}
+</h2>
+            <p className=' sm:text-center md:text-start'>{intl.formatMessage({ id: "downloadapp" })}
+</p>
             <div  className=' flex items-center mt-3 mb-3 '>
            
                         <Image alt='alt' height={100} width={100}  src={appstore}/>
