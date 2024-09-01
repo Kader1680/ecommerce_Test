@@ -1,125 +1,151 @@
-
-
 {
-    
-    "logo" : "KIFT",
-    "navbar.Menswear" :"Menswear",
-    "navbar.Womenswear" :"Womenswear",
-    "navbar.Brands" :"Brands",
-    "navbar.Sale" :"Sale",
-    "navbar.sign" :"Signup or sing in",
-    "navbar.sell" :"Sell Now",
-    
-    "getapp" :"Get the app.",
-    "downloadapp" :"Download the app for free on iPhone, iPad and Android.",
-    
-
-
-
-
-    "page.home.title": "Buy, sell, and discover fashion, home decor, beauty, and more",
-    "page.home.description": "Sign up now and join millions of people on the social marketplace for all things style",
-
-    "page.home.market": "Best selling brands",
-    "page.home.popular": "Popular this week",
-    "page.home.popular.filter.all" :"All Products", 
-    "page.home.popular.filter.Chiffon" :"Chiffon", 
-    "page.home.popular.filter.Casual" :"Casual", 
-    "page.home.popular.filter.Blazer" :"Blazer", 
-    "page.home.popular.filter.View" :"Blazer", 
- 
-     
-    "footer.intro.address" : "Address 451 Wall Street, UK, London",
-    "footer.intro.email" : "Email example@info.com",
-    "footer.intro.number" : "Call (064) 332-1233",
-    "footer.intro.subscribe" : "Subscribe To Our Newsletter",
-    "footer.intro.bySell" : "BUY AND SELL ON APP" ,
-
-    "footer.category" : "SHOP CATEGORIES" ,
-    "footer.category.Women" : "Women" ,
-    "footer.category.Men" : "Men" ,
-    "footer.category.Kids" : "Kids" ,
-    "footer.category.Home" : "Home" ,
-    "footer.category.Electronics" : "Electronics" ,
-    "footer.category.Pets" : "Pets" ,
-    "footer.category.Handbags" : "Handbags" ,
-    "footer.category.Shoes" : "Shoes" ,
-    "footer.category.Jewelry" : "Jewelry & Accessories" ,
-    "footer.category.Makeup" : "Makeup" ,
-    "footer.category.Dresses" : "Dresses",  
-    
-    "brand" : "POPULAR BRANDS" ,
-    "brand.Nike" : "Nike" ,
-    "brand.Michael" : "Michael Kors" ,
-    "brand.Louis" : "Louis Vuitton " ,
-    "brand.lululemon" : "lululemon athletica" ,
-    "brand.PINK" : "PINK Victoria's Secret" ,
-    "brand.Coach" : "Coach" ,
-    "brand.Chanel" : "Chanel" ,
-    "brand.See" : "See All Brands »" ,
-     
-
-     
-    "shop" : "SHOP CATEGORIES" ,
-    "shop.About" : "About" ,
-    "shop.Community" : "Our Community" ,
-    "shop.Blog" : "Blog" ,
-    "shop.FAQs" : "FAQs" ,
-    "shop.Live" : "Live Shopping" ,
-    "shop.Sell" : "Sell on KIFT" ,
-    "shop.How" : "How it works" ,
-    "shop.Gift" : "Gift Cards" ,
-    "shop.Careers" : "Careers" ,
-    "shop.Press" : "Press",
-    "shop.Accessibility" : "Accessibility",
-
    
-    "Menswear" : "Menswear",
-    "Menswear.Accessories" : "Men's Accessories",
-    "Menswear.Shoes" : "Shoes",
-    "Menswear.Athletic" : "Athletic Apparel",
-    "Menswear.Tops" : "Tops",
-    "Menswear.Shorts" : "Shorts",
-    "Menswear.Jeans" : "Jeans",
-    "Menswear.Sweat" : "Sweats & Hoodies ",
-    "Menswear.Sweaters" : "Sweaters",
-    "Menswear.Coats" : "Coats & Jackets",
-    "Menswear.View" : "View All",
-    "Menswear.Belts" : "Belts",
-    "Menswear.Hats" : "Hats",
-    "Menswear.Sunglass" : "Sunglass",
-    "Menswear.Ties" : "Ties",
-    "Menswear.Wallets" : "Wallets",
-    "Menswear.Watches" : "Watches",
-    "Menswear.Other" : "Other",
+
+
+
+    "logo" : "كيفت",
+    "menswear" :"الملابس الرجالية",
+    "womenswear" :"الملابس النسائية",
+    "Brands" :"العلامات التجارية",
+    "Sale" :"تخفيضات",
+    "sign" :"اشترك أو غنِ",
+    "sell" :"بيع الآن",
+
+    "getapp" :"احصل على التطبيق",
+    "downloadapp" :"يمكنك تنزيل التطبيق مجانًا على iPhone وiPad وAndroid.",
     
 
 
 
-    "Womenswear" : "Menswear",
-    "Womenswear.Handbags" : "Men's Accessories",
-    "Womenswear.Shoes" : "Shoes",
-    "Womenswear.Athletic" : "Athletic Apparel",
-    "Womenswear.Tops" : "Tops & Blouses",
-    "Womenswear.Jewelry" : "Jewelry",
-    "Womenswear.Dresses" : "Dresses",
-    "Womenswear.Accessories" : "Accessories",
-    "Womenswear.Sweaters" : "Sweaters",
-    "Womenswear.Coats" : "Coats & Jackets",
-    "Womenswear.Jeans" : "Jeans",
-    "Womenswear.View" : "View All",
 
-    "Womenswear.Backpacks" : "Backpacks",
-    "Womenswear.HatCosmetic" : "Cosmetic Bags",
-    "Womenswear.Hobo" : "Hobo Bags",
-    "Womenswear.Crossbody" : "Crossbody Bags",
-    "Womenswear.Satchels" : "Satchels",
-    "Womenswear.Shoulder" : "Shoulder Bags",
-    "Womenswear.Tote" : "Tote Bags  Waist",
-    "Womenswear.Bags" : "Bags & Fanny",
-    "Womenswear.Packs" : "Packs",
-    "Womenswear.Messenger" : "Messenger",
-    "Womenswear.Bucket" : "Bucket Bags  ",
-     
-    "profile.name" : "Leslie Alexander"
+
+    "title": "قم بشراء وبيع واكتشف الأزياء وديكور المنزل والجمال والمزيد",
+    "description": "اشترك الآن وانضم إلى ملايين الأشخاص في السوق الاجتماعي لكل ما يتعلق بالأناقة",
+    "market": "العلامات التجارية الأكثر مبيعًا",
+    "popular": "شعبية هذا الأسبوع ",
+    "Popularfilterall" :"جميع المنتجات ", 
+    "PopularfilterChiffon" :"شيفون ", 
+    "PopularfilterCasual" :"كاجوال ", 
+    "PopularfilterBlazer" :"سترة ", 
+    "PopularfilterView" :"عرض جميع المنتجات ",
+    
+
+    "list" : [
+        { "id": 0, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة", "featured" : "خصم/بيع", "discount": 20, "image":"/p1.png", "oldPrice" : 200.00, "newPrice" : 30.0  },
+        { "id": 1, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة", "featured" : "خصم/بيع", "discount": 20, "image":"/p2.png", "oldPrice" : 200.00, "newPrice" : 30.0  },
+        { "id": 2, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة", "featured" : "خصم/بيع", "discount": 20, "image":"/p3.png", "oldPrice" : 200.00, "newPrice" : 30.0  },
+        { "id": 3, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة", "featured" : "خصم/بيع", "discount": 20, "image":"/p4.png", "oldPrice" : 200.00, "newPrice" : 30.0  } 
+        ,
+        { "id": 4, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة", "featured" : "خصم/بيع", "discount": 20, "image":"/p4.png", "oldPrice" : 200.00, "newPrice" : 30.0  } 
+
+        ,
+        { "id": 5, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة", "featured" : "خصم/بيع", "discount": 20, "image":"/p5.png", "oldPrice" : 200.00, "newPrice" : 30.0  } 
+
+        ,
+        { "id": 6, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة",  "featured" : "خصم/بيع", "discount": 20, "image":"/p6.png", "oldPrice" : 200.00, "newPrice" : 30.0  } 
+
+        ,
+        { "id": 7, "name" : "فتاة مجعد فستان جميلفتاة مجعد فستان جميلفتاة مجعد فستان جميل", "description": "جميلفتاة مجعد فستان جميلفتاة", "featured" : "خصم/بيع", "discount": 20, "image":"/p7.png", "oldPrice" : 200.00, "newPrice" : 30.0  } 
+
+       
+    ],
+
+    
+
+    "footerAddress" : "العنوان 451 وول ستريت، المملكة المتحدة، لندن",
+    "footerEmail" : "البريد الإلكتروني example@info.com",
+    "footerNumber" : "اتصل بالرقم (064) 332-1233",
+    "footerSubscribe" : "اشترك في النشرة الإخبارية لدينا",
+    "footerBySell" : "شراء وبيع على التطبيق" ,
+    
+    
+    "footerCategory" : "فئات التسوق" ,
+    "footerCategoryWomen" : "نحيف " ,
+    "footerCategoryMen" : "رجال" ,
+    "footerCategoryKids" : "أطفال" ,
+    "footerCategoryHome" : "بيت" ,
+    "footerCategoryElectronics" : "إلكترونيات" ,
+    "footerCategoryPets" : "حيوانات أليفة " ,
+    "footerCategoryHandbags" : "حقائب اليد " ,
+    "footerCategoryShoes" : "أحذية" ,
+    "footerCategoryJewelry" : "مجوهرات واكسسوارات" ,
+    "footerCategoryMakeup" : "ماكياج" ,
+    "footerCategoryDresses" : "فساتين"  ,
+
+
+    "brand" : "العلامات التجارية الشهيرة" ,
+    "brandNike" : "نايك" ,
+    "brandMichael" : "مايكل كورز" ,
+    "brandLouis" : "لويس فيتون" ,
+    "brandlululemon" : "اثليتيكا " ,
+    "brandPINK" : "بينك فيكتوريا سيكريت" ,
+    "brandCoach" : "مدرب" ,
+    "brandChanel" : "شانيل" ,
+    "brandSee" : "شاهد جميع العلامات التجارية  »" ,
+    
+    "shop" : "فئات المتجر" ,
+    "shopAbout" : "حول" ,
+    "shopCommunity" : "مجتمعنا" ,
+    "shopBlog" : "مدونة" ,
+    "shopFAQs" : "الأسئلة الشائعة" ,
+    "shopLive" : "التسوق المباشر" ,
+    "shopSell" : "بيع على KIFT" ,
+    "shopHow" : "كيف تعمل" ,
+    "shopGift" : "بطاقات الهدايا" ,
+    "shopCareers" : "وظائف" ,
+    "shopPress" : "يضعط",
+    "shopAccessibility" : "إمكانية الوصول",
+    
+
+
+    "Menswear" : "ملابس رجالية",
+    "Menswear.Accessories" : "اكسسوارات رجالية",
+    "Menswear.Shoes" : "أحذية",
+    "Menswear.Athletic" : "ملابس رياضية",
+    "Menswear.Tops" : "قمصان",
+    "Menswear.Shorts" : "شورتات",
+    "Menswear.Jeans" : "جينز",
+    "Menswear.Sweat" : "تعرق وهوديس",
+    "Menswear.Sweaters" : "سترات",
+    "Menswear.Coats" : "معاطف و جاكيتات",
+    "Menswear.View" : "عرض الكل",
+    "Menswear.Belts" : "أحزمة",
+    "Menswear.Hats" : "قبعات",
+    "Menswear.Sunglass" : "نظارات شمسية",
+    "Menswear.Ties" : "ربطات عنق",
+    "Menswear.Wallets" : "محافظ",
+    "Menswear.Watches" : "ساعات",
+    "Menswear.Other" : "أخرى",
+    
+
+
+
+    "Womenswear" : "ملابس نسائية",
+    "Womenswear.Handbags" : "حقائب يد",
+    "Womenswear.Shoes" : "أحذية",
+    "Womenswear.Athletic" : "ملابس رياضية",
+    "Womenswear.Tops" : "قمم والبلوزات",
+    "Womenswear.Jewelry" : "مجوهرات",
+    "Womenswear.Dresses" : "فساتين",
+    "Womenswear.Accessories" : "أكسسوارات",
+    "Womenswear.Sweaters" : "البلوزات",
+    "Womenswear.Coats" : "معاطف و جاكيتات",
+    "Womenswear.Jeans" : "الجينز",
+    "Womenswear.View" : "عرض الكل",
+
+    "Womenswear.Backpacks" : "حقائب ظهر",
+    "Womenswear.HatCosmetic" : "حقائب مستحضرات تجميل",
+    "Womenswear.Hobo" : "حقائب هوبو",
+    "Womenswear.Crossbody" : "حقائب كروسبودي",
+    "Womenswear.Satchels" : "حقائب ساتشل",
+    "Womenswear.Shoulder" : "حقائب كتف",
+    "Womenswear.Tote" : "حقائب كتف للخصر",
+    "Womenswear.Bags" : "حقائب وفاني",
+    "Womenswear.Packs" : "حزم",
+    "Womenswear.Messenger" : "حقائب رسول ",
+    "Womenswear.Bucket" : "حقائب دلو ",
+
+
+
+    "profile.name" : " ليزلي ألكسندر "
 }

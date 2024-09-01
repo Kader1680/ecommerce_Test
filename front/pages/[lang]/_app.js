@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 
 
 import { Poppins } from 'next/font/google';
+import App from '../components/navbar';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -14,37 +15,22 @@ const poppins = Poppins({
 });
 
 
-
-import { useRouter } from 'next/router'
-import { IntlProvider } from 'react-intl'
-import en from '../locales/ar.json'
-import ar from '../locales/en.json';
  
-const messages = {
-  ar: ar,
-  en: en,
-}
 
- 
-function getDirection() {
-  return "Itr";
-}
 
 function MyApp({ Component, pageProps }) {
-const {locale} = useRouter();
+
 
   return (
-    <IntlProvider locale={locale}  messages={messages [locale]}>
       <NextUIProvider> 
-          <Layout>
+           
           <div className={poppins.className}>
-          
-                <Component {...pageProps} dir={getDirection(locale)} />
+                <Component {...pageProps} />
 
           </div>
-          </Layout>
+         
       </NextUIProvider>
-    </IntlProvider>
+  
    
   );
 }

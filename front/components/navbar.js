@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 
-import { useIntl } from "react-intl";
-
+import { useRouter } from "next/router";
+import ar from "../locales/ar.json"
+import en from "../locales/en.json"
 import {
   Navbar,
   NavbarBrand,
@@ -14,11 +15,11 @@ import {
   Button,
   Image,
 } from "@nextui-org/react";
-import Search from "./search";
-import MegaMenu from "./megaMenu";
-import WomenSawar from "./womenSawar";
+// import Search from "../search";
+// import MegaMenu from "../megaMenu";
+// import WomenSawar from "../womenSawar";
 
-export default function App() {
+export default function Mynavbar({pathLang}) {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -51,21 +52,32 @@ export default function App() {
     setwomenSawar(!womenSawar);
   };
 
-  const intl = useIntl();
+  const router = useRouter();
+  var { lang } = router.query; 
+  
+  const translations = {
+    "en": en,
+    "ar": ar,
+};
 
+
+  const t = translations[lang];
+
+  const isArabic = lang === 'ar';
+  const directionStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : { direction: 'ltr' };
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar style={directionStyle} onMenuOpenChange={setIsMenuOpen}>
       <div
         className="menswear"
         style={{ display: menswear ? "block" : "none" }}
       >
-        <MegaMenu />
+        {/* <MegaMenu /> */}
       </div>
       <div
         className="womenSawar"
         style={{ display: womenSawar ? "block" : "none" }}
       >
-        <WomenSawar />
+        {/* <WomenSawar /> */}
       </div>
       <NavbarContent>
         <NavbarMenuToggle
@@ -78,7 +90,7 @@ export default function App() {
             className="font-bold 
           "
           >
-            {intl.formatMessage({ id: "logo" })}
+            {t?.logo} 
           </h2>
         </NavbarBrand>
       </NavbarContent>
@@ -86,26 +98,30 @@ export default function App() {
       <NavbarContent className="hidden sm:flex gap-4 font-bold" justify="start">
         <NavbarItem>
           <div onClick={displayMenswear} color="foreground">
-          {intl.formatMessage({ id: "navbar.Menswear" })}
+          {t?.menswear}
+           
           </div>
         </NavbarItem>
 
         <NavbarItem>
           <div onClick={displayWomenSawar} color="foreground">
-          {intl.formatMessage({ id: "navbar.Womenswear" })}
+          {t?.womenswear}
+
 
           </div>
         </NavbarItem>
 
         <NavbarItem>
           <Link color="foreground" href="#">
-          {intl.formatMessage({ id: "navbar.Brands" })}
+          {t?.Brands}
+
 
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className=" text-red-600" href="#">
-          {intl.formatMessage({ id: "navbar.Sale" })}
+          {t?.Sale}
+
 
           </Link>
         </NavbarItem>
@@ -117,7 +133,7 @@ export default function App() {
               className="displaySeach"
               style={{ display: searchBar ? "block" : "none" }}
             >
-              <Search />
+              {/* <Search /> */}
             </div>
             <div
               onClick={addSearchBar}
@@ -159,7 +175,8 @@ export default function App() {
             href="/auth/signup"
             variant="flat"
           >
-          {intl.formatMessage({ id: "navbar.sign" })}
+                    {t?.sign}
+
 
           </Button>
           <Button
@@ -168,26 +185,13 @@ export default function App() {
             href="#"
             variant="flat"
           >
-          {intl.formatMessage({ id: "navbar.sell" })}
+            {t?.sell}
+
 
           </Button>
 
-          <Button
-            as={Link}
-            className=" bg-black text-white rounded-full"
-            href="/"
-            variant="flat"
-          >
-            English
-          </Button>
-          <Button
-            as={Link}
-            className=" bg-black text-white rounded-full"
-            href="/ar"
-            variant="flat"
-          >
-            Arabic
-          </Button>
+         
+        
 
         </NavbarItem>
       </NavbarContent>

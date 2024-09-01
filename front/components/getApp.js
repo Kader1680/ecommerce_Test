@@ -5,17 +5,31 @@ import React from 'react'
 import appstore from "../public/appelBorder.png"
 import google from "../public/googleBorder.png"
 import rect789 from "../public/Rectangle 798.png"
-import { useIntl } from "react-intl";
+import { useRouter } from 'next/router'
+ import ar from "../locales/ar.json"
+import en from "../locales/en.json"
 
 function GetApp() {
-  const intl = useIntl();
+  const router = useRouter();
+  var { lang } = router.query; 
+  
+  const translations = {
+    "en": en,
+    "ar": ar,
+};
+
+
+  const t = translations[lang];
+
+  const isArabic = lang === 'ar';
+  const directionStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : { direction: 'ltr' };
 
   return (
     <div  className='getApp mt-5 md:flex items-center justify-around relative'>
         <div className=' sm:text-center'>
-            <h2   className=' ms-0'>{intl.formatMessage({ id: "getapp" })}
+            <h2   className=' ms-0'>  {t?.getapp} 
 </h2>
-            <p className=' sm:text-center md:text-start'>{intl.formatMessage({ id: "downloadapp" })}
+            <p className=' sm:text-center md:text-start'>  {t?.downloadapp} 
 </p>
             <div  className=' flex items-center mt-3 mb-3 '>
            

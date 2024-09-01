@@ -7,12 +7,11 @@ import React, { useCallback, useEffect, useState } from 'react'
 import products from "../pages/product"
 import filterIcon from "../public/filterIcon.png"
 import { Input } from 'postcss'
-
-import { useIntl } from "react-intl";
+ 
 
 function Profil() {
 
-   const intl = useIntl();
+   
 
     const sizes = ['XXS', 'XS', 'S', 'M', 'L', 'XL', 'XXL', "3XL", "4XL", "5XL", "One size"];
     const brand = ["Brandy Melville", "Forever 21", "Caddis", "Nike", "New Balance", "Aragona"]
@@ -159,7 +158,7 @@ function Profil() {
 
             <div className='name lg:grid-span-1 items-center'>
                <div className=' flex items-center '>
-                    <h3 className=' myfont'>{intl.formatMessage({ id: "profile.name" })}</h3>
+                    <h3 className=' myfont'>s</h3>
                     <Image width={30} height={30} alt='alt' src='/Frame.png' />
                </div>
                <div className=' flex items-center'>

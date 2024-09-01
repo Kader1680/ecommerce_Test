@@ -2,10 +2,10 @@ import { Button, Link } from '@nextui-org/react'
 import React, { useState } from 'react'
 import {User} from "@nextui-org/user";
 import {Card, CardHeader, CardBody, CardFooter} from "@nextui-org/card";
-import Products from '../components/products';
-import GetApp from '../components/getApp';
+import Products from '../../components/products';
+import GetApp from '../../components/getApp';
 import Image from 'next/image';
-import Comments from '../components/comments';
+import Comments from '../../components/comments';
 function Id() {
 
     const images = ['/singleProduct.png',

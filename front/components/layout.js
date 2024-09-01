@@ -1,12 +1,13 @@
 // components/Layout.js
-import Navbar from './navbar';
+import App from './navbar';
 import Footer from './footer';
+ 
 const Layout = ({ children }) => {
+   
+ 
   return (
     <div>
-    
-      <Navbar />
- 
+      <App/>
       <main>{children}</main>
       <Footer />
     </div>
