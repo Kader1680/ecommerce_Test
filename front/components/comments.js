@@ -4,9 +4,35 @@ import user from "../public/Ellipse 1186.png"
 import user2 from "../public/Ellipse 1191.png"
 import menu from "../public/menu-circle-vertical.png"
 import arrow from "../public/Combo shape.png"
+import ar from "../locales/ar.json";
+import en from "../locales/en.json";
+import { useRouter } from 'next/router'
 function Comments() {
+    const router = useRouter();
+    var { lang } = router.query; 
+    
+    const translations = {
+      "en": en,
+      "ar": ar,
+  };
+     
+  
+    const t = translations[lang]?.list;
+   
+    const {id} = router.query;
+     const idProduct  =  parseInt(id) || 1;
+    
+   
+    
+    // const item = t.filter(el => el.id == idProduct) || "no"
+    // convert array seller to json strcutre
+
+    // const selerItem = (item.map(el=>el.comment))
+    // console.log(t.map(el => el))
+    const isArabic = lang === 'ar';
+    const directionStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : { direction: 'ltr' };
   return (
-    <div>
+    <div style={directionStyle}>
         <h3 style={{ fontSize:"24px" }} className=' font-bold mt-5 mb-5 '>Comments</h3>
         <div className='comment p-4 mt-5 mb-5 border rounded-lg' style={{ backgroundColor:"#f3f3f3" }} >
             <div className='head flex items-center justify-between'>
