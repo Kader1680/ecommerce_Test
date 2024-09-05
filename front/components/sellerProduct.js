@@ -1,34 +1,17 @@
 import { Button, User } from "@nextui-org/react";
 import Image from "next/image";
 import React from "react";
-import ar from "../locales/ar.json"
-import en from "../locales/en.json"
-import { useRouter } from "next/router";
+ 
  
 function SellerProduct() {
-    const router = useRouter();
-    var { lang } = router.query; 
-    
-    const translations = {
-      "en": en,
-      "ar": ar,
-  };
-     
-  
-    const t = translations[lang]?.list;
-   
-    const {id} = router.query;
-     const idProduct  =  parseInt(id) || 1;
-    
    
     
-    const item = t.filter(el => el.id == idProduct)
-    // convert array seller to json strcutre
+    // const item = t.filter(el => el.id == idProduct)
+    // // convert array seller to json strcutre
 
-    const selerItem = (item.map(el=>el.seller))
-    console.log(selerItem.map(el => el.reviews))
-    const isArabic = lang === 'ar';
-    const directionStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : { direction: 'ltr' };
+    // const selerItem = (item.map(el=>el.seller))
+    // console.log(selerItem.map(el => el.reviews))
+    
   return (
     <div style={directionStyle} className=" border-1 p-4 mt-5 rounded-lg border-gray-300">
       {

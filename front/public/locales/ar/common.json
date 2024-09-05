@@ -30,33 +30,36 @@
   "reviewWord": "مراجعة",
   "dollars": "دولارًا",
 
-  "comment" : "التعليقات",
+  "comment": "التعليقات",
   "shippID": "الشحن والمدفوعات",
   "list": [
     {
       "id": 0,
       "name": "فتاة مجعد فستان ",
       "description": "جميلفتاة مجعد فستان جميلفتاة",
-      "featured": "Featured",
+      "featured": "خصم",
       "discount": 20,
       "image": "/p1.png",
       "oldPrice": 200.0,
       "newPrice": 30.0,
-      "condition": "New",
+       
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
       "category": ["DJI", "Electronics", "Drones"],
       "color": "Gray ",
       "posted": "04/20/24",
       "review": 1,
-      "discont": "خصم",
-      "update": "تم التحديث منذ يومين"
+      "discont": 20,
+      "update": "تم التحديث منذ يومين",
+      "brand": "براندي ملفيل",
+      "Condition" : "ممتاز",
+      "FreeShipping": "شحن مجاني " 
+       
     },
     {
       "id": 1,
       "name": "فتاة مجعد فستان ",
       "description": "جميلفتاة مجعد فستان جميلفتاة",
-      "featured": "Featured",
+      "featured": "خصم",
       "discount": 20,
       "image": "/p2.png",
       "oldPrice": 200.0,
@@ -64,32 +67,9 @@
 
       "condition": "New",
       "model": "فتاة مجعد فستان ",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
-      "posted": "04/20/24",
-      "review": 1,
-      "buynow": "buynow",
-      "addtobag": "Add to bag",
-      "makeoffer": "Make an offer",
-      "comments": "Comments",
-      "discont": "خصم",
-      "update": "تم التحديث منذ يومين"
-    },
-    {
-      "id": 2,
-      "name": "فتاة مجعد فستان ",
-      "description": "جميلفتاة مجعد فستان جميلفتاة",
-      "featured": "Featured",
-      "discount": 20,
-      "image": "/p3.png",
-      "oldPrice": 200.0,
-      "newPrice": 30.0,
-      "condition": "New",
-      "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
-      "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Green ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -98,7 +78,31 @@
       "comments": "Comments",
       "discont": "خصم",
       "update": "تم التحديث منذ يومين",
+      "brand": "كاديس"
+    },
+    {
+      "id": 2,
+      "name": "فتاة مجعد فستان ",
+      "description": "جميلفتاة مجعد فستان جميلفتاة",
+      "featured": "خصم",
+      "discount": 20,
+      "image": "/p3.png",
+      "oldPrice": 200.0,
+      "newPrice": 30.0,
+      "condition": "New",
+      "model": "Mavic 2 Enterprise Series",
 
+      "category": ["DJI", "Electronics", "Drones"],
+      "color": "Blue ",
+      "posted": "04/20/24",
+      "review": 1,
+      "buynow": "buynow",
+      "addtobag": "Add to bag",
+      "makeoffer": "Make an offer",
+      "comments": "Comments",
+      "discont": "خصم",
+      "update": "تم التحديث منذ يومين",
+       
       "seller": {
         "name": "Leslie Alexander",
         "reviews": "reviews",
@@ -107,7 +111,8 @@
         "m": 354,
         "Sales": "Sales",
         "s": 35
-      }
+      },
+      "brand" : "نايك" 
     },
     {
       "id": 3,
@@ -120,14 +125,14 @@
       "newPrice": 30.0,
       "condition": " جديد ",
       "model": "سلسلة مافيك 2 إنتربرايز",
-      "brand": "DJI",
+
       "category": [
         "DJI",
         " إلكترونيات ",
         " طائرات بدون طيار ",
         " طائرات كاميرا DJI بدون طيار "
       ],
-      "color": " رمادي  ",
+      "color": "Black  ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "اشتر الآن",
@@ -153,31 +158,24 @@
 
       "comment": {
         "client_1": {
-
           "pic": "/Ellipse 443.png",
           "name": "ليزلي ألكسندر",
           "content": "تعليق",
-          "time": 137 
-        
-  
+          "time": 137
         },
-        "client_2" : {
-
+        "client_2": {
           "name": "ليزلي ألكسندر",
           "content": "تعليق",
-          "time": 137 
-        
-  
+          "time": 137
         }
-
-
-      }
+      },
+      "brand": "للأبد 21 "
     },
     {
       "id": 4,
       "name": "فتاة مجعد فستان ",
       "description": "جميلفتاة مجعد فستان جميلفتاة",
-      "featured": "Featured",
+      "featured": "خصم",
       "discount": 20,
       "image": "/p4.png",
       "oldPrice": 200.0,
@@ -185,9 +183,9 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Black  ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -195,14 +193,15 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "خصم",
-      "update": "تم التحديث منذ يومين"
+      "update": "تم التحديث منذ يومين",
+      "brand": "نايك"
     },
 
     {
       "id": 5,
       "name": "فتاة مجعد فستان  ",
       "description": "جميلفتاة مجعد فستان جميلفتاة",
-      "featured": "Featured",
+      "featured": "خصم",
       "discount": 20,
       "image": "/p5.png",
       "oldPrice": 200.0,
@@ -210,9 +209,9 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Blue ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -220,14 +219,15 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "خصم",
-      "update": "تم التحديث منذ يومين"
+      "update": "تم التحديث منذ يومين",
+      "brand": "كاديس"
     },
 
     {
       "id": 6,
       "name": "فتاة مجعد فستان  ",
       "description": "جميلفتاة مجعد فستان جميلفتاة",
-      "featured": "Featured",
+      "featured": "خصم",
       "discount": 20,
       "image": "/p6.png",
       "oldPrice": 200.0,
@@ -235,9 +235,9 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Pink ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -245,23 +245,24 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "خصم",
-      "update": "تم التحديث منذ يومين"
+      "update": "تم التحديث منذ يومين",
+      "brand":  "أراغونا"
     },
 
     {
       "id": 7,
       "name": "فتاة مجعد فستان ",
       "description": "جميلفتاة مجعد فستان جميلفتاة",
-      "featured": "Featured",
+      "featured": "خصم",
       "discount": 20,
       "image": "/p7.png",
       "oldPrice": 200.0,
       "newPrice": 30.0,
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Black  ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "اشتر الآن ",
@@ -269,9 +270,45 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "خصم",
-      "update": "تم التحديث منذ يومين"
+      "update": "تم التحديث منذ يومين",
+
+      "brand": "نايك"
     }
   ],
+
+  "categorTitle": "أزياء للنساء",
+  "categories": "الفئات",
+  "CoatsJackets": "معاطف و جاكيتات",
+  "Sweaters": "القمصان",
+  "Tops": "البلوزات",
+  "Accessories": "الإكسسوارات",
+  "Shoes": "الأحذية",
+  "Handbags": "حقائب اليد",
+  "Dresses": "الفساتين",
+  "Jeans": "الجينز",
+
+  "FILTER" : "التصفية",
+ 
+  "status": "الحالة",
+  "Brand": "العلامة التجارية",
+  "size": "الحجم",
+  "Condition": "الحالة",
+  "exc": "ممتاز",
+  "vg": "جيد جداً",
+  "price": "السعر",
+  "colors": "اللون",
+  "shipping": " الشحن ",
+  "All": "الكل",
+  "FreeShipping": "شحن مجاني ",
+  "any" : "أي ",
+  "SatutSell" : "للبيع ",
+  "sold" : "مباع",
+  "BrandyMelville": "براندي ملفيل",
+  "Forever": "للأبد 21 ",
+  "Caddis": "كاديس",
+  "Nike": "نايك",
+  "NewBalance": "نيو بالانس",
+  "Aragona": "أراغونا",
 
   "footerAddress": "العنوان 451 وول ستريت، المملكة المتحدة، لندن",
   "footerEmail": "البريد الإلكتروني example@info.com",
@@ -358,10 +395,24 @@
   "Womenswear.Packs": "حزم",
   "Womenswear.Messenger": "حقائب رسول ",
   "Womenswear.Bucket": "حقائب دلو ",
- 
 
-  "moreSeller" : " المزيد من هذا البائع",
- 
-  "view" : "عرض الكل",
-  "profile.name": " ليزلي ألكسندر "
+  "moreSeller": " المزيد من هذا البائع",
+
+  "view": "عرض الكل",
+  "profile.name": " ليزلي ألكسندر ",
+
+  "LoginTitle": "KIFT تسجيل الدخول إلى ",
+  "dontHvAcnt": "ليس لديك حساب؟ ,اشتراك",
+  "policy": "هذا الموقع محمي بواسطة reCAPTCHA Enterprise وتنطبق عليه سياسة خصوصية Google وشروط الخدمة.",
+  "forget": "هل نسيت كلمة السر؟",
+  "login": "تسجيل الدخول",
+  "regTitle": "التسجيل للمتابعة",
+  "regcontent": "لإبداء الإعجاب بعنصر ما أو شرائه، أو للدردشة مع البائع، يرجى إنشاء حسابك.",
+  "policyRegi": "أوافق على شروط خدمة KIFT وسياسة الخصوصية",
+  "dontHvAccount": "هل لديك حساب",
+  "loginacount": "تسجيل الدخول",
+
+  "google": "Google متابعة مع ",
+  "facebook": "Facebook متابعة مع ",
+  "appel": "Apple متابعة مع "
 }

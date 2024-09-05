@@ -1,8 +1,6 @@
 import React, { useState } from "react";
-
-import { useRouter } from "next/router";
-import ar from "../locales/ar.json"
-import en from "../locales/en.json"
+import { useTranslation } from '../context/TranslationContext';
+ 
 import {
   Navbar,
   NavbarBrand,
@@ -15,13 +13,13 @@ import {
   Button,
   Image,
 } from "@nextui-org/react";
+import { usePathname } from "next/navigation";
 // import Search from "../search";
 // import MegaMenu from "../megaMenu";
 // import WomenSawar from "../womenSawar";
 
-export default function Mynavbar({pathLang}) {
+export default function Mynavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
   const menuItems = [
     "Profile",
     "Dashboard",
@@ -51,22 +49,12 @@ export default function Mynavbar({pathLang}) {
   const displayWomenSawar = () => {
     setwomenSawar(!womenSawar);
   };
-
-  const router = useRouter();
-  var { lang } = router.query; 
-  
-  const translations = {
-    "en": en,
-    "ar": ar,
-};
-
-
-  const t = translations[lang];
-
-  const isArabic = lang === 'ar';
-  const directionStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : { direction: 'ltr' };
+ 
+  const { t, changeLanguage } = useTranslation();
   return (
-    <Navbar style={directionStyle} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar   onMenuOpenChange={setIsMenuOpen}>
+   
+ 
       <div
         className="menswear"
         style={{ display: menswear ? "block" : "none" }}
@@ -90,7 +78,7 @@ export default function Mynavbar({pathLang}) {
             className="font-bold 
           "
           >
-            {t?.logo} 
+             {t('logo')} 
           </h2>
         </NavbarBrand>
       </NavbarContent>
@@ -98,29 +86,31 @@ export default function Mynavbar({pathLang}) {
       <NavbarContent className="hidden sm:flex gap-4 font-bold" justify="start">
         <NavbarItem>
           <div onClick={displayMenswear} color="foreground">
-          {t?.menswear}
            
+          {t('menswear')}
           </div>
         </NavbarItem>
 
         <NavbarItem>
           <div onClick={displayWomenSawar} color="foreground">
-          {t?.womenswear}
-
+       
+          {t('womenswear')}
 
           </div>
         </NavbarItem>
 
         <NavbarItem>
           <Link color="foreground" href="#">
-          {t?.Brands}
+        
+          {t('Brands')}
 
 
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link className=" text-red-600" href="#">
-          {t?.Sale}
+           
+          {t('Sale')}
 
 
           </Link>
@@ -175,7 +165,8 @@ export default function Mynavbar({pathLang}) {
             href="/auth/signup"
             variant="flat"
           >
-                    {t?.sign}
+                     
+                    {t('sign')}
 
 
           </Button>
@@ -185,7 +176,8 @@ export default function Mynavbar({pathLang}) {
             href="#"
             variant="flat"
           >
-            {t?.sell}
+            
+            {t('sell')}
 
 
           </Button>
@@ -194,6 +186,19 @@ export default function Mynavbar({pathLang}) {
         
 
         </NavbarItem>
+        <button  className=" text-center"  onClick={() => changeLanguage('en')}> 
+        
+        <Image width={20} height={20} alt="ALT" src="/english.png" />
+        <p>English</p>
+        
+        </button>
+        <button   onClick={() => changeLanguage('ar')}>
+        <Image width={20} height={20} alt="ALT" src="/arabic.png" />
+        
+         <p>العربية</p>
+        
+        </button>
+
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (

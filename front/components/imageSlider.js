@@ -1,23 +1,23 @@
-// "use client"
-// import { useState, useEffect } from "react"
-
-// import image1 from "../public/cat (1).png"
-// import image2 from "../public/cat (2).png"
-// import image3 from "../public/cat (3).png"
-// import image4 from "../public/cat (4).png"
-// import image5 from "../public/cat (11).png"
-// import image7 from "../public/cat (7).png"
-// import image8 from "../public/cat (8).png"
-// import image9 from "../public/cat (9).png"
-// import image10 from "../public/cat (10).png"
-
+ 
 
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Image from "next/image" 
+
+ 
+import { useTranslation } from '../context/TranslationContext';
+
 const ImageSlider = () => {
+
+  const { t } = useTranslation();
+   
+
+ 
+  
+
+
   const settings = {
     dots: false,
     infinite: true,
@@ -31,49 +31,51 @@ const ImageSlider = () => {
   return (
     <div className="relative gap-3" style={{ margin:"auto", width:"100%" }} >
       <Slider {...settings}>
+       
         <div className="font-bold rounded-full">
+        
           <Image width={28} height={28} style={{ width:"5rem" }} className="rounded-full" src="/cat (1).png" alt="Skirts" />
-          <p className="mt-2">Skirts</p>
+          <p className="mt-2">{t("Sweaters")}</p>
         </div>
         <div className="font-bold"  >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full"  src="/cat (2).png" alt="Pants" />
-          <p className="mt-2">Pants</p>
+          <p className="mt-2">{t("Sweaters")}</p>
         </div>
         <div  className="font-bold" >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full" src="/cat (3).png" alt="Sportswear" />
-          <p className=" mt-2">Sportswear</p>
+          <p className=" mt-2">{t("Skirts")}</p>
         </div>
         <div  className="font-bold" >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full" src="/cat (4).png" alt="Tuxedo" />
-          <p className="mt-2"> Tuxedo</p>
+          <p className="mt-2"> {t("Dresses")}</p>
         </div>
 
         <div className="font-bold"  >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full" src="/cat (7).png" alt="Tuxedo" />
-          <p className="mt-2"> Tuxedo</p>
+          <p className="mt-2"> {t("Shoes")}</p>
         </div>
 
 
         <div  className="font-bold"  >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full" src="/cat (8).png" alt="Tuxedo" />
-          <p className="mt-2">Tuxedo</p>
+          <p className="mt-2">{t("Handbags")}</p>
         </div>
 
 
         <div  className="font-bold" >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full" src="/cat (9).png" alt="Tuxedo" />
-          <p className=" mt-2">Tuxedo</p>
+          <p className=" mt-2">{t("Sweaters")}</p>
         </div>
 
 
         <div  className="font-bold" >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full"   src="/cat (10).png" alt="Tuxedo"  />
-          <p className=" mt-2">Tuxedo</p>
+          <p className=" mt-2">{t("Handbags")}</p>
         </div>
 
         <div  className="font-bold" >
           <Image width={28} height={28} style={{ width:"5rem" }}  className="rounded-full" src="/cat (11).png" alt="Tuxedo"    />
-          <p className="mt-2">Tuxedo</p>
+          <p className="mt-2">{t("Handbags")}</p>
         </div>
 
       </Slider>

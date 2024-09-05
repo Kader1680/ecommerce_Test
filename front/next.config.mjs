@@ -1,12 +1,8 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
- 
-
+// next.config.js
+export default {
   i18n: {
-    
-    locales: ["zh", "sq"],  //  
-    defaultLocale: "zh"     //  
-  }
+    locales: ['en', 'ar'], // Specify the supported locales
+    defaultLocale: 'en', // The default language
+    localeDetection: true, // Auto-detect based on browser language
+  },
 };
-
-export default nextConfig;

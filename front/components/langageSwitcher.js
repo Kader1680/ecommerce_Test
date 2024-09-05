@@ -1,20 +1,17 @@
-// components/LanguageSwitcher.js
 import { useRouter } from 'next/router';
-import React from 'react';
-const LanguageSwitcher = () => {
+
+export default function LanguageSwitcher() {
   const router = useRouter();
-  const { locale, locales, pathname, query } = router;
-  const changeLanguage = (lng) => {
-    router.push({ pathname, query }, undefined, { locale: lng });
+  const { locale } = router;
+
+  const switchLanguage = (lang) => {
+    router.push(router.pathname, router.asPath, { locale: lang });
   };
+
   return (
     <div>
-      {locales.map((lng) => (
-        <button key={lng} onClick={() => changeLanguage(lng)}>
-          {lng}
-        </button>
-      ))}
+      <button onClick={() => switchLanguage('ar')}>Arabic</button>
+      <button onClick={() => switchLanguage('en')}>English</button>
     </div>
   );
-};
-export default LanguageSwitcher;
+}

@@ -8,9 +8,11 @@ import Apple from "../../public/Apple.png"
 import { useRouter } from "next/router";
 import axios from "axios";
 // import rightImg from "../../public/rightImg.png"
+import { useTranslation } from '../../context/TranslationContext';
  
 function Login() {
 
+  const { t } = useTranslation();
   
   
   const [email, setemail] = useState("");
@@ -57,27 +59,30 @@ function Login() {
 
       
          
-        <h3 className=" text-start mb-2	">Login to KIFT</h3>
+        <h3 className=" text-start mb-2	">{t('LoginTitle')}</h3>
         <p className="mb-3 dntHaveAccnt text-start	">
-          Don&lsquo;t have an account?
+       
           <Link className=" font-bold text-center ms-1  	" href="/auth/signup">
-            Sign up
+          {t('dontHvAcnt')}
           </Link>
         </p>
         <div className="authO">
           <Button className="googleBtn">
   
             <Image alt="alt"   src={googleIcon} width={20} height={20} /> 
-            Continuez avec Google
+            {t('google')}
+
           </Button>
 
           <Button className="facebookBtn">
             <Image alt="alt"    src={facebook} width={20} height={20} /> 
-            Continuez avec Facebook
+            {t('facebook')}
+
           </Button>
           <Button className="appleBtn">
-            <Image alt="alt"  src={Apple} width={20} height={20} /> Continuez
-            avec Appel
+            <Image alt="alt"  src={Apple} width={20} height={20} /> 
+            {t('appel')}
+
           </Button>
           <div className=" flex items-center ms-3 mb-3  justify-between">
             <hr></hr> <p>Or</p> <hr></hr>
@@ -117,16 +122,17 @@ function Login() {
                   />
 
              
-              <Link className="mt-4 float-end" href="/">forget password</Link>
+              <Link className="mt-4 float-end" href="/">{t('forget')}</Link>
 
               <Button type="submit" className="LoginIcon" style={{ backgroundColor:"black", margin: "30px 0px" }}>
-                 Log in
+              {t('login')}
               </Button>
 
             </form>
 
 
-            <p className="btmTxt" >This site is protected by reCAPTCHA Enterprise and the Google <Link className=" underline" href="">Privacy Policy</Link> and <Link href="/" className=" underline" >Terms of Service</Link> apply.</p>
+            <p className="btmTxt" > {t('dontHvAcnt')}
+</p>
           </div>
         </div>
       </div>

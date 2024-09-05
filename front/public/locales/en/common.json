@@ -6,13 +6,10 @@
   "Sale": "Sale",
   "sign": "Signup or sing in",
   "sell": "Sell Now",
-
   "getapp": "Get the app.",
   "downloadapp": "Download the app for free on iPhone, iPad and Android.",
-
   "title": "Buy, sell, and discover fashion, home decor, beauty, and more",
   "description": "Sign up now and join millions of people on the social marketplace for all things style",
-
   "market": "Best selling brands",
   "popular": "Popular this week",
   "Popularfilterall": "All Products",
@@ -20,7 +17,6 @@
   "PopularfilterCasual": "Casual",
   "PopularfilterBlazer": "Blazer",
   "PopularfilterView": "Blazer",
-
   "details": "Details",
   "satuts": "Condition",
   "model": "Model",
@@ -30,10 +26,9 @@
   "posted": "Posted",
   "reviewWord": "Review",
   "dollars": "$",
-  "shippID" : "Shipping & Payments",
-  "comment" : "comment",
-
-  "Visit" : "Visite shop",
+  "shippID": "Shipping & Payments",
+  "comment": "comment",
+  "Visit": "Visite shop",
   "list": [
     {
       "id": 0,
@@ -46,9 +41,7 @@
       "newPrice": 30.0,
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -57,7 +50,11 @@
       "comments": "Comments",
       "discont": "SALE 60% OFF",
       "update": "Updated 2d ago",
-      "seller" : []
+      "seller": [],
+      "color": "Gray ",
+      "brand": "Brandy Melville",
+      "shipping": "Free Shipping" 
+      
     },
     {
       "id": 1,
@@ -71,17 +68,18 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Green ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
       "addtobag": "Add to bag",
       "makeoffer": "Make an offer",
       "comments": "Comments",
-       "discont": "SALE 60% OFF",
-      "update": "Updated 2d ago"
+      "discont": "SALE 60% OFF",
+      "update": "Updated 2d ago",
+      "brand": "Caddis"
     },
     {
       "id": 2,
@@ -95,9 +93,9 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Blue ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -105,7 +103,8 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "SALE 60% OFF",
-      "update": "Updated 2d ago"
+      "update": "Updated 2d ago",
+      "brand": "Nike"
     },
     {
       "id": 3,
@@ -119,68 +118,7 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
-      "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
-      "posted": "04/20/24",
-      "review": 1,
-      "buynow": "buynow",
-      "addtobag": "Add to bag",
-      "makeoffer": "Make an offer",
-      "comments": "Comments",
-       "discont": "SALE 60% OFF",
-      "update": "Updated 2d ago",
-      "shipping" : "Free shipping on orders over $89 Details",
-      
-      "seller" : {
-        
-        "name" : "Leslie Alexander",
-        "reviews" :  "reviews",
-        "n" :  137,
-        "Listed" :  "Listed",
-        "m" :  354,
-        "Sales" :  "Sales",
-        "s" :   35
-        
-      },
-      "comment": {
-        "client_1": {
 
-          "pic": "/Ellipse 443.png",
-          "name": "ليزلي ألكسندر",
-          "content": "تعليق",
-          "time": 137 
-        
-  
-        },
-        "client_2" : {
-
-          "name": "ليزلي ألكسندر",
-          "content": "تعليق",
-          "time": 137 
-        
-  
-        }
-
-
-      }
-    
-      
-
-    },
-    {
-      "id": 4,
-      "name": "Nike Dri-Fit Pattern Golf Polo Shirt",
-     "description": "DJI Mini 2 is beginner-friendly,powerful,and well, mini. Impressive performance, stunning image quality, & creative 4k videos are just a few taps away.Fly More Combo  /In The Box :  Aircraft x 1Remote Controller x1Intelligent Flight Battery x3Pair of Spare Propellers x3Type-C Cable x1Gimbal Protector x1RC Cables  (USB Type-C Connector) x1 (Lightning Connector) x1 (Standard Micro-USB Connector) x1Pair of Spare Control Sticks x1Spare Screws,prop hubs Charging HubDJI usb 18W chargerFlight Bag -Ultralight & Foldable31-Min Max Flight Time10km Video TransmissionL5 Wind ResistanceUltra-Clear 4K VideoIntelligent Modes & QuickShotsPack Light, Fly FreeJust how light is DJI Mini 2? At less than 249 g, it weighs about as much as an apple & fits in the palm of your hand. Compact and convenient, Mini 2 is your ideal travel companionPowerful PerformanceIt may be small, but this drone packs a ton of power. With a max battery life of 31 minutes it  resists level five winds",
-      "featured": "Featured",
-      "discount": 20,
-      "image": "/p4.png",
-      "oldPrice": 200.0,
-      "newPrice": 30.0,
-
-      "condition": "New",
-      "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
       "category": ["DJI", "Electronics", "Drones"],
       "color": "Gray ",
       "posted": "04/20/24",
@@ -190,7 +128,58 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "SALE 60% OFF",
-      "update": "Updated 2d ago"
+      "update": "Updated 2d ago",
+      "shipping": "Free shipping on orders over $89 Details",
+
+      "seller": {
+        "name": "Leslie Alexander",
+        "reviews": "reviews",
+        "n": 137,
+        "Listed": "Listed",
+        "m": 354,
+        "Sales": "Sales",
+        "s": 35
+      },
+      "comment": {
+        "client_1": {
+          "pic": "/Ellipse 443.png",
+          "name": "ليزلي ألكسندر",
+          "content": "تعليق",
+          "time": 137
+        },
+        "client_2": {
+          "name": "ليزلي ألكسندر",
+          "content": "تعليق",
+          "time": 137
+        }
+      },
+
+      "brand": "Forever"
+    },
+    {
+      "id": 4,
+      "name": "Nike Dri-Fit Pattern Golf Polo Shirt",
+      "description": "DJI Mini 2 is beginner-friendly,powerful,and well, mini. Impressive performance, stunning image quality, & creative 4k videos are just a few taps away.Fly More Combo  /In The Box :  Aircraft x 1Remote Controller x1Intelligent Flight Battery x3Pair of Spare Propellers x3Type-C Cable x1Gimbal Protector x1RC Cables  (USB Type-C Connector) x1 (Lightning Connector) x1 (Standard Micro-USB Connector) x1Pair of Spare Control Sticks x1Spare Screws,prop hubs Charging HubDJI usb 18W chargerFlight Bag -Ultralight & Foldable31-Min Max Flight Time10km Video TransmissionL5 Wind ResistanceUltra-Clear 4K VideoIntelligent Modes & QuickShotsPack Light, Fly FreeJust how light is DJI Mini 2? At less than 249 g, it weighs about as much as an apple & fits in the palm of your hand. Compact and convenient, Mini 2 is your ideal travel companionPowerful PerformanceIt may be small, but this drone packs a ton of power. With a max battery life of 31 minutes it  resists level five winds",
+      "featured": "Featured",
+      "discount": 20,
+      "image": "/p4.png",
+      "oldPrice": 200.0,
+      "newPrice": 30.0,
+
+      "condition": "New",
+      "model": "Mavic 2 Enterprise Series",
+
+      "category": ["DJI", "Electronics", "Drones"],
+      "color": "Gray ",
+      "posted": "04/20/24",
+      "review": 1,
+      "buynow": "buynow",
+      "addtobag": "Add to bag",
+      "makeoffer": "Make an offer",
+      "comments": "Comments",
+      "discont": "SALE 60% OFF",
+      "update": "Updated 2d ago",
+      "brand": "Nike"
     },
 
     {
@@ -205,7 +194,7 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
       "color": "Gray ",
       "posted": "04/20/24",
@@ -214,8 +203,9 @@
       "addtobag": "Add to bag",
       "makeoffer": "Make an offer",
       "comments": "Comments",
-       "discont": "SALE 60% OFF",
-      "update": "Updated 2d ago"
+      "discont": "SALE 60% OFF",
+      "update": "Updated 2d ago",
+      "brand": "Caddis"
     },
 
     {
@@ -230,9 +220,9 @@
 
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Pink ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -240,13 +230,14 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "SALE 60% OFF",
-      "update": "Updated 2d ago"
+      "update": "Updated 2d ago",
+      "brand": "Aragona"
     },
 
     {
       "id": 7,
       "name": "Supreme Backpack (SS20 Black)",
-     "description": "DJI Mini 2 is beginner-friendly,powerful,and well, mini. Impressive performance, stunning image quality, & creative 4k videos are just a few taps away.Fly More Combo  /In The Box :  Aircraft x 1Remote Controller x1Intelligent Flight Battery x3Pair of Spare Propellers x3Type-C Cable x1Gimbal Protector x1RC Cables  (USB Type-C Connector) x1 (Lightning Connector) x1 (Standard Micro-USB Connector) x1Pair of Spare Control Sticks x1Spare Screws,prop hubs Charging HubDJI usb 18W chargerFlight Bag -Ultralight & Foldable31-Min Max Flight Time10km Video TransmissionL5 Wind ResistanceUltra-Clear 4K VideoIntelligent Modes & QuickShotsPack Light, Fly FreeJust how light is DJI Mini 2? At less than 249 g, it weighs about as much as an apple & fits in the palm of your hand. Compact and convenient, Mini 2 is your ideal travel companionPowerful PerformanceIt may be small, but this drone packs a ton of power. With a max battery life of 31 minutes it  resists level five winds",
+      "description": "DJI Mini 2 is beginner-friendly,powerful,and well, mini. Impressive performance, stunning image quality, & creative 4k videos are just a few taps away.Fly More Combo  /In The Box :  Aircraft x 1Remote Controller x1Intelligent Flight Battery x3Pair of Spare Propellers x3Type-C Cable x1Gimbal Protector x1RC Cables  (USB Type-C Connector) x1 (Lightning Connector) x1 (Standard Micro-USB Connector) x1Pair of Spare Control Sticks x1Spare Screws,prop hubs Charging HubDJI usb 18W chargerFlight Bag -Ultralight & Foldable31-Min Max Flight Time10km Video TransmissionL5 Wind ResistanceUltra-Clear 4K VideoIntelligent Modes & QuickShotsPack Light, Fly FreeJust how light is DJI Mini 2? At less than 249 g, it weighs about as much as an apple & fits in the palm of your hand. Compact and convenient, Mini 2 is your ideal travel companionPowerful PerformanceIt may be small, but this drone packs a ton of power. With a max battery life of 31 minutes it  resists level five winds",
       "featured": "Featured",
       "discount": 20,
       "image": "/p7.png",
@@ -254,9 +245,9 @@
       "newPrice": 30.0,
       "condition": "New",
       "model": "Mavic 2 Enterprise Series",
-      "brand": "DJI",
+
       "category": ["DJI", "Electronics", "Drones"],
-      "color": "Gray ",
+      "color": "Black ",
       "posted": "04/20/24",
       "review": 1,
       "buynow": "buynow",
@@ -264,9 +255,45 @@
       "makeoffer": "Make an offer",
       "comments": "Comments",
       "discont": "SALE 60% OFF",
-      "update": "Updated 2d ago"
+      "update": "Updated 2d ago",
+      "brand": "New Balance"
     }
   ],
+
+  "FILTER" : "Filter",
+  "categorTitle": "Fashion for Women",
+  "categories": "CATEGORIES",
+  "CoatsJackets": "Coats Jackets",
+  "Sweaters": "Sweaters",
+  "Tops": "Tops",
+  "Accessories": "Accessories",
+  "Shoes": "Shoes",
+  "Handbags": "Handbags",
+  "Dresses": "Dresses",
+  "Jeans": "Jeans",
+  "filter": "FILTER",
+  "status": "Status",
+  "any" : "Any",
+  "SatutSell" : "Sell",
+  "sold" : "Sold",
+  "Brand": "Brand",
+  "size": "size",
+  "Condition": "Condition",
+  "exc": "Excellent",
+  "vg": "Very Good",
+  "price": "Price",
+  "colors": "Color",
+  "shipping": " Shipping ",
+  "All": "All",
+  "FreeShipping": "Free Shipping",
+  
+
+  "BrandyMelville": "Brandy Melville",
+  "Forever": "Brandy Melville",
+  "Caddis": "Caddis",
+  "Nike": "Nike",
+  "NewBalance": "New Balance",
+  "Aragona": "Aragona",
 
   "footerAddress": "Address 451 Wall Street, UK, London",
   "footerEmail": "Email example@info.com",
@@ -353,9 +380,21 @@
   "Womenswear.Packs": "Packs",
   "Womenswear.Messenger": "Messenger",
   "Womenswear.Bucket": "Bucket Bags  ",
-  "moreSeller" : "More from this seller",
+  "moreSeller": "More from this seller",
 
- 
+  "view": "View All",
 
-  "view" : "View All" 
+  "LoginTitle": "Login to KIFT",
+  "dontHvAcnt": "Don't have an account?",
+  "policy": "This site is protected by reCAPTCHA Enterprise and the Google Privacy Policy and Terms of Service apply.",
+  "forget": "Forgot password?",
+  "login": "Log in",
+  "regTitle": "Sign up to continue",
+  "regcontent": "To like or purchase an item, or to chat with the seller, please create your account.",
+  "policyRegi": "I agree to the KIFT Terms of Service and Privacy Policy",
+  "dontHvAccount": "Already have an account? Log in",
+
+  "google": "Continuez avec Google",
+  "facebook": "Continuez avec Facebook",
+  "appel": "Continuez avec Apple"
 }

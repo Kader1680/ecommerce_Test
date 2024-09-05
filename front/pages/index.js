@@ -1,48 +1,35 @@
 import React, { useState } from "react";
 
+import { useTranslation } from '../context/TranslationContext';
 
 // import { FormattedMessage, useIntl } from "react-intl";
 import Image from "next/image";
 import { Button, Link } from "@nextui-org/react";
-import GetApp from "../../components/getApp";
-import Products from "../../components/products";
-import white from "../../public/white.png";
-import sll from "../../public/sll.png";
-import picwomen from "../../public/picwomen.png";
+import GetApp from "../components/getApp";
+import Products from "../components/products";
+import white from "../public/white.png";
+import sll from "../public/sll.png";
+import picwomen from "../public/picwomen.png";
 
-import ans from "../../public/ans.png";
-import maj from "../../public/maj.png";
-import coste from "../../public/coste.png";
-import bl from "../../public/bl.png";
-import rebok from "../../public/rebok.png";
-import kb from "../../public/kb.png";
-import nike from "../../public/nike.png";
+import ans from "../public/ans.png";
+import maj from "../public/maj.png";
+import coste from "../public/coste.png";
+import bl from "../public/bl.png";
+import rebok from "../public/rebok.png";
+import kb from "../public/kb.png";
+import nike from "../public/nike.png";
 
-import g1 from "../../public/g1.png";
-import g2 from "../../public/g2.png";
-import g3 from "../../public/g3.png";
-import g4 from "../../public/g4.png";
-import { useRouter } from "next/router";
-import ar from "../../locales/ar.json"
-import en from "../../locales/en.json"
+import g1 from "../public/g1.png";
+import g2 from "../public/g2.png";
+import g3 from "../public/g3.png";
+import g4 from "../public/g4.png";
+ 
 function Index() {
-  const router = useRouter();
-    var { lang } = router.query; 
+    const { t, changeLanguage } = useTranslation();
     
-
-    const translations = {
-        "en": en,
-        "ar": ar,
-    };
-
- 
-    const t = translations[lang];
- 
-  
-    const isArabic = lang === 'ar';
-    const directionStyle = isArabic ? { direction: 'rtl', textAlign: 'right' } : { direction: 'ltr' };
   return (
-    <div style= {directionStyle}>
+    <div  >
+     
  <div
     
     className="homePub font-poppins "
@@ -58,10 +45,11 @@ function Index() {
      
           <h3 className="font-poppins">
           
-            {t?.title}
+            {t('title')}
           </h3>
           <p>
-          {t?.description}
+          {t('description')}
+          
           </p>
         </div>
         <div style={{ position: "relative" }} className="field2">
@@ -118,8 +106,8 @@ function Index() {
     <div className="Brands mb-4 ">
        
       <h3 className=" sm:text-center md:text-start">
-        
-      {t?.market}
+      {t('market')}
+     
       </h3>
       <div className="md:flex md:items-cente md:justify-between markes sm:grid sm:grid-cols-2">
         <Image width={100} height={100} alt="alt" src={ans} />
@@ -170,7 +158,10 @@ function Index() {
     </div>
 
     <div className="filter Brands : md:flex md:items-center  md:justify-between">
-      <h3 className="font-poppins">{t?.popular}</h3>
+      <h3 className="font-poppins">
+    
+      {t('popular')}
+      </h3>
       <div className="filterBar ">
         <Button
           as={Link}
@@ -178,7 +169,8 @@ function Index() {
           href="#"
           variant="flat"
         >
-          {t?.Popularfilterall}
+        {t('Popularfilterall')}
+         
         </Button>
 
         <Button
@@ -187,7 +179,8 @@ function Index() {
           href="#"
           variant="flat"
         >
-          {t?.PopularfilterChiffon} (21)
+         {t('PopularfilterChiffon')}
+           (21)
         </Button>
         <Button
           as={Link}
@@ -195,7 +188,8 @@ function Index() {
           href="#"
           variant="flat"
         >
-          {t?.PopularfilterCasual} (21)
+        {t('PopularfilterCasual')}
+          (21)
         </Button>
         <Button
           as={Link}
@@ -203,7 +197,9 @@ function Index() {
           href="#"
           variant="flat"
         >
-          {t?.PopularfilterBlazer} (21)
+
+{t('PopularfilterBlazer')}
+          (21)
         </Button>
         <Button
           as={Link}
@@ -211,14 +207,16 @@ function Index() {
           href="#"
           variant="flat"
         >
-          {t?.PopularfilterView}
+{t('PopularfilterView')}
+
+          
         </Button>
       </div>
     </div>
 
-     <Products />
+      <Products />
 
-    <GetApp />  
+      <GetApp />  
   </div>
     </div>
    
@@ -227,28 +225,3 @@ function Index() {
 
 export default Index;
 
-// import { useRouter } from "next/router";
-// import { FormattedMessage, useIntl } from "react-intl";
-
-// export default function Home({ dir }) {
-//   const { locales } = useRouter();
-//   const intl = useIntl();
-
-//   const title = intl.formatMessage({ id: "page.home.title" });
-//   const description = intl.formatMessage({
-//     id: "page.home.description",
-//   });
-
-//   return (
-//     <>
-
-//       <div>
-//         <FormattedMessage id="page.home.title" values={title} />
-//       </div>
-//       <h1  className=" font-bold   text-yellow-600">
-//         <FormattedMessage id="page.home.description" values={description} />
-//       </h1>
-
-//     </>
-//   );
-// }
