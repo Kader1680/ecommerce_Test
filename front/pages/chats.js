@@ -8,9 +8,14 @@ import SearchBar from '../components/search';
 import FriendText from '../components/friendText';
 import send from "../public/Group 39564.png"
 import { useTranslation } from '../context/TranslationContext';
+import UserProfil from '../components/userProfil';
+
+
 
 function Chats() {
     const { t } = useTranslation();
+
+    const mobileProps = "block";    
 
     
   return (
@@ -20,7 +25,7 @@ function Chats() {
         <Breadcrumbs>
             <BreadcrumbItem>Home</BreadcrumbItem>
             <BreadcrumbItem>Leslie Alexander</BreadcrumbItem>
-            <BreadcrumbItem className=' font-bold' >Messages</BreadcrumbItem> 
+            <BreadcrumbItem className=' font-bold' >{t('message')}</BreadcrumbItem> 
         </Breadcrumbs>
         <h3 style={{ fontSize:"35px" }} className='myfont mt-4 mb-4 font-bold'>{t('message')}</h3>
         <Image alt='alt' width={10} height={10} src={swip} />
@@ -29,10 +34,10 @@ function Chats() {
                 <div className=' m-3 flex justify-between'>
                    <div>
                         <Button   as={Link} className=' mb-3 bg-black text-white rounded-full' href="#" variant="flat">
-                            Chat
+                        {t('Chat')}
                         </Button>
                         <Button as={Link} style={{ border:"1px solid black" }} className='   bg-white ms-1 text-black rounded-full border' href="#" variant="flat">
-                        Offers
+                        {t('Offers')}
                         </Button>
                    </div>
                    <div className=' flex items-center'>
@@ -59,7 +64,8 @@ function Chats() {
             </div>
             <div className=' col-span-1 border p-4 rounded-xl font-normal relative'>
                 {/* <div style={{ width:"20px", height:"20px", backgroundColor:"#1fb582", top:"20px", left:"8.5rem", border:"2px solid white"  }} className='online rounded-full absolute'></div> */}
-                <Users /> 
+                {/* <Users />  */}
+                <UserProfil mobileProps = {mobileProps}  />
                 <Item />
             </div>
             

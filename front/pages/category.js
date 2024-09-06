@@ -8,10 +8,10 @@ import filterIcon from "../public/filterIcon.png";
 import ImageSlider from "../components/imageSlider";
 
 import { Input } from "@nextui-org/react";
- 
-import { useTranslation } from '../context/TranslationContext';
+
+import { useTranslation } from "../context/TranslationContext";
 function Category() {
-   
+  
   const { t } = useTranslation();
 
   const sizes = [
@@ -51,14 +51,13 @@ function Category() {
     "Casual Corner Vintage Linen Blazer Chartreuse",
   ];
 
-  const prodcutsItems = t("list")
-
-   
+  const prodcutsItems = t("list");
 
   function targerInput(e) {
-    const filteredProducts = prodcutsItems.filter((product) =>
-      names.some((name) => product.name === name && e === name)
-    ) || [] ;
+    const filteredProducts =
+      prodcutsItems.filter((product) =>
+        names.some((name) => product.name === name && e === name)
+      ) || [];
     setfiltProduct(filteredProducts);
   }
 
@@ -149,9 +148,8 @@ function Category() {
     );
   };
 
-   
   return (
-    <div  >
+    <div>
       <div style={{ width: "90%", margin: "auto" }}>
         <h3 style={{ fontSize: "24px" }} className="myfont font-bold">
           {t("categorTitle")}
@@ -328,7 +326,6 @@ function Category() {
                                   key={item}
                                   className="w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2"
                                 >
-                                  
                                   {item}
                                 </div>
                               ))}
@@ -342,7 +339,6 @@ function Category() {
                                   key={item}
                                   className="w-fit p-2 border   text-black hover:bg-black hover:text-white rounded-md gap-2"
                                 >
-                                  
                                   {item}
                                 </div>
                               ))}
@@ -494,7 +490,9 @@ function Category() {
                                 className=" flex items-center p-2"
                               >
                                 <input type="checkbox" />
-                                <p className=" ms-3">{t('FreeShipping')} (670)</p>
+                                <p className=" ms-3">
+                                  {t("FreeShipping")} (670)
+                                </p>
                               </div>
                             </div>
                           </FilterItem>
@@ -508,56 +506,47 @@ function Category() {
           </div>
 
           <div className=" md:col-span-7">
- 
-          
             <div className="products  md:gap-4 grid sm:grid-cols-4 md:grid-cols-3">
-              { 
-                filtProduct.map((item) => (
-                  <div key={item.id} className="relative car">
-                    <div
-                      style={{ backgroundColor: "black" }}
-                      className="discount bg-black absolute"
-                    >
-                      {item.discount} $
-                     
-                    </div>
-                    <div
-                      style={{
-                        top: "3rem",
-                        width: "fit-content",
-                        backgroundColor: "#cc0d39",
-                      }}
-                      className="discount absolute"
-                    >
-                      {item.featured}
-                    </div>
-                    <Image
-                      alt="alt"
-                      src={item.image}
-                      width={300}
-                      height={460.03}
-                    />
-                    <div className="price flex justify-between ">
-                      <div style={{ fontSize: "13px" }}>{item.name}</div>
-                      <div className=" block ">
-                        <div
-                          style={{ fontSize: "12px" }}
-                          className="   line-through"
-                        >
-                          {item.oldPrice}$
-                        </div>
-                        <div
-                          className=" font-bold"
-                          style={{ fontSize: "15px" }}
-                        >
-                          {item.newPrice}$
-                        </div>
+              {filtProduct.map((item) => (
+                <div key={item.id} className="relative car">
+                  <div
+                    style={{ backgroundColor: "black" }}
+                    className="discount bg-black absolute"
+                  >
+                    {item.discount} $
+                  </div>
+                  <div
+                    style={{
+                      top: "3rem",
+                      width: "fit-content",
+                      backgroundColor: "#cc0d39",
+                    }}
+                    className="discount absolute"
+                  >
+                    {item.featured}
+                  </div>
+                  <Image
+                    alt="alt"
+                    src={item.image}
+                    width={300}
+                    height={460.03}
+                  />
+                  <div className="price flex justify-between ">
+                    <div style={{ fontSize: "13px" }}>{item.name}</div>
+                    <div className=" block ">
+                      <div
+                        style={{ fontSize: "12px" }}
+                        className="   line-through"
+                      >
+                        {item.oldPrice}$
+                      </div>
+                      <div className=" font-bold" style={{ fontSize: "15px" }}>
+                        {item.newPrice}$
                       </div>
                     </div>
                   </div>
-                ))
-              
-              }
+                </div>
+              ))}
             </div>
           </div>
         </div>

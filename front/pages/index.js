@@ -25,7 +25,7 @@ import g3 from "../public/g3.png";
 import g4 from "../public/g4.png";
  
 function Index() {
-    const { t, changeLanguage } = useTranslation();
+    const { t } = useTranslation();
     
   return (
     <div  >
@@ -38,11 +38,8 @@ function Index() {
     <div className="Selling md:flex md:items-center md:justify-between container">
       <div className=" ">
         <div className="intro">
-        {/* <p className=" text-red-700"> {t?.list.map(e => (
-          <p> {e.name} </p>
-        ))}</p> */}
-
-     
+        
+      
           <h3 className="font-poppins">
           
             {t('title')}

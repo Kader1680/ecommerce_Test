@@ -53,8 +53,7 @@
       "seller": [],
       "color": "Gray ",
       "brand": "Brandy Melville",
-      "shipping": "Free Shipping" 
-      
+      "shipping": "Free Shipping"
     },
     {
       "id": 1,
@@ -260,7 +259,7 @@
     }
   ],
 
-  "FILTER" : "Filter",
+  "FILTER": "Filter",
   "categorTitle": "Fashion for Women",
   "categories": "CATEGORIES",
   "CoatsJackets": "Coats Jackets",
@@ -273,9 +272,9 @@
   "Jeans": "Jeans",
   "filter": "FILTER",
   "status": "Status",
-  "any" : "Any",
-  "SatutSell" : "Sell",
-  "sold" : "Sold",
+  "any": "Any",
+  "SatutSell": "Sell",
+  "sold": "Sold",
   "Brand": "Brand",
   "size": "size",
   "Condition": "Condition",
@@ -286,7 +285,6 @@
   "shipping": " Shipping ",
   "All": "All",
   "FreeShipping": "Free Shipping",
-  
 
   "BrandyMelville": "Brandy Melville",
   "Forever": "Brandy Melville",
@@ -396,5 +394,96 @@
 
   "google": "Continuez avec Google",
   "facebook": "Continuez avec Facebook",
-  "appel": "Continuez avec Apple"
+  "appel": "Continuez avec Apple",
+
+  "profileUser": "Leslie Alexander",
+  "items": "items",
+  "following": "following",
+  "followers": "followers",
+  "likes": "likes",
+  "follow": "follow",
+
+  "compliment": "Top compliments from reviews",
+  "QuickShipper ": "Quick shipper ",
+  "GreatPackaging": "Great packaging",
+  "ItemDescription": "Item description",
+  "Friendly": "Friendly",
+  "Communication": "Communication",
+  "Purchased": "Purchased",
+
+  "reviewsClients": [
+    {
+      "name": "Theresa Webb",
+      "users": "@theresawebb",
+      "contentReview": "Just as described and shipped quickly!! Thank you!",
+      "time": "2 months ago",
+      "feedback": "/stars.png",
+      "pics": "/p1.png"
+    },
+    {
+      "name": "Kristin Watson",
+      "users": "@kristinwatson",
+      "contentReview": "Just as described and shipped quickly!! Thank you!",
+      "time": "2 months ago",
+      "feedback": "/stars.png",
+      "pics": "/p2.png"
+    },
+    {
+      "name": "Robert Fox",
+      "users": "@robertfox",
+      "contentReview": "Just as described and shipped quickly!! Thank you!",
+      "time": "2 months ago",
+      "feedback": "/stars.png",
+      "pics": "/p3.png"
+    },
+    {
+      "name": "Ralph Edwards",
+      "users": "@ralphedwards",
+      "contentReview": "Just as described and shipped quickly!! Thank you!",
+      "time": "2 months ago",
+      "feedback": "/stars.png",
+      "pics": "/p4.png"
+    },
+    {
+      "name": "Jenny Wilson",
+      "users": "@jennywilson",
+      "contentReview": "Just as described and shipped quickly!! Thank you!",
+      "time": "2 months ago",
+      "feedback": "/stars.png",
+      "pics": "/p5.png"
+    },
+    {
+      "name": "Eleanor Pena",
+      "users": "@eleanorpena",
+      "contentReview": "Just as described and shipped quickly!! Thank you!",
+      "time": "2 months ago",
+      "feedback": "/stars.png",
+      "pics": "/p6.png"
+    } 
+  ],
+
+
+  "message" : "Messages",
+  "Chat" : "Chat",
+  "Offers" : "Offers",
+  "chatFriends": [
+    {
+      "name": "Dianne Russell",
+      "body": "Has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged",
+      "contentReview": "Just as described and shipped quickly!! Thank you!",
+      "time": "02-07-2021",
+      "pics": "/p1.png"
+    }
+  ],
+
+  "itemsMessage" :"Item info",
+  "itemsDescription" :"CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDEMADE IN USA STITCHED",
+  "oldPrice" :20.36,
+  "newPrice" :25.00,
+
+  "buy" :"Buy Now",
+  "viewItem" :"View Item" ,
+  "searchItemsBar" : "search items"
+
+  
 }

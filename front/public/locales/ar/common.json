@@ -42,7 +42,7 @@
       "image": "/p1.png",
       "oldPrice": 200.0,
       "newPrice": 30.0,
-       
+
       "model": "Mavic 2 Enterprise Series",
       "category": ["DJI", "Electronics", "Drones"],
       "color": "Gray ",
@@ -51,9 +51,8 @@
       "discont": 20,
       "update": "تم التحديث منذ يومين",
       "brand": "براندي ملفيل",
-      "Condition" : "ممتاز",
-      "FreeShipping": "شحن مجاني " 
-       
+      "Condition": "ممتاز",
+      "FreeShipping": "شحن مجاني "
     },
     {
       "id": 1,
@@ -102,7 +101,7 @@
       "comments": "Comments",
       "discont": "خصم",
       "update": "تم التحديث منذ يومين",
-       
+
       "seller": {
         "name": "Leslie Alexander",
         "reviews": "reviews",
@@ -112,7 +111,7 @@
         "Sales": "Sales",
         "s": 35
       },
-      "brand" : "نايك" 
+      "brand": "نايك"
     },
     {
       "id": 3,
@@ -246,7 +245,7 @@
       "comments": "Comments",
       "discont": "خصم",
       "update": "تم التحديث منذ يومين",
-      "brand":  "أراغونا"
+      "brand": "أراغونا"
     },
 
     {
@@ -287,8 +286,8 @@
   "Dresses": "الفساتين",
   "Jeans": "الجينز",
 
-  "FILTER" : "التصفية",
- 
+  "FILTER": "التصفية",
+
   "status": "الحالة",
   "Brand": "العلامة التجارية",
   "size": "الحجم",
@@ -300,9 +299,9 @@
   "shipping": " الشحن ",
   "All": "الكل",
   "FreeShipping": "شحن مجاني ",
-  "any" : "أي ",
-  "SatutSell" : "للبيع ",
-  "sold" : "مباع",
+  "any": "أي ",
+  "SatutSell": "للبيع ",
+  "sold": "مباع",
   "BrandyMelville": "براندي ملفيل",
   "Forever": "للأبد 21 ",
   "Caddis": "كاديس",
@@ -414,5 +413,93 @@
 
   "google": "Google متابعة مع ",
   "facebook": "Facebook متابعة مع ",
-  "appel": "Apple متابعة مع "
+  "appel": "Apple متابعة مع ",
+
+  "profileUser": " ليزلي ألكسندر ",
+  "items": "أغراض",
+  "following": "متابعون",
+  "followers": "أتابعه",
+  "likes": "الإعجابات",
+  "follow": " متابعة ",
+
+  "compliment": " أفضل تحيات المراجعات ",
+  "QuickShipper ": " الشاحن السريع ",
+  "GreatPackaging": " تغليف رائع ",
+  "ItemDescription": " وصف السلعة ",
+  "Friendly": "  سهل الاستخدام ",
+  "Communication": " الاتصالات",
+  "Purchased": "Purchased",
+
+  "reviewsClients": [
+    {
+      "name": "تيريزا ويب",
+      "users": "@تيريزاويب",
+      "contentReview": "تماما كما هو موضح وشحنها بسرعة!! ,شكرًا لك!",
+      "time": "منذ شهرين",
+      "feedback": "/stars.png",
+      "pics": "/p1.png"
+    },
+    {
+      "name": "كريستين واتسون",
+      "users": "@كريستين واتسون",
+      "contentReview": "تماما كما هو موضح وشحنها بسرعة!! ,شكرًا لك!",
+      "time": "منذ شهرين",
+      "feedback": "/stars.png",
+      "pics": "/p2.png"
+    },
+    {
+      "name": "روبرت فوكس",
+      "users": "@روبرتفوكس",
+      "contentReview": "تماما كما هو موضح وشحنها بسرعة!! ,شكرًا لك!",
+      "time": "منذ شهرين",
+      "feedback": "/stars.png",
+      "pics": "/p3.png"
+    },
+    {
+      "name": "رالف إدواردز",
+      "users": "@ralphedwards",
+      "contentReview": "تماما كما هو موضح وشحنها بسرعة!! ,شكرًا لك!",
+      "time": "منذ شهرين",
+      "feedback": "/stars.png",
+      "pics": "/p4.png"
+    },
+    {
+      "name": "جيني ويلسون",
+      "users": "@جيني ويلسون",
+      "contentReview": "تماما كما هو موضح وشحنها بسرعة!! ,شكرًا لك!",
+      "time": "منذ شهرين",
+      "feedback": "/stars.png",
+      "pics": "/p5.png"
+    },
+    {
+      "name": "إليانور بينا",
+      "users": "@eleanorpena",
+      "contentReview": "تماما كما هو موضح وشحنها بسرعة!! ,شكرًا لك!",
+      "time": "منذ شهرين",
+      "feedback": "/stars.png",
+      "pics": "/p6.png"
+    }
+  ],
+
+  "message": "الرسائل",
+  "Chat": "الدردشة",
+  "Offers": "العروض",
+  "chatFriends": [
+    {
+      "name": "ديان راسل",
+      "body": "لم تنجو من خمسة قرون فحسب، بل قفزت أيضًا إلى التنضيد الإلكتروني، وبقيت دون تغيير جوهري",
+      "time": "02-07-2021",
+      "pics": "/p1.png"
+    }
+  ],
+
+  "itemsMessage" :"معلومات العنصر",
+  "itemsDescription" :"حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+  "oldPrice" :20.36,
+  "newPrice" :25.00,
+
+  "buy" :"اشتر الآن",
+  "viewItem" :"عرض العنصر" ,
+
+  "searchItemsBar" : "البحث عن العناصر"
 }

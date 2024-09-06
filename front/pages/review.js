@@ -2,11 +2,16 @@ import React, { useState } from 'react'
 import {Breadcrumbs, BreadcrumbItem, Button, Link, Input} from "@nextui-org/react";
 import GetApp from '../components/getApp';
 import Image from 'next/image';
+import UserProfil from '../components/userProfil';
 
+import { useTranslation } from "../context/TranslationContext";
 
 function Review() {
+  const { t } = useTranslation();
 
- 
+   
+  const reviewsClients =  t("reviewsClients");
+  console.log(reviewsClients.map(el => el.users))
   return (
     <div style={{ width:"90%", margin:"auto" }}> 
         <Breadcrumbs>
@@ -14,37 +19,43 @@ function Review() {
             <BreadcrumbItem>Leslie Alexander</BreadcrumbItem>
             <BreadcrumbItem className=' font-bold' >Reviews</BreadcrumbItem> 
         </Breadcrumbs>
-        <h3 className='myfont mt-4 mb-4 font-bold'>Top compliments from reviews</h3>
+ 
+        <UserProfil />
+        
+        <h3 className='myfont mt-4 mb-4 font-bold'> 
+        {t('compliment')}
+       
+        </h3>
 
         <div  className=' reviews mb-4'>
             <div className=' md:flex items-center justify-start gap-2'>
                 <div className='  rounded-md font-bold text-center p-2' style={{ width: "fils-content", backgroundColor:"#e5e5e5" }}>
                     7
-                    <p style={{ fontSize:"16px" }} className=' font-normal'>Quick shipper </p>
+                    <p style={{ fontSize:"16px" }} className=' font-normal'>{t('QuickShipper ')}</p>
                 </div>
                 <div className='rounded-md font-bold text-center p-2' style={{ width:"fils-content", backgroundColor:"#e5e5e5" }}>
                     8
-                    <p style={{ fontSize:"16px" }}  className=' font-normal'>Great packaging</p>
+                    <p style={{ fontSize:"16px" }}  className=' font-normal'>{t('GreatPackaging')}</p>
                 </div>
                 <div className='rounded-md font-bold text-center p-2' style={{ width:"fils-content", backgroundColor:"#e5e5e5" }}>
                     12
-                    <p style={{ fontSize:"16px" }}  className='  font-normal'>Item description</p>
+                    <p style={{ fontSize:"16px" }}  className='  font-normal'>{t('ItemDescription')}</p>
                 </div>
                 <div className= 'rounded-md font-bold text-center p-2' style={{ width:"fils-content", backgroundColor:"#e5e5e5" }}>
                     3
-                    <p style={{ fontSize:"16px" }}  className=' font-normal'>Friendly</p>
+                    <p style={{ fontSize:"16px" }}  className=' font-normal'>{t('Friendly')}</p>
                 </div>
                 <div className='rounded-md font-bold text-center p-2' style={{ width:"fils-content", backgroundColor:"#e5e5e5" }}>
                     9
-                    <p style={{ fontSize:"16px" }}  className=' font-normal'>Communication</p>
+                    <p style={{ fontSize:"16px" }}  className=' font-normal'>{t('Communication')}</p>
                 </div>
             </div> 
             <div className=" md:flex mt-3 mb-3 gap-2 ">
                 <Button  as={Link} className=' bg-black text-white rounded-full' href="#" variant="flat">
-                    Sold (103) 
+                {t('sold')} (103) 
                     </Button>
                 <Button as={Link} className=' bg-white text-black rounded-full border' href="#" variant="flat">
-                    Purchased (34)
+                {t('Purchased')} (34)
                     </Button>
                     
                 <Button as={Link} className=' float-right  bg-white text-black rounded-full border' href="#" variant="flat">
@@ -52,129 +63,32 @@ function Review() {
                 </Button>
             </div>
             <div>
-                <div className=' mb-4 md:flex items-center justify-start gap-3'>
-                    <Image alt='alt' className='reviewImg' width={200} height={20} src='/p1.png' />
+            {
+                reviewsClients.map(review => (
+
+                    <div key={review.users} className=' mb-4 md:flex items-center justify-start gap-3'>
+                    <Image alt='alt' className='reviewImg' width={200} height={20} src={review.pics} />
                     <div className=' flex align-center gap-2'>
                  
                         <Image alt='alt' className='reviewUser' width={80} height={80} src='/Ellipse 1178.png' />
                         <div >
-                            <h3 className=' font-bold'>Theresa Webb</h3>
-                            <p style={{ fontSize:"14px" }}>@theresawebb</p>
+                            <h3 className=' font-bold'>{review.name}</h3>
+                            <p style={{ fontSize:"14px" }}>{review.users}</p>
                             <div>
-                                <p>Just as described and shipped quickly!! Thank you!</p>
-                                <p>2 months ago</p>
+                                <p>{review.contentReview}</p>
+                                <p>{review.time}</p>
                             </div>
                         </div>
 
                     </div>
-                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
+                    <Image alt='alt' width={100} height={100} className='stars' src={review.feedback} />
                 </div>
 
-                <div className=' mb-4 md:flex items-center justify-start gap-3'>
-                    <Image alt='alt' className='reviewImg' width={200} height={20} src='/p7.png' />
-                    <div className=' flex align-center gap-2'>
-                        <Image alt='alt' className='reviewUser' width={80} height={80} src='/Ellipse 1178.png' />
-                        <div >
-                            <h3 className=' font-bold'>Theresa Webb</h3>
-                            <p style={{ fontSize:"14px" }}>@theresawebb</p>
-                            <div>
-                                <p>Just as described and shipped quickly!! Thank you!</p>
-                                <p>2 months ago</p>
-                            </div>
-                        </div>
+                ))
+            }
+                
 
-                    </div>
-                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
-                </div>
-
-
-                <div className=' mb-4 md:flex items-center justify-start gap-3'>
-                    <Image alt='alt' className='reviewImg' width={200} height={20} src='/p2.png' />
-                    <div className=' flex align-center gap-2'>
-                        <Image alt='alt' className='reviewUser' width={80} height={80} src='/Ellipse 1178.png' />
-                        <div >
-                            <h3 className=' font-bold'>Theresa Webb</h3>
-                            <p style={{ fontSize:"14px" }}>@theresawebb</p>
-                            <div>
-                                <p>Just as described and shipped quickly!! Thank you!</p>
-                                <p>2 months ago</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
-                </div>
-
-
-                <div className='mb-4 md:flex items-center justify-start gap-3'>
-                    <Image alt='alt' className='reviewImg' width={200} height={20} src='/p3.png' />
-                    <div className=' flex align-center gap-2'>
-                        <Image alt='alt' className='reviewUser' width={80} height={80} src='/Ellipse 1178.png' />
-                        <div >
-                            <h3 className=' font-bold'>Theresa Webb</h3>
-                            <p style={{ fontSize:"14px" }}>@theresawebb</p>
-                            <div>
-                                <p>Just as described and shipped quickly!! Thank you!</p>
-                                <p>2 months ago</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
-                </div>
-
-
-                <div className=' mb-4 md:flex items-center justify-start gap-3'>
-                    <Image alt='alt' className='reviewImg' width={200} height={20} src='/p4.png' />
-                    <div className=' flex align-center gap-2'>
-                        <Image alt='alt' className='reviewUser' width={80} height={80} src='/Ellipse 1178.png' />
-                        <div >
-                            <h3 className=' font-bold'>Theresa Webb</h3>
-                            <p style={{ fontSize:"14px" }}>@theresawebb</p>
-                            <div>
-                                <p>Just as described and shipped quickly!! Thank you!</p>
-                                <p>2 months ago</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <Image alt='alt' width={100} height={100} className='stars' src='/stars.png' />
-                </div>
-
-                <div className=' mb-4 md:flex items-center justify-start gap-3'>
-                    <Image alt='alt' className='reviewImg' width={200} height={20} src='/p5.png' />
-                    <div className=' flex align-center gap-2'>
-                        <Image alt='alt' className='reviewUser' width={80} height={80} src='/Ellipse 1178.png' />
-                        <div >
-                            <h3 className=' font-bold'>Theresa Webb</h3>
-                            <p style={{ fontSize:"14px" }}>@theresawebb</p>
-                            <div>
-                                <p>Just as described and shipped quickly!! Thank you!</p>
-                                <p>2 months ago</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <Image width={100} height={100} alt='alt' className='stars' src='/stars.png' />
-                </div>
-
-
-                <div className='mb-4 md:flex items-center justify-start gap-3'>
-                    <Image alt='alt' className='reviewImg' width={200} height={20} src='/p6.png' />
-                    <div className=' flex align-center gap-2'>
-                        <Image alt='alt' className='reviewUser' width={80} height={80} src='/Ellipse 1178.png' />
-                        <div >
-                            <h3 className=' font-bold'>Theresa Webb</h3>
-                            <p style={{ fontSize:"14px" }}>@theresawebb</p>
-                            <div>
-                                <p>Just as described and shipped quickly!! Thank you!</p>
-                                <p>2 months ago</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <Image width={100} height={100} alt='alt' className='stars' style={{  width:"96px", height:"20px" }} src='/stars.png' />
-                </div>
+ 
             </div>
 
             

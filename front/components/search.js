@@ -2,8 +2,12 @@
   import {Input} from "@nextui-org/react";
   import Image from 'next/image';
   import products from "../pages/product.json"
+import { useTranslation } from "../context/TranslationContext";
+
 import Category from '../pages/category';
   function Search() {
+  const { t } = useTranslation();
+
     const names = [
       "Embellished Flare Leg Jeans 90s",
       "Daisy Romantic Sweet Flower",
@@ -39,7 +43,7 @@ import Category from '../pages/category';
         className='searchBar bg-transparent'
           onChange={(e)=>{targerInput(e.target.value)}}
           radius="lg"
-          placeholder="search items"
+          placeholder={t("searchItemsBar")}
           startContent={
             <Image alt='alt' width={20} height={20} src='/searchicon.png' />
           }
