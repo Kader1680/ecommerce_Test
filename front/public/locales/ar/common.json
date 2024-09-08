@@ -42,7 +42,7 @@
       "image": "/p1.png",
       "oldPrice": 200.0,
       "newPrice": 30.0,
-
+       
       "model": "Mavic 2 Enterprise Series",
       "category": ["DJI", "Electronics", "Drones"],
       "color": "Gray ",
@@ -111,6 +111,22 @@
         "Sales": "Sales",
         "s": 35
       },
+
+      "comment": [
+
+       
+        {
+          "pic": "/Ellipse 443.png",
+          "name": "ليزلي ألكسندر",
+          "content": "تعليق",
+          "time": 137
+        },
+       {
+          "name": "ليزلي ألكسندر",
+          "content": "تعليق",
+          "time": 137
+        }
+      ],
       "brand": "نايك"
     },
     {
@@ -155,19 +171,24 @@
         "Visit": " قم بزيارة المتجر "
       },
 
-      "comment": {
-        "client_1": {
+      "comment": [
+
+       
+        {
           "pic": "/Ellipse 443.png",
           "name": "ليزلي ألكسندر",
           "content": "تعليق",
           "time": 137
         },
-        "client_2": {
+       {
+        "pic": "/Ellipse 1111.png",
+
+
           "name": "ليزلي ألكسندر",
           "content": "تعليق",
           "time": 137
         }
-      },
+      ],
       "brand": "للأبد 21 "
     },
     {
@@ -493,13 +514,143 @@
     }
   ],
 
-  "itemsMessage" :"معلومات العنصر",
-  "itemsDescription" :"حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
-  "oldPrice" :20.36,
-  "newPrice" :25.00,
+  "itemsMessage": "معلومات العنصر",
+  "itemsDescription": "حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+  "oldPrice": 20.36,
+  "newPrice": 25.0,
 
-  "buy" :"اشتر الآن",
-  "viewItem" :"عرض العنصر" ,
+  "buy": "اشتر الآن",
+  "viewItem": "عرض العنصر",
 
-  "searchItemsBar" : "البحث عن العناصر"
+  "searchItemsBar": "البحث عن العناصر",
+
+  "bag": "سلة التسوق",
+  "bagInfo": "4 عناصر في سلة التسوق الخاصة بك",
+  "bagItem": [
+    {
+      "name": "فلويد مايلز",
+      "users": "@floydmiles",
+      "description": "حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (1).png",
+      "userImage": "/userBag (1).png"
+    },
+    {
+      "name": "رالف إدواردز",
+      "users": "@ralphedwards",
+      "description": "متجر NWT Disney Wakanda، تي شيرت Black Panther، مقاس كبير جدًا للرجال من Marvel",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (3).png",
+      "userImage": "/userBag (2).png"
+    },
+
+    {
+      "name": "دارلين روبرتسون",
+      "users": "@دارلينيروبيرتسون",
+      "description": "مقاس رجالي 11، حذاء عالي الجودة باللون الأخضر الزيتوني مع لمسات باللونين الأسود والبرتقالي",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (5).png",
+      "userImage": "/userBag (3).png"
+    },
+
+    {
+      "name": " ديان راسل",
+      "users": "@diannerussell",
+      "description": "مقاس رجالي 11، حذاء عالي الجودة باللون الأخضر الزيتوني مع لمسات باللونين الأسود والبرتقالي",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (3).png",
+      "userImage": "/userBag (4).png"
+    }
+  ],
+
+  "alterBag": "تخفيضات عيد الأم: خصم إضافي 25%",
+  "alterBag2": ",استخدم الرمز JUST4MOM لحفظ الأنماط المحددة.",
+  "summury": "الملخص",
+  "Subtotal": "المجموع الفرعي",
+  "Estimated": ",الشحن والمناولة المقدرة",
+  "Tax": ",الضريبة المقدرة",
+  "Discount": ",إجمالي الخصم",
+  "Total": " الإجمالي ",
+  "chekout": "صفحة الدفع",
+  "download": "قم بتنزيل التطبيق",
+  "textBag": "القائمة والتسوق وأسهل من الويب ,(وفتح أحدث الميزات)",
+  "bagEmpty": "حقيبتك فارغة",
+  "emptyTextBag": "بمجرد إضافة شيء ما إلى حقيبتك، سوف يظهر هنا. ,على استعداد للبدء؟",
+  "goShopping": "اذهب للتسوق",
+  "delete": "حذف",
+
+  "Checkout": "صفحة الدفع",
+
+  "Faster": " للحصول على تجربة دفع أسرع ",
+  "textChkout": "من خلال المتابعة، أؤكد أنني قرأت البنود والشروط وأوافق عليها. ,وسياسة الخصوصية.",
+  "email": " أدخل بريدك الإلكتروني  ",
+  "ShippingAddress": " عنوان الشحن ",
+  "f_name": "الاسم الأول",
+  "l_name": "اسم العائلة",
+  "address": "كتابة عنوانك بنجمة ",
+  "phone": "الهاتف",
+  "save": "حفظ ومتابعة",
+  "Delivery": "خيارات التسليم",
+  "Payment": "الدفع",
+  "Voucher": " القسيمة والعرض الترويجي ",
+  "Apply": "  تطبيق  ",
+  "code": " أدخل الرمز ",
+
+  "Contact": " جهة الاتصال ",
+
+  "SelectMethods": " حدد طريقة الدفع ",
+  "creadit": " بطاقة الائتمان أو الخصم ",
+  "addCard": " إضافة بطاقة  ",
+  "continue" : " متابعة الدفع",
+
+ 
+    "pay" : " متابعة الدفع",
+
+
+    "deliveryOption": [
+      {
+       
+        "standar": "الخيار القياسي",
+        "description": "حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+        "price": 5,
+        "timeDelivery" : "3-4 أيام تقدير التسليم",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+       
+      },
+      {
+        "standar": "الخيار القياسي",
+        "description": "حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+        "price": 5,
+        "timeDelivery" : "3-4 أيام تقدير التسليم",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+      },
+  
+      {
+        "standar": "الخيار القياسي",
+        "description": "حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+        "price": 5,
+        "timeDelivery" : "3-4 أيام تقدير التسليم",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+      },
+  
+      {
+        "standar": "الخيار القياسي",
+        "description": "متجر NWT Disney Wakanda، تي شيرت Black Panther، مقاس كبير جدًا للرجال من Marvel",
+        "price": 5,
+        "timeDelivery" : "3-4 أيام تقدير التسليم",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+      }
+    ] 
+  
+  
+
+    
 }

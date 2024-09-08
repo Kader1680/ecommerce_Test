@@ -7,6 +7,7 @@ import { useTranslation } from "../context/TranslationContext";
 function FriendText() {
   const { t } = useTranslation();
 
+ 
   const friendMessge = t("chatFriends")
   return (
     <>

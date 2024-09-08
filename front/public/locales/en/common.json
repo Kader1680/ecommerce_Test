@@ -139,19 +139,27 @@
         "Sales": "Sales",
         "s": 35
       },
-      "comment": {
-        "client_1": {
-          "pic": "/Ellipse 443.png",
-          "name": "ليزلي ألكسندر",
-          "content": "تعليق",
-          "time": 137
-        },
-        "client_2": {
-          "name": "ليزلي ألكسندر",
-          "content": "تعليق",
-          "time": 137
-        }
-      },
+      "comment":  
+         [
+          
+          
+          {
+            "pic": "/Ellipse 443.png",
+            "name": "Ronald Richards",
+            "content": "List and shop and easier than on web (and unlock the lastest features )",
+            "time": 13
+          },
+          {
+            "pic": "/Ellipse 1111.png",
+
+            "name": "Ralph Edwards",
+            "content": "List and shop and easier than on web List and shop and easier than on web List and shop and easier than on web",
+            "time": 55
+          }
+          
+          
+          
+       ],
 
       "brand": "Forever"
     },
@@ -483,7 +491,133 @@
 
   "buy" :"Buy Now",
   "viewItem" :"View Item" ,
-  "searchItemsBar" : "search items"
+  "searchItemsBar" : "search items",
 
+  "bag" : "Bag",
+  "bagInfo" : "4 items in your cart",
+  "bagItem": [
+    {
+      "name": "Eleanor Pena",
+      "users": "@eleanorpena",
+      "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+      "oldPrice" :20.36,
+      "newPrice" :25.00,
+      "pic" : "/item (1).png",
+      "userImage" : "/profilItem.png"
+
+    },
+    {
+      "name": "Ralph Edwards",
+      "users": "@ralphedwards",
+      "description": "NWT Disney store Wakanda, Black Panther T-shirt, marvel men’s extra large",
+      "oldPrice" :20.36,
+      "newPrice" :25.00,
+      "pic" : "/item (3).png",
+      "userImage" : "/profilItem.png"
+
+    },
+
+    {
+     "name": "Kristin Watson",
+      "users": "@kristinwatson",
+      "description": "Men's Size 11, High Top Olive Green Hikers w/ Black and Orange Accents",
+      "oldPrice" :20.36,
+      "newPrice" :25.00,
+      "pic" : "/item (5).png",
+      "userImage" : "/profilItem.png"
+    },
+
+    {
+      "name": "Robert Fox",
+      "users": "@robertfox",
+      "description": "Men's Size 11, High Top Olive Green Hikers w/ Black and Orange Accents",
+      "oldPrice" :20.36,
+      "newPrice" :25.00,
+      "pic" : "/item (3).png",
+      "userImage" : "/profilItem.png"
+
+    } 
+  ],
+
+  "alterBag" : "Mother’s Day Sale: Extra 25% Off",
+  "alterBag2" : "Use code JUST4MOM to save on select styles.",
+  "summury" : "Summary",
+  "Subtotal" : "Subtotal",
+  "Estimated" : "Estimated Shipping & Handling",
+  "Tax" : "Estimated Tax",
+  "Discount" : "Discount Total",
+  "Total" : "Total",
+  "chekout" : "Check Out",
+  "download" : "Download the app" ,
+  "textBag" : "List and shop and easier than on web (and unlock the lastest features )" ,
+  "bagEmpty" : "YOUR BAG IS EMPTY",
+  "emptyTextBag" : "Once you add something to your bag, it will appear here. Ready to get started?" ,
+  "goShopping" : "Go shopping",
+  "delete" : "delete" ,
+
+  "Checkout" : "Checkout",
+   
+  "Faster" : "For Faster Checkout Experience",
+  "textChkout" : "By continuing, I confirm that I have read and accept the Terms and Conditions. and the Privacy Policy.",
+  "email" : "Enter your Email ",
+  "ShippingAddress" : "Shipping address",
+  "f_name" : "First Name",
+  "l_name" : "Last Name",
+  "address" : "Star typing your address ",
+  "phone":"Phone",
+  "save":"Save and contiune",
+  "Delivery":"Delivery options ",
+  "Payment":"Payment",
+   "Voucher" : "Voucher and promo",
+   "Apply" : "Apply",
+   "code" : "Enter code",
+  
+  "Contact" : "Contact" ,
+
+   "SelectMethods" : "Select Payment Method",
+   "creadit" : "Credit or debit card ",
+   "addCard" : "Add Card " ,
+    "pay" : "Pay Now",
+
+
+    "deliveryOption": [
+      {
+       
+        "standar": "Standard Option",
+        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+        "price": 5,
+        "timeDelivery" : "3-4 Days delivery estimate",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+       
+      },
+      {
+        "standar": "Standard Option",
+        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+        "price": 5,
+        "timeDelivery" : "3-4 Days delivery estimate",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+      },
+  
+      {
+        "standar": "Standard Option",
+        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+        "price": 5,
+        "timeDelivery" : "3-4 Days delivery estimate",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+      },
+  
+      {
+        "standar": "Standard Option",
+        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+        "price": 5,
+        "timeDelivery" : "3-4 Days delivery estimate",
+        "pic": "/item (1).png" ,
+        "edit" : "/edit.png"
+      }
+    ] 
+  
   
 }

@@ -16,6 +16,7 @@ export function TranslationProvider({ children }) {
     setLocale(lang);
   };
 
+  
   return (
     <TranslationContext.Provider value={{ t, changeLanguage, locale }}>
       {children}
