@@ -1,19 +1,23 @@
 import React from 'react'
 import { Button } from '@nextui-org/react'
 import Link from 'next/link'
+import { useTranslation } from "../../context/TranslationContext";
+
 function Security() {
+  const { t } = useTranslation();
+  
   return (
     <div className=' p-6'>
-        <h3 className='myfont font-bold'>Notifications</h3>
+        <h3 className='myfont font-bold'>{t("Security")}</h3>
         <div className=' mt-3 md:flex items-center justify-between'>
             <div>
-              <h5 className=' font-bold'>Email</h5>
-              <p>Check that your email is correct</p>
+              <h5 className=' font-bold'>{t("Email")}</h5>
+              <p>{t("secure")}</p>
             </div>
             <div className=' flex items-center justify-between'>
                
                 <Button as={Link} className=' bg-white text-black     rounded-full        border' href='#' variant="flat">
-                Delete Account
+                {t("deleteAcc")}
                 </Button>
             </div>
         </div>
@@ -22,13 +26,13 @@ function Security() {
 
         <div className=' mt-3 md:flex items-center justify-between'>
             <div>
-              <h5 className=' font-bold'>Change Password</h5>
-              <p>Protect your account with a stronger password.</p>
+              <h5 className=' font-bold'>{t("changePass")}</h5>
+              <p>{t("protect")}</p>
             </div>
             <div className=' flex items-center justify-between'>
                
                 <Button as={Link} className=' bg-white text-black     rounded-full        border' href='#' variant="flat">
-                Change Password
+                {t("changePass")}
                 </Button>
             </div>
         </div>
@@ -38,13 +42,13 @@ function Security() {
 
         <div className=' mt-3 md:flex items-center justify-between'>
             <div>
-              <h5 className=' font-bold'>2-step verification</h5>
-              <p>Add an extra layer of security to your Vinted account — verify your phone number now. You’ll receive a verification code if we ever notice any unusual activity</p>
+              <h5 className=' font-bold'>{t("stepVerification")}</h5>
+              <p>{t("extralayer")}</p>
             </div>
             <div className=' flex items-center justify-between'>
                
                 <Button as={Link} className=' mr-auto bg-white text-black     rounded-full        border' href='#' variant="flat">
-                Two factor authentication
+                {t("2factor")}
                 </Button>
             </div>
         </div>
@@ -53,13 +57,13 @@ function Security() {
 
         <div className='mb-10 mt-3 md:flex items-center justify-between'>
             <div>
-              <h5 className=' font-bold'>Delete Account</h5>
-              <p>This will be permanently deleted account in KIFTm this action connot be undone</p>
+              <h5 className=' font-bold'>{t("deleteAcc")}</h5>
+              <p>{t("deletePermanent")}</p>
             </div>
             <div className=' flex items-center justify-between'>
                
                 <Button style={{ border:"1px solid #fa586c", color:"#fa586c" }} as={Link} className=' bg-white      rounded-full        border' href='#' variant="flat">
-                Delete Account
+                {t("deleteAcc")}
                 </Button>
             </div>
         </div>

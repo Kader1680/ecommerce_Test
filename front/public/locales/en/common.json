@@ -617,7 +617,94 @@
         "pic": "/item (1).png" ,
         "edit" : "/edit.png"
       }
-    ] 
+    ],
   
+
+    "setting" : "Account Setting",
+    "Profildetails" : "Profile details",
+
+    
+    "Yourphoto" : "Your photo",
+    "About" : "About you",
+    "telling" : "Tell us more about yourself and your style",
+    "Country" : "Country",
+    "Town/City" : "Town/City",
+    "Showcity" : "Show city in profile",
+    "Language" : "Language",
+
+
+
+    "Accountsettings" : "Account settings",
+
+    "Email" : "Email",
+    "changeEmail" : "Change Email",
+    "emailValue" : "mohamedbenrekaya@gmail.com",
+    "Phonenumber" : "Phone number",
+    "PhoneInfo" : "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
+    "Fullname" : "Full name",
+    "Gender" : "Gender",
+    "Birthday" : "Birthday",
+    "Day" : "Day",
+    "Month" : "Month",
+    "Year " : "Year ",
+    "GoogleAuth" : "Google",
+    "FacebookAuth" : "Facebook",
+    "link" : "Link",
+    "linked" : "Linked",
+    "verifyPhone" : "Verify Phone Number",
+
+
+
+
+    "Shipping" : "Shipping",
+
+    "SavedDelivery" : "Saved Delivery Addresses",
+    "shippingCont" : "You currently don't have any saved delivery addresses. Add an address here to be prefilled for quicker checkout.",
+  
+
+
+    "notifications" : "Notifications",
+    "showCity": "Show city in profile",
+    "Profiledetails" : "Profile details",
+    "News" : "News",
+    "KIFT" : "KIFT Updates",
+    "notInfo" : "Be the first to know about our newest features, updates, and changes",
+    "marketing" : "Marketing communications",
+    "recommendations" : "Receive personalized offers, news, and recommendations",
+    "Other" : "Other notifications",
+    "newMess" : "New messages",
+    "newFeed" : "New feedback",
+    "Discounted" : "Discounted items",
+
+
+    "priority" : "High-priority notifications",
+ 
+    "Favorited" : "Favorited Items",
+    "newFollow" : "New followers",
+    "newItem" : "New items",
+
+
+    "Payments" : "Payments",
+    "saved" : "Saved Payment Methods",
+    "currently" : "You currently don't have any saved payment methods. Add a payment method here for quicker checkout.",
+    "addPayment" : "Add Paymenet",
+
+ 
+
+
+    "Security" : "Security",
+    
+    "secure" : "Keep your account even more secure",
+
+    "recommend" : "We recommend taking extra steps to secure your account, to make using KIFT as safe as possible.",
+    "checkEmail" : "Check that your email is correct",
+    "deleteAcc" : "Delete Account",
+    "changePass" : "Change Password",
+    "protect" : "Protect your account with a stronger password.",
+    "stepVerification" : "2-step verification",
+    "extralayer" : "Add an extra layer of security to your Vinted account — verify your phone number now. You’ll receive a verification code if we ever notice any unusual activity",
+    "2factor" : "Two factor authentication" ,
+    "deletePermanent" :"This will be permanently deleted account in KIFTm this action connot be undone"
+    
   
 }

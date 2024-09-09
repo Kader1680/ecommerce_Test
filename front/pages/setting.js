@@ -9,31 +9,35 @@ import Security from './setting/security';
 import Payaments from './setting/payaments';
 import Notification from './setting/notification';
 import Shipping from './setting/shipping';
- 
+import { useTranslation } from "../context/TranslationContext";
+
 function Setting() {
 
+    const { t } = useTranslation();
  
  
 
-    const list = ["Profile details", "Account settings", "Shipping", "notifications", "Payments", "Security"]
+    const list = [t("Profildetails"), t("Accountsettings"), t("Shipping"), t("notifications"), t("Payments"), t("Security")]
     
-    const [items, setitems] = useState("Profile details");
+    const [items, setitems] = useState(t("Profildetails"));
 
     const handelPage = () =>{
         switch (items) {
-            case "Profile details":
+            case t("Profildetails"):
                 return <ProfilDetail />
                  
-            case "Account settings":
+            case t("Accountsettings"):
                 return <Account />
-            case "Shipping":
+            case t("Shipping"):
                 return <Shipping />
-            case "notifications":
+            case t("notifications"):
                 return <Notification />
-            case "Payments":
+            case t("Payments"):
                 return <Payaments />
-            case "Security":
+            case t("Security"):
                 return <Security />
+            default:
+                return <ProfilDetail />
         }
     }
   return (
@@ -41,9 +45,9 @@ function Setting() {
  
             <Breadcrumbs>
                 <BreadcrumbItem>Home</BreadcrumbItem>
-                <BreadcrumbItem className=' font-bold' >Account Setting</BreadcrumbItem>
+                <BreadcrumbItem className=' font-bold' >{t("Accountsettings")}</BreadcrumbItem>
             </Breadcrumbs>
-        <h3 style={{ fontSize:"35px" }} className='myfont mt-4 mb-4  font-bold'>Account Setting</h3>
+        <h3 style={{ fontSize:"35px" }} className='myfont mt-4 mb-4  font-bold'>{t("Accountsettings")}</h3>
    
         <div className=' row grid md:grid-cols-3'>
             <div className=' col-span-1'>
