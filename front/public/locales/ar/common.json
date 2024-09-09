@@ -733,11 +733,50 @@
     "stepVerification" : "التحقق بخطوتين",
     "extralayer" : "أضف طبقة إضافية من الأمان إلى حساب Vinted الخاص بك - تحقق من رقم هاتفك الآن. ,ستتلقى رمز التحقق إذا لاحظنا أي نشاط غير عادي",
     "2factor" : "المصادقة الثنائية" ,
-    "deletePermanent" :"سيتم حذف هذا الحساب نهائيًا في KIFT ولا يمكن التراجع عن هذا الإجراء"
+    "deletePermanent" :"سيتم حذف هذا الحساب نهائيًا في KIFT ولا يمكن التراجع عن هذا الإجراء",
+
+    "sellItem" : "بيع غرض",
+    "Review Product" : "مراجعة المنتج",
+    "Product information" : "معلومات المنتج",
+    "Drop your image here or" : "سقط صورتك هنا أو أضف انقر",
+    "Add click Upload Photos" : "فوق تحميل الصور",
+    "Upload Photos" : "تحميل الصور" ,
     
     
    
   
+  
+    "The item title" : "عنوان العنصر",
+    "Select Category" : "حدد فئة",
+    "Continue" : "متابعة",
+    "Product Detail" : "تفاصيل المنتج",
+    "Price & Stock" : "السعر والمخزون",
+    
+    "Your phone number" : "سيتم استخدام رقم هاتفك فقط لمساعدتك في تسجيل الدخول. ولن يتم نشره أو استخدامه لأغراض تسويقية.",
+    "Describe your item" : "قم بوصف الموقد الخاص بك",
+    "Select Condition" : "اختر الحالة",
+    "Select Color" : "اختر اللون",
+    "Select Brand" : "اختر الموديل",
+    "Select Model" : "اختر العلامة التجارية",
+     
+    "item's price" : "سعر السلعة",
+    "Discount / Sales" : "الخصم / المبيعات",
+    "SKU" : "SKU",
+    "Stock / Quantity" : "كمية المخزون",
+    "Item weight" : "وزن السلعة",
+    "Weight" : "الوزن",
+    "Key Facts and Tips" : "حقائق ونصائح أساسية",
+    "Length" : "الطول",
+    "Wide" : "عريض",
+    "Height" : "الارتفاع",
+    "Insurance" : "التأمين",
+    "Essential" : "التغطية الأساسية والفوائد",
+    "Reauired" : "مطلوب",
+    "Optional" : "استمر" ,
+    "save as draf" : "حفظ كمسودة",
+  "Products Details" : "تفاصيل المنتج" ,
+
+  "add minimum" : "مطلوب إضافة صورتين كحد أدنى. صور عالية الدقة 800 × 800 بكسل أو أكبر، يوصى بالتنسيق PNG، JPG، JPEG"
   
 
     

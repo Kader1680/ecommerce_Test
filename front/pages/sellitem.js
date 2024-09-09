@@ -5,10 +5,12 @@ import point from "../public/point.png"
 import upload from "../public/upload.png"
 import add from "../public/add.png"
 import {Radio} from "@nextui-org/react";
+import { useTranslation } from "../context/TranslationContext";
 
  function SelItems() {
 
 
+  const { t } = useTranslation();
 
   const [text, settext] = useState();
 
@@ -61,10 +63,10 @@ import {Radio} from "@nextui-org/react";
 
         <Breadcrumbs  style={{ width:"90%", margin:"auto" }}>
             <BreadcrumbItem>Home</BreadcrumbItem>
-            <BreadcrumbItem className=' font-bold' >Sell an item</BreadcrumbItem> 
+            <BreadcrumbItem className=' font-bold' >{t("sellItem")}</BreadcrumbItem> 
         </Breadcrumbs>
 
-        <h3 style={{ fontSize:"48px" }} className='textDecor myfont'>Sell an item</h3>
+        <h3 style={{ fontSize:"48px" }} className='textDecor myfont'>{t("sellItem")}</h3>
  
 
         
@@ -73,7 +75,7 @@ import {Radio} from "@nextui-org/react";
                 <div style={{ border:"1.5px solid" }} className=' rounded-lg bg-white p-3'>
 
                 <div className=''>
-                    <AddProduct title="Product information">
+                    <AddProduct title={t("Product information")}>
                       <div className='bg-white rounded-md p-3 mb-3'>
 
 
@@ -83,8 +85,8 @@ import {Radio} from "@nextui-org/react";
                           <Image alt='alt' width={40} height={40} src={upload} />
 
                           <div className='blabla'>
-                            <p>Drop your image here or </p>
-                            <p className=' font-bold'>Add click Upload Photos</p>
+                            <p>{t("Drop your image here or")} </p>
+                            <p className=' font-bold'>{t("Add click Upload Photos")}</p>
                           </div>
 
 
@@ -95,7 +97,7 @@ import {Radio} from "@nextui-org/react";
                             <div>
                               <Button   onClick={() => hiddenBrowseButton.current.click()} as={Link} className=' add text-black rounded-full border' href="#" variant="flat">
                                     <Image alt='alt'  width={20} height={20} src={add} />
-                                    <p>Upload Photos</p>
+                                    <p>{t("Upload Photos")}</p>
                                     
 
                               </Button>
@@ -106,14 +108,14 @@ import {Radio} from "@nextui-org/react";
                           <div className=' mt-4 mb-4 flex justify-center items-center'>
                           <Image alt='alt' width={20} height={20}  src={point} />
                           <p  className=' ms-2' style={{ fontSize:"14px" }}>
-                          <span className=' font-bold'>Add Minimum 2 photos required High resolution images</span>  800x800px or larger recommended Format PNG,JPG ,JPEG
+                          {t("add minimum")}
                           </p>
                           </div>
 
-                          <Input className=' mb-2' type="text" variant="bordered" placeholder='The item title'  />
+                          <Input className=' mb-2' type="text" variant="bordered" placeholder={t('The item title')}  />
 
                           <select class=" mb-4 w-full appearance-none row-start-1 col-start-1 bg-slate-50 dark:bg-slate-800 ...">
-                                <option>Select Category</option>
+                                <option>{t("Select Category")}</option>
                                 <option>Sweaters</option>
                                 <option>Shoes</option>
                                 <option>Dresses</option>
@@ -123,7 +125,7 @@ import {Radio} from "@nextui-org/react";
                         </select>
 
                           <Button style={{ backgroundColor:"#dcdcdc"  }} as={Link} className=' text-gray-600  add rounded-full border' href="#" variant="flat">
-                          continue
+                          {t("Continue")}
                           </Button>
 
 
@@ -139,10 +141,10 @@ import {Radio} from "@nextui-org/react";
             </div>
             
             <div style={{ border:"1.5px solid" }} className=' rounded-lg bg-white p-3 mt-2' >
-                  <AddProduct title="Products Details">
+                  <AddProduct title={t("Products Details")}>
                   <div className='bg-white rounded-md p-3 mb-3'>
                   
-                  <p>Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.</p> 
+                  <p>{t('Your phone number')}</p> 
                   
                   </div>
                   <div style={{ border:"2px solid rgb(210,210,210)" }} className='relative rounded-lg'>
@@ -152,7 +154,7 @@ import {Radio} from "@nextui-org/react";
                        <textarea
                        
                         
-                        placeholder='Describe your item' className=' rounded-t-lg outline-none p-3 rounded-b-lg h-40 w-full' 
+                        placeholder={t('Describe your item')} className=' rounded-t-lg outline-none p-3 rounded-b-lg h-40 w-full' 
                         style={{ border:"1px solid rgb(243,243,243)", fontWeight: bold ? "bolder" : "", fontStyle: italic ? "italic" : "" }}
                         
 
@@ -171,7 +173,7 @@ import {Radio} from "@nextui-org/react";
 
                      <div className=''>
                         <select class=" mb-4 w-full appearance-none row-start-1 col-start-1 bg-slate-50 dark:bg-slate-800 ...">
-                                <option>Select Condition </option>
+                                <option>{t("Select Condition")} </option>
                                 <option>Excellent</option>
                                 <option>Very Good</option>
                                 <option>Good</option>
@@ -179,7 +181,7 @@ import {Radio} from "@nextui-org/react";
                          
 
                         <select class="mb-4   w-full appearance-none row-start-1 col-start-1 bg-slate-50 dark:bg-slate-800 ...">
-                                <option style={{ border:"5px solid red" }} >Select Brand</option>
+                                <option style={{ border:"5px solid red" }} >{t("Select Brand")}</option>
                                 <option>Brandy Melville</option>
                                 <option>Forever 21</option>
                                 <option>Caddis</option>
@@ -194,7 +196,7 @@ import {Radio} from "@nextui-org/react";
                      <div className=''>
                     
                           <select class="mb-4  w-full appearance-none row-start-1 col-start-1 bg-slate-50 dark:bg-slate-800 ...">
-                                <option>Select Color</option>
+                                <option>{t("Select Color")}</option>
                                 <option>Red</option>
                                 <option>Black</option>
                                 <option>White</option>
@@ -206,7 +208,7 @@ import {Radio} from "@nextui-org/react";
                           
                         
                           <select class="mb-4  w-full appearance-none row-start-1 col-start-1 bg-slate-50 dark:bg-slate-800 ...">
-                                  <option>Select Model</option>
+                                  <option>{t("Select Model")}</option>
                                   <option>XXL</option>
                                   <option>S</option>
                                   <option>XL</option>
@@ -225,15 +227,15 @@ import {Radio} from "@nextui-org/react";
             <div style={{ border:"1.5px solid" }} className=' rounded-lg bg-white p-3 mt-2'>
                   <AddProduct title="Price & Stock">
                   <div className='bg-white rounded-md p-3 mb-3'>
-                      <p>Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.</p>
+                      <p>{t("Your phone number")}</p>
                       <div className=' grid grid-cols-2 gap-2 mt-4 mb-4  '>
                           <div className='w-full'>
-                              <Input className=' w-full' type="text" label="item's price" />
-                              <Input type="text" label="SKU" className=' mt-2' />
+                              <Input className=' w-full' type="text" label={t("item's price")} />
+                              <Input type="text" label={t("SKU")} className=' mt-2' />
                           </div>
                           <div className=''>
-                              <Input type="text" label="Discount / Sales" />
-                              <Input  className=' mt-2' type="text" label="Stock / Quantity" />
+                              <Input type="text" label={t("Discount / Sales")} />
+                              <Input  className=' mt-2' type="text" label={t("Stock / Quantity")} />
                           </div>
                       </div>
                   </div>
@@ -243,33 +245,33 @@ import {Radio} from "@nextui-org/react";
             <div style={{ border:"1.5px solid", height:"auto" }} className=' rounded-lg bg-white p-3 mt-2'>
                   <AddProduct title="Shipping">
                   <div className='bg-white rounded-md p-3 mb-3'>
-                       <p>Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.</p>
+                       <p>{t("Your phone number")}</p>
                        <div className=' grid grid-cols-2 gap-1 mt-3'>
                           <div>
-                              <p className=' fw-bolder'>Item weight</p>
-                              <p>Key Facts and Tips</p>
+                              <p className=' fw-bolder'>{t("Item weight")}</p>
+                              <p>{t("Key Facts and Tips")}</p>
                           </div>
-                          <Input type="text" label="Weight" style={{ backgroundColor:"transparent" }}  />
+                          <Input type="text" label={t("Weight")} style={{ backgroundColor:"transparent" }}  />
                        </div>
                        <div className=' grid grid-cols-3 gap-2 mt-3'>
-                          <Input type="text" label="Length"   />
-                          <Input type="text" label="Wide"   />
-                          <Input type="text" label="Height"   />
+                          <Input type="text" label={t("Length")}   />
+                          <Input type="text" label={t("Wide")}   />
+                          <Input type="text" label={t("Height")}   />
                        </div>
                        <div>
                           
                           <div>
                                 <div class="flex items-center justify-between mt-3 mb-3">
                                     <div>
-                                        <h4>Insurance</h4>
-                                        <p>Essential Coverage and Benefits</p>
+                                        <h4>{t("Insurance")}</h4>
+                                        <p>{t("Essential")} </p>
                                     </div>
                                    <div>
                                         <input  id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{t("Reauired")}</label>
 
                                         <input  id="default-radio-2" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600  ms-3 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600" />
-                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+                                        <label for="default-radio-2" class="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{t("Optional")}</label>
                                    </div>
                                    
                                 </div>
@@ -280,10 +282,11 @@ import {Radio} from "@nextui-org/react";
                        </div>
                        <div className=' float-end'>
                     <Button  as={Link} className=' me-3 bg-white text-black rounded-full border' href="/auth/signup" variant="flat">
-                          Save as darft
+                    {t("save as draf")}   
                     </Button>
                     <Button  as={Link} className=' bg-black text-white rounded-full' href="#" variant="flat">
-                    Sell Now
+                    {t("sell")}   
+
                     </Button>
                     </div>
                   </div>
@@ -297,7 +300,7 @@ import {Radio} from "@nextui-org/react";
 
         </div>
             <div style={{ height:"auto" }} className=' md:col-span-2 border p-4 rounded-lg'>
-              <h3 className=' font-bold mb-4'>Review Product</h3>
+              <h3 className=' font-bold mb-4'>{t("Review Product")}</h3>
               <div className=' rounded-md'  style={{ backgroundColor:"#f3f3f3", width:"100%", height:"281px" }}></div>
             
             </div>

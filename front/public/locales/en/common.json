@@ -704,7 +704,46 @@
     "stepVerification" : "2-step verification",
     "extralayer" : "Add an extra layer of security to your Vinted account — verify your phone number now. You’ll receive a verification code if we ever notice any unusual activity",
     "2factor" : "Two factor authentication" ,
-    "deletePermanent" :"This will be permanently deleted account in KIFTm this action connot be undone"
-    
+    "deletePermanent" :"This will be permanently deleted account in KIFTm this action connot be undone",
+
+
+    "sellItem" : "Sell an item",
+    "Review Product" : "Review Product",
+    "Product information" : "Product information",
+    "Drop your image here or" : "Drop your image here or",
+    "Add click Upload Photos" : "Add click Upload Photos",
+    "Upload Photos" : "Upload Photos" ,
   
+  "Products Details" : "Products Details",
+    "The item title" : "The item's title",
+    "Select Category" : "Select Category",
+    "Continue" : "Continue",
+    "Product Detail" : "Product Detail",
+    "Price & Stock" : "Price & Stock",
+    
+    "Your phone number" : "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
+    "Describe your item" : "Describe your item",
+    "Select Condition" : "Select Condition",
+    "Select Color" : "Select Color",
+    "Select Brand" : "Select Brand",
+    "Select Model" : "Select Model",
+    "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes." : "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
+    "item's price" : "item's price",
+    "Discount / Sales" : "Discount / Sales",
+    "SKU" : "SKU",
+    "Stock / Quantity" : "Stock / Quantity",
+    "Item weight" : "Item weight",
+    "Weight" : "Weight",
+    "Key Facts and Tips" : "Key Facts and Tips",
+    "Length" : "Length",
+    "Wide" : "Wide",
+    "Height" : "Height",
+    "Insurance" : "Insurance",
+    "Essential" : "Essential Coverage and Benefits",
+    "Reauired" : "Reauired",
+    "Optional" : "Optional" ,
+
+    "save as draf" : "Save as darft",
+    "add minimum" : "Add Minimum 2 photos required High resolution images 800x800px or larger recommended Format PNG,JPG ,JPEG"
+    
 }
