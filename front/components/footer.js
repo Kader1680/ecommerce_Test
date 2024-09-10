@@ -6,8 +6,7 @@ import appstore  from '../public/appstore.png'
 import playstore from '../public/playstore.png'
 import creadiCart from "../public/footer-img.png"
  
-import { useRouter } from "next/router";
-
+ 
 function Footer() {
  
     const { t } = useTranslation();

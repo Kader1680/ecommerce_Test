@@ -3,14 +3,17 @@ import React from 'react'
 
 import app from '../public/app.png'
 import google from '../public/googleBorder.png'
+import { useTranslation } from '../context/TranslationContext';
 
 
 function DownloadApp() {
+  const { t } = useTranslation();
+
   return (
     // style={{ height:"27rem" }}
     <div  className="max-w-sm   bg-white p-6 rounded-lg shadow-lg mb-4">
     <div className=' flex items-center justify-between mb-3'>
-                <h2 className="text-xl font-bold mt-3 mb-3">Download the app</h2>
+                <h2 className="text-xl font-bold mt-3 mb-3">{t("downloadapp")}</h2>
                 {/* <h3 className=' text-lg font-bold mt-3 mb-3'>Cart</h3> */}
                 <div className=' bg-slate-200 p-2 rounded-full'>
                     <Image  width={18} height={18} alt='close' src='/close.png' />
@@ -28,8 +31,7 @@ function DownloadApp() {
       <div className="mt-4">
      
         <p className="text-lg text-gray-600">
-        List and shop and easier than on web 
-        (and unlock the lastest features )
+       {t("List and shop")}
         </p>
       </div>
       <div className="flex mt-4 space-x-2">

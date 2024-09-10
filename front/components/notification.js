@@ -1,7 +1,11 @@
 import { Button } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
+import { useTranslation } from '../context/TranslationContext';
+
 const NotificationItem = ({ notification }) => {
+   
+
     return (
       <div className="flex justify-between items-center p-4 bg-gray-100 rounded-lg mb-2">
         <div>
@@ -13,28 +17,10 @@ const NotificationItem = ({ notification }) => {
     );
   };
 function Notification() {
-    const notifications = [
-        {
-          title: 'Talk about what you love',
-          description: 'Find answers. Give suggestions. Nerd out with your people.',
-          time: '4d',
-        },
-        {
-          title: 'Talk about what you love',
-          description: 'Find answers. Give suggestions. Nerd out with your people.',
-          time: '4d',
-        },
-        {
-          title: 'Talk about what you love',
-          description: 'Find answers. Give suggestions. Nerd out with your people.',
-          time: '4d',
-        },
-        {
-          title: 'Talk about what you love',
-          description: 'Find answers. Give suggestions. Nerd out with your people.',
-          time: '4d',
-        },
-      ];
+  const { t } = useTranslation();
+    const notifications = t("notificationsItem")
+
+ 
   return (
     <div className="max-w-sm mx-auto bg-white p-6 rounded-lg shadow-lg">
     <div className="mb-6">
@@ -46,7 +32,7 @@ function Notification() {
         className="rounded-lg"
       />
       <div className="mt-4">
-        <h2 className="text-lg font-semibold">Download the app</h2>
+        <h2 className="text-lg font-semibold"> {t("notifications")} </h2>
         <p className="text-xs text-gray-600">
           List and shop and easier than on web (and unlock the lastest features).
         </p>
@@ -69,8 +55,8 @@ function Notification() {
       </div>
     </div>
     <div className="flex justify-between items-center mb-4">
-      <h2 className="text-lg font-semibold">New</h2>
-      <button className="text-sm text-blue-500 hover:underline">Mark as read</button>
+      <h2 className="text-lg font-semibold"> {t("new")} </h2>
+      <button className="text-sm text-blue-500 hover:underline">{t("Mark as read")}</button>
     </div>
     <div>
       {notifications.map((notification, index) => (

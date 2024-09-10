@@ -7,6 +7,7 @@
   "sign": "Signup or sing in",
   "sell": "Sell Now",
   "getapp": "Get the app.",
+  "List and shop" : "List and shop and easier than on web (and unlock the lastest features )",
   "downloadapp": "Download the app for free on iPhone, iPad and Android.",
   "title": "Buy, sell, and discover fashion, home decor, beauty, and more",
   "description": "Sign up now and join millions of people on the social marketplace for all things style",
@@ -139,27 +140,21 @@
         "Sales": "Sales",
         "s": 35
       },
-      "comment":  
-         [
-          
-          
-          {
-            "pic": "/Ellipse 443.png",
-            "name": "Ronald Richards",
-            "content": "List and shop and easier than on web (and unlock the lastest features )",
-            "time": 13
-          },
-          {
-            "pic": "/Ellipse 1111.png",
+      "comment": [
+        {
+          "pic": "/Ellipse 443.png",
+          "name": "Ronald Richards",
+          "content": "List and shop and easier than on web (and unlock the lastest features )",
+          "time": 13
+        },
+        {
+          "pic": "/Ellipse 1111.png",
 
-            "name": "Ralph Edwards",
-            "content": "List and shop and easier than on web List and shop and easier than on web List and shop and easier than on web",
-            "time": 55
-          }
-          
-          
-          
-       ],
+          "name": "Ralph Edwards",
+          "content": "List and shop and easier than on web List and shop and easier than on web List and shop and easier than on web",
+          "time": 55
+        }
+      ],
 
       "brand": "Forever"
     },
@@ -467,13 +462,12 @@
       "time": "2 months ago",
       "feedback": "/stars.png",
       "pics": "/p6.png"
-    } 
+    }
   ],
 
-
-  "message" : "Messages",
-  "Chat" : "Chat",
-  "Offers" : "Offers",
+  "message": "Messages",
+  "Chat": "Chat",
+  "Offers": "Offers",
   "chatFriends": [
     {
       "name": "Dianne Russell",
@@ -484,266 +478,448 @@
     }
   ],
 
-  "itemsMessage" :"Item info",
-  "itemsDescription" :"CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDEMADE IN USA STITCHED",
-  "oldPrice" :20.36,
-  "newPrice" :25.00,
+  "itemsMessage": "Item info",
+  "itemsDescription": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDEMADE IN USA STITCHED",
+  "oldPrice": 20.36,
+  "newPrice": 25.0,
 
-  "buy" :"Buy Now",
-  "viewItem" :"View Item" ,
-  "searchItemsBar" : "search items",
+  "buy": "Buy Now",
+  "viewItem": "View Item",
+  "searchItemsBar": "search items",
 
-  "bag" : "Bag",
-  "bagInfo" : "4 items in your cart",
+  "bag": "Bag",
+  "bagInfo": "4 items in your cart",
   "bagItem": [
     {
       "name": "Eleanor Pena",
       "users": "@eleanorpena",
       "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
-      "oldPrice" :20.36,
-      "newPrice" :25.00,
-      "pic" : "/item (1).png",
-      "userImage" : "/profilItem.png"
-
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (1).png",
+      "userImage": "/profilItem.png"
     },
     {
       "name": "Ralph Edwards",
       "users": "@ralphedwards",
       "description": "NWT Disney store Wakanda, Black Panther T-shirt, marvel men’s extra large",
-      "oldPrice" :20.36,
-      "newPrice" :25.00,
-      "pic" : "/item (3).png",
-      "userImage" : "/profilItem.png"
-
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (3).png",
+      "userImage": "/profilItem.png"
     },
 
     {
-     "name": "Kristin Watson",
+      "name": "Kristin Watson",
       "users": "@kristinwatson",
       "description": "Men's Size 11, High Top Olive Green Hikers w/ Black and Orange Accents",
-      "oldPrice" :20.36,
-      "newPrice" :25.00,
-      "pic" : "/item (5).png",
-      "userImage" : "/profilItem.png"
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (5).png",
+      "userImage": "/profilItem.png"
     },
 
     {
       "name": "Robert Fox",
       "users": "@robertfox",
       "description": "Men's Size 11, High Top Olive Green Hikers w/ Black and Orange Accents",
-      "oldPrice" :20.36,
-      "newPrice" :25.00,
-      "pic" : "/item (3).png",
-      "userImage" : "/profilItem.png"
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "pic": "/item (3).png",
+      "userImage": "/profilItem.png"
+    }
+  ],
 
+  "alterBag": "Mother’s Day Sale: Extra 25% Off",
+  "alterBag2": "Use code JUST4MOM to save on select styles.",
+  "summury": "Summary",
+  "Subtotal": "Subtotal",
+  "Estimated": "Estimated Shipping & Handling",
+  "Tax": "Estimated Tax",
+  "Discount": "Discount Total",
+  "Total": "Total",
+  "chekout": "Check Out",
+  "download": "Download the app",
+  "textBag": "List and shop and easier than on web (and unlock the lastest features )",
+  "bagEmpty": "YOUR BAG IS EMPTY",
+  "emptyTextBag": "Once you add something to your bag, it will appear here. Ready to get started?",
+  "goShopping": "Go shopping",
+  "delete": "delete",
+
+  "Checkout": "Checkout",
+
+  "Faster": "For Faster Checkout Experience",
+  "textChkout": "By continuing, I confirm that I have read and accept the Terms and Conditions. and the Privacy Policy.",
+  "email": "Enter your Email ",
+  "ShippingAddress": "Shipping address",
+  "f_name": "First Name",
+  "l_name": "Last Name",
+  "address": "Star typing your address ",
+  "phone": "Phone",
+  "save": "Save and contiune",
+  "Delivery": "Delivery options ",
+  "Payment": "Payment",
+  "Voucher": "Voucher and promo",
+  "Apply": "Apply",
+  "code": "Enter code",
+
+  "Contact": "Contact",
+
+  "SelectMethods": "Select Payment Method",
+  "creadit": "Credit or debit card ",
+  "addCard": "Add Card ",
+  "pay": "Pay Now",
+
+  "deliveryOption": [
+    {
+      "standar": "Standard Option",
+      "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+      "price": 5,
+      "timeDelivery": "3-4 Days delivery estimate",
+      "pic": "/item (1).png",
+      "edit": "/edit.png"
+    },
+    {
+      "standar": "Standard Option",
+      "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+      "price": 5,
+      "timeDelivery": "3-4 Days delivery estimate",
+      "pic": "/item (1).png",
+      "edit": "/edit.png"
+    },
+
+    {
+      "standar": "Standard Option",
+      "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+      "price": 5,
+      "timeDelivery": "3-4 Days delivery estimate",
+      "pic": "/item (1).png",
+      "edit": "/edit.png"
+    },
+
+    {
+      "standar": "Standard Option",
+      "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+      "price": 5,
+      "timeDelivery": "3-4 Days delivery estimate",
+      "pic": "/item (1).png",
+      "edit": "/edit.png"
+    }
+  ],
+
+  "setting": "Account Setting",
+  "Profildetails": "Profile details",
+
+  "Yourphoto": "Your photo",
+  "About": "About you",
+  "telling": "Tell us more about yourself and your style",
+  "Country": "Country",
+  "Town/City": "Town/City",
+  "Showcity": "Show city in profile",
+  "Language": "Language",
+
+  "Accountsettings": "Account settings",
+
+  "Email": "Email",
+  "changeEmail": "Change Email",
+  "emailValue": "mohamedbenrekaya@gmail.com",
+  "Phonenumber": "Phone number",
+  "PhoneInfo": "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
+  "Fullname": "Full name",
+  "Gender": "Gender",
+  "Birthday": "Birthday",
+  "Day": "Day",
+  "Month": "Month",
+  "Year ": "Year ",
+  "GoogleAuth": "Google",
+  "FacebookAuth": "Facebook",
+  "link": "Link",
+  "linked": "Linked",
+  "verifyPhone": "Verify Phone Number",
+
+  "Shipping": "Shipping",
+
+  "SavedDelivery": "Saved Delivery Addresses",
+  "shippingCont": "You currently don't have any saved delivery addresses. Add an address here to be prefilled for quicker checkout.",
+
+  "notifications": "Notifications",
+  "showCity": "Show city in profile",
+  "Profiledetails": "Profile details",
+  "News": "News",
+  "KIFT": "KIFT Updates",
+  "notInfo": "Be the first to know about our newest features, updates, and changes",
+  "marketing": "Marketing communications",
+  "recommendations": "Receive personalized offers, news, and recommendations",
+  "Other": "Other notifications",
+  "newMess": "New messages",
+  "newFeed": "New feedback",
+  "Discounted": "Discounted items",
+
+  "priority": "High-priority notifications",
+
+  "Favorited": "Favorited Items",
+  "newFollow": "New followers",
+  "newItem": "New items",
+
+  "Payments": "Payments",
+  "saved": "Saved Payment Methods",
+  "currently": "You currently don't have any saved payment methods. Add a payment method here for quicker checkout.",
+  "addPayment": "Add Paymenet",
+
+  "Security": "Security",
+
+  "secure": "Keep your account even more secure",
+
+  "recommend": "We recommend taking extra steps to secure your account, to make using KIFT as safe as possible.",
+  "checkEmail": "Check that your email is correct",
+  "deleteAcc": "Delete Account",
+  "changePass": "Change Password",
+  "protect": "Protect your account with a stronger password.",
+  "stepVerification": "2-step verification",
+  "extralayer": "Add an extra layer of security to your Vinted account — verify your phone number now. You’ll receive a verification code if we ever notice any unusual activity",
+  "2factor": "Two factor authentication",
+  "deletePermanent": "This will be permanently deleted account in KIFTm this action connot be undone",
+
+  "sellItem": "Sell an item",
+  "Review Product": "Review Product",
+  "Product information": "Product information",
+  "Drop your image here or": "Drop your image here or",
+  "Add click Upload Photos": "Add click Upload Photos",
+  "Upload Photos": "Upload Photos",
+
+  "Products Details": "Products Details",
+  "The item title": "The item's title",
+  "Select Category": "Select Category",
+  "Continue": "Continue",
+  "Product Detail": "Product Detail",
+  "Price & Stock": "Price & Stock",
+
+  "Your phone number": "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
+  "Describe your item": "Describe your item",
+  "Select Condition": "Select Condition",
+  "Select Color": "Select Color",
+  "Select Brand": "Select Brand",
+  "Select Model": "Select Model",
+  "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.": "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
+  "item's price": "item's price",
+  "Discount / Sales": "Discount / Sales",
+  "SKU": "SKU",
+  "Stock / Quantity": "Stock / Quantity",
+  "Item weight": "Item weight",
+  "Weight": "Weight",
+  "Key Facts and Tips": "Key Facts and Tips",
+  "Length": "Length",
+  "Wide": "Wide",
+  "Height": "Height",
+  "Insurance": "Insurance",
+  "Essential": "Essential Coverage and Benefits",
+  "Reauired": "Reauired",
+  "Optional": "Optional",
+
+  "save as draf": "Save as darft",
+  "add minimum": "Add Minimum 2 photos required High resolution images 800x800px or larger recommended Format PNG,JPG ,JPEG",
+
+  "followerUsers": [
+    {
+      "name": "Floyd Miles",
+      "username": "@floydmiles",
+      "pics": "/followers (1).png"
+    },
+    {
+      "name": "Ralph Edwards",
+      "username": "@ralphedwards",
+      "pics": "/followers (2).png"
+    },
+
+    {
+      "name": "Dianne Russell",
+      "username": "@diannerussell",
+      "pics": "/followers (3).png"
+    },
+
+    {
+      "name": "Darlene Robertson",
+      "username": "@darlenerobertson",
+      "pics": "/followers (4).png"
+    },
+
+    {
+      "name": "Theresa Webb",
+      "username": "@theresawebb",
+      "pics": "/followers (5).png"
+    },
+
+    {
+      "name": "Robert Fox",
+      "username": "@robertfox",
+      "pics": "/followers (6).png"
+    },
+    {
+      "name": "Jenny Wilson",
+      "username": "@jennywilson",
+      "pics": "/followers (7).png"
     } 
   ],
 
-  "alterBag" : "Mother’s Day Sale: Extra 25% Off",
-  "alterBag2" : "Use code JUST4MOM to save on select styles.",
-  "summury" : "Summary",
-  "Subtotal" : "Subtotal",
-  "Estimated" : "Estimated Shipping & Handling",
-  "Tax" : "Estimated Tax",
-  "Discount" : "Discount Total",
-  "Total" : "Total",
-  "chekout" : "Check Out",
-  "download" : "Download the app" ,
-  "textBag" : "List and shop and easier than on web (and unlock the lastest features )" ,
-  "bagEmpty" : "YOUR BAG IS EMPTY",
-  "emptyTextBag" : "Once you add something to your bag, it will appear here. Ready to get started?" ,
-  "goShopping" : "Go shopping",
-  "delete" : "delete" ,
+  "followingUsers": [
+    {
+      "name": "Floyd Miles",
+      "username": "@floydmiles",
+      "pics": "/followers (1).png"
+    },
+    {
+      "name": "Ralph Edwards",
+      "username": "@ralphedwards",
+      "pics": "/followers (2).png"
+    },
 
-  "Checkout" : "Checkout",
+    {
+      "name": "Dianne Russell",
+      "username": "@diannerussell",
+      "pics": "/followers (3).png"
+    },
+
+    {
+      "name": "Darlene Robertson",
+      "username": "@darlenerobertson",
+      "pics": "/followers (4).png"
+    },
+
+    {
+      "name": "Theresa Webb",
+      "username": "@theresawebb",
+      "pics": "/followers (5).png"
+    },
+
+    {
+      "name": "Robert Fox",
+      "username": "@robertfox",
+      "pics": "/followers (6).png"
+    },
+    {
+      "name": "Jenny Wilson",
+      "username": "@jennywilson",
+      "pics": "/followers (7).png"
+    } 
+  ],
+
+  "cancel" :"Cancel",
+
+
+  "Confirm Password" : "Confirm Password",
+
+
+  "Add your shipping address" : "Add your shipping address",
+  "Address line 1" : "Address line 1",
+  "Address line 2 (optional)" : "Address line 2 (optional)",
+  "Zip code " : "Zip code ",
+  "Save " : "Save ",
+
+
+  "Add Payment Method" : "Add Payment Method",
+  "Card Number" : "Card  Number",
+  "MM/YY" : "MM/YY",
+  "CVV" : "CVV",
+  "Add Billing Address" : "Add Billing Address",
+  "Password requirements" : "Password requirements: Minimum of 8 characters Uppercase, lowercase letters, and one number",
+  "Confirm" : "Confirm",
+
+
+  "Your two-step verification process was successful" : "Your two-step verification process was successful",
+  "If you did not initiate this request, please contact our support team immediately." : "If you did not initiate this request, please contact our support team immediately.",
+  "Thank you for enhancing your account security." : "Thank you for enhancing your account security.",
+
+  "Done" : "Done",
+
+  "Cart" : "Cart",
+
+  "cartItem": [
+    {
+     
+      "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "$7.99 delivery fee",
+      "pic": "/item (1).png" 
+    },
+    {
+      
+     
+      "description": "NWT Disney store Wakanda, Black Panther T-shirt, marvel men’s extra large",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "$7.99 delivery fee",
+
+      "pic": "/item (3).png" 
+    },
+
+    {
+       
+      "description": "Men's Size 11, High Top Olive Green Hikers w/ Black and Orange Accents",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "$7.99 delivery fee",
+
+      "pic": "/item (5).png" 
+    },
+
+    {
+      
+      "description": "Men's Size 11, High Top Olive Green Hikers w/ Black and Orange Accents",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "$7.99 delivery fee",
+
+      "pic": "/item (3).png" 
+    }
+  ],
+
+
+  "notificationsItem" : [
+    {
+      "title": "Talk about what you love",
+      "description": "Find answers. Give suggestions. Nerd out with your people.",
+      "time": "4d" 
+    },
+    {
+      "title": "Talk about what you love",
+      "description": "Find answers. Give suggestions. Nerd out with your people.",
+      "time": "4d" 
+    },
+    {
+      "title": "Talk about what you love",
+      "description": "Find answers. Give suggestions. Nerd out with your people.",
+      "time": "4d" 
+    },
+    {
+      "title": "Talk about what you love",
+      "description": "Find answers. Give suggestions. Nerd out with your people.",
+      "time": "4d" 
+    } ],
+    
+    "new" : "New",
+
+  "Mark as read" : "Mark as read",
+
+  "Make An Offer" : "Make An Offer",
+
+  "offerItem": [
+    {
+     
+      "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "Interested in this product? Tell us what you ' re willing to pay! Fill out the form below with your offer amount and any additional comments",
+      "pic": "/item (1).png" 
+    } 
+  ],
+  "Enter your offer" : "Enter your offer",
+  "Recommend" : "Recommend" ,
+
+  "Submit Offer" : "Submit Offer",
+  "An offer is not a purchase. If the seller accepts, you’ll have 24 hours to buy the item at your offer price." : "An offer is not a purchase. If the seller accepts, you’ll have 24 hours to buy the item at your offer price." 
+  
    
-  "Faster" : "For Faster Checkout Experience",
-  "textChkout" : "By continuing, I confirm that I have read and accept the Terms and Conditions. and the Privacy Policy.",
-  "email" : "Enter your Email ",
-  "ShippingAddress" : "Shipping address",
-  "f_name" : "First Name",
-  "l_name" : "Last Name",
-  "address" : "Star typing your address ",
-  "phone":"Phone",
-  "save":"Save and contiune",
-  "Delivery":"Delivery options ",
-  "Payment":"Payment",
-   "Voucher" : "Voucher and promo",
-   "Apply" : "Apply",
-   "code" : "Enter code",
-  
-  "Contact" : "Contact" ,
-
-   "SelectMethods" : "Select Payment Method",
-   "creadit" : "Credit or debit card ",
-   "addCard" : "Add Card " ,
-    "pay" : "Pay Now",
-
-
-    "deliveryOption": [
-      {
-       
-        "standar": "Standard Option",
-        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
-        "price": 5,
-        "timeDelivery" : "3-4 Days delivery estimate",
-        "pic": "/item (1).png" ,
-        "edit" : "/edit.png"
-       
-      },
-      {
-        "standar": "Standard Option",
-        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
-        "price": 5,
-        "timeDelivery" : "3-4 Days delivery estimate",
-        "pic": "/item (1).png" ,
-        "edit" : "/edit.png"
-      },
-  
-      {
-        "standar": "Standard Option",
-        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
-        "price": 5,
-        "timeDelivery" : "3-4 Days delivery estimate",
-        "pic": "/item (1).png" ,
-        "edit" : "/edit.png"
-      },
-  
-      {
-        "standar": "Standard Option",
-        "description": "CIRCA BROWN LEATHER BELT Square Buckle Small 1.5”WIDE MADE IN USA STITCHED",
-        "price": 5,
-        "timeDelivery" : "3-4 Days delivery estimate",
-        "pic": "/item (1).png" ,
-        "edit" : "/edit.png"
-      }
-    ],
   
 
-    "setting" : "Account Setting",
-    "Profildetails" : "Profile details",
-
-    
-    "Yourphoto" : "Your photo",
-    "About" : "About you",
-    "telling" : "Tell us more about yourself and your style",
-    "Country" : "Country",
-    "Town/City" : "Town/City",
-    "Showcity" : "Show city in profile",
-    "Language" : "Language",
-
-
-
-    "Accountsettings" : "Account settings",
-
-    "Email" : "Email",
-    "changeEmail" : "Change Email",
-    "emailValue" : "mohamedbenrekaya@gmail.com",
-    "Phonenumber" : "Phone number",
-    "PhoneInfo" : "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
-    "Fullname" : "Full name",
-    "Gender" : "Gender",
-    "Birthday" : "Birthday",
-    "Day" : "Day",
-    "Month" : "Month",
-    "Year " : "Year ",
-    "GoogleAuth" : "Google",
-    "FacebookAuth" : "Facebook",
-    "link" : "Link",
-    "linked" : "Linked",
-    "verifyPhone" : "Verify Phone Number",
-
-
-
-
-    "Shipping" : "Shipping",
-
-    "SavedDelivery" : "Saved Delivery Addresses",
-    "shippingCont" : "You currently don't have any saved delivery addresses. Add an address here to be prefilled for quicker checkout.",
-  
-
-
-    "notifications" : "Notifications",
-    "showCity": "Show city in profile",
-    "Profiledetails" : "Profile details",
-    "News" : "News",
-    "KIFT" : "KIFT Updates",
-    "notInfo" : "Be the first to know about our newest features, updates, and changes",
-    "marketing" : "Marketing communications",
-    "recommendations" : "Receive personalized offers, news, and recommendations",
-    "Other" : "Other notifications",
-    "newMess" : "New messages",
-    "newFeed" : "New feedback",
-    "Discounted" : "Discounted items",
-
-
-    "priority" : "High-priority notifications",
- 
-    "Favorited" : "Favorited Items",
-    "newFollow" : "New followers",
-    "newItem" : "New items",
-
-
-    "Payments" : "Payments",
-    "saved" : "Saved Payment Methods",
-    "currently" : "You currently don't have any saved payment methods. Add a payment method here for quicker checkout.",
-    "addPayment" : "Add Paymenet",
-
- 
-
-
-    "Security" : "Security",
-    
-    "secure" : "Keep your account even more secure",
-
-    "recommend" : "We recommend taking extra steps to secure your account, to make using KIFT as safe as possible.",
-    "checkEmail" : "Check that your email is correct",
-    "deleteAcc" : "Delete Account",
-    "changePass" : "Change Password",
-    "protect" : "Protect your account with a stronger password.",
-    "stepVerification" : "2-step verification",
-    "extralayer" : "Add an extra layer of security to your Vinted account — verify your phone number now. You’ll receive a verification code if we ever notice any unusual activity",
-    "2factor" : "Two factor authentication" ,
-    "deletePermanent" :"This will be permanently deleted account in KIFTm this action connot be undone",
-
-
-    "sellItem" : "Sell an item",
-    "Review Product" : "Review Product",
-    "Product information" : "Product information",
-    "Drop your image here or" : "Drop your image here or",
-    "Add click Upload Photos" : "Add click Upload Photos",
-    "Upload Photos" : "Upload Photos" ,
-  
-  "Products Details" : "Products Details",
-    "The item title" : "The item's title",
-    "Select Category" : "Select Category",
-    "Continue" : "Continue",
-    "Product Detail" : "Product Detail",
-    "Price & Stock" : "Price & Stock",
-    
-    "Your phone number" : "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
-    "Describe your item" : "Describe your item",
-    "Select Condition" : "Select Condition",
-    "Select Color" : "Select Color",
-    "Select Brand" : "Select Brand",
-    "Select Model" : "Select Model",
-    "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes." : "Your phone number will only be used to help you log in. It won’t be made public or used for marketing purposes.",
-    "item's price" : "item's price",
-    "Discount / Sales" : "Discount / Sales",
-    "SKU" : "SKU",
-    "Stock / Quantity" : "Stock / Quantity",
-    "Item weight" : "Item weight",
-    "Weight" : "Weight",
-    "Key Facts and Tips" : "Key Facts and Tips",
-    "Length" : "Length",
-    "Wide" : "Wide",
-    "Height" : "Height",
-    "Insurance" : "Insurance",
-    "Essential" : "Essential Coverage and Benefits",
-    "Reauired" : "Reauired",
-    "Optional" : "Optional" ,
-
-    "save as draf" : "Save as darft",
-    "add minimum" : "Add Minimum 2 photos required High resolution images 800x800px or larger recommended Format PNG,JPG ,JPEG"
-    
 }

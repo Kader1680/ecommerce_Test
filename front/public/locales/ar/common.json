@@ -776,7 +776,225 @@
     "save as draf" : "حفظ كمسودة",
   "Products Details" : "تفاصيل المنتج" ,
 
-  "add minimum" : "مطلوب إضافة صورتين كحد أدنى. صور عالية الدقة 800 × 800 بكسل أو أكبر، يوصى بالتنسيق PNG، JPG، JPEG"
+  "add minimum" : "مطلوب إضافة صورتين كحد أدنى. صور عالية الدقة 800 × 800 بكسل أو أكبر، يوصى بالتنسيق PNG، JPG، JPEG",
+
+
+  "followingUsers": [
+    {
+      "name": "فلويد مايلز",
+      "username": "@floydmiles",
+      "pics": "/followers (1).png"
+    },
+    {
+      "name": "رالف إدواردز",
+      "username": "@ralphedwards",
+      "pics": "/followers (2).png"
+    },
+
+    {
+      "name": "ديان راسل",
+      "username": "@diannerussell",
+      "pics": "/followers (3).png"
+    },
+
+    {
+      "name": "دارلين روبرتسون",
+      "username": "@darlenerobertson",
+      "pics": "/followers (4).png"
+    },
+
+    {
+      "name": "تيريزا ويب",
+      "username": "@theresawebb",
+      "pics": "/followers (5).png"
+    },
+
+    {
+      "name": "روبرت فوكس",
+      "username": "@robertfox",
+      "pics": "/followers (6).png"
+    },
+    {
+      "name": "جيني ويلسون",
+      "username": "@jennywilson",
+      "pics": "/followers (7).png"
+    } 
+  ],
+
+
+  "followerUsers": [
+    {
+      "name": "فلويد مايلز",
+      "username": "@floydmiles",
+      "pics": "/followers (1).png"
+    },
+    {
+      "name": "رالف إدواردز",
+      "username": "@ralphedwards",
+      "pics": "/followers (2).png"
+    },
+
+    {
+      "name": "ديان راسل",
+      "username": "@diannerussell",
+      "pics": "/followers (3).png"
+    },
+
+    {
+      "name": "دارلين روبرتسون",
+      "username": "@darlenerobertson",
+      "pics": "/followers (4).png"
+    },
+
+    {
+      "name": "تيريزا ويب",
+      "username": "@theresawebb",
+      "pics": "/followers (5).png"
+    },
+
+    {
+      "name": "روبرت فوكس",
+      "username": "@robertfox",
+      "pics": "/followers (6).png"
+    },
+    {
+      "name": "جيني ويلسون",
+      "username": "@jennywilson",
+      "pics": "/followers (7).png"
+    } 
+  ],
+
+  "cancel" :"إلغاء",
+
+
+  "Confirm Password" : "تأكيد كلمة المرور",
+
+
+
+  
+  "Add your shipping address" : "أضف عنوان الشحن",
+  "Address line 1" : "العنوان سطر 1",
+  "Address line 2 (optional)" : "سطر العنوان 2 (اختياري)",
+  "Zip code" : "الرمز البريدي ",
+  "" : "يتم استخدام الرمز البريدي الخاص بك لحساب ضريبة المبيعات المطبقة. ,يتعلم أكثر.",
+  "Save " : "حفظ  ",
+
+
+  "Add Payment Method" : "إضافة طريقة الدفع",
+  "Card Number" : "رقم البطاقة",
+  "MM/YY" : "مم / سنة",
+  "CVV" : "رمز التحقق",
+  "Add Billing Address" : "إضافة عنوان إرسال الفواتير",
+  
+  "Password requirements" : "Password requirements: Minimum of 8 characters Uppercase, lowercase letters, and one number",
+  
+  "Confirm" : "تأكيد",
+
+
+  "Your two-step verification process was successful" : "تمت عملية التحقق المكونة من خطوتين بنجاح",
+  "If you did not initiate this request, please contact our support team immediately." : "إذا لم تكن قد بدأت هذا الطلب، فيرجى الاتصال بفريق الدعم لدينا على الفور.",
+  "Thank you for enhancing your account security." : ",شكرًا لك على تعزيز أمان حسابك.",
+
+  "Done" : "منتهي",
+
+
+  "Cart" : "سلة التسوق",
+
+  "cartItem": [
+    {
+     
+      "description": "حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "رسوم التوصيل 7.99 دولارًا",
+      "pic": "/item (1).png" 
+    },
+    {
+      
+     
+      "description": "NWT مقاس متوسط ​​LF بلوزة تركواز",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "رسوم التوصيل 7.99 دولارًا",
+
+      "pic": "/item (3).png" 
+    },
+
+    {
+       
+      "description": "متجر NWT Disney Wakanda، تي شيرت Black Panther، مقاس كبير جدًا للرجال من Marvel",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "رسوم التوصيل 7.99 دولارًا",
+
+      "pic": "/item (5).png" 
+    },
+
+    {
+      
+      "description": "مقاس رجالي 11، حذاء عالي الجودة باللون الأخضر الزيتوني مع لمسات باللونين الأسود والبرتقالي",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "رسوم التوصيل 7.99 دولارًا",
+      "pic": "/item (3).png" 
+
+    }
+  ],
+
+
+
+
+  
+  "notificationsItem" : [
+    {
+      "title": "تحدث عما تحب",
+      "description": "ابحث عن اجابات. ,تقديم اقتراحات. ,الطالب الذي يذاكر كثيرا خارجا مع شعبك.",
+      "time": "4 د" 
+    },
+    {
+      "title": "تحدث عما تحب",
+      "description": "ابحث عن اجابات. ,تقديم اقتراحات. ,الطالب الذي يذاكر كثيرا خارجا مع شعبك.",
+      "time": "4 د" 
+    },
+    {
+      "title": "تحدث عما تحب",
+      "description": "ابحث عن اجابات. ,تقديم اقتراحات. ,الطالب الذي يذاكر كثيرا خارجا مع شعبك.",
+      "time": "4 د" 
+    },
+    {
+      "title": "تحدث عما تحب",
+      "description": "ابحث عن اجابات. ,تقديم اقتراحات. ,الطالب الذي يذاكر كثيرا خارجا مع شعبك.",
+      "time": "4 د" 
+    }
+  ],
+
+
+  "new" : "جديد",
+
+  "Mark as read" : "وضع علامة كمقروء" ,
+
+  "List and shop" : "القائمة والتسوق وأسهل من الويب ,(وفتح أحدث الميزات)",
+
+
+  "Make An Offer" : "تقديم عرض",
+
+  "offerItem": [
+    {
+     
+      "description": "حزام سيركا من الجلد البني بإبزيم مربع صغير بعرض 1.5 بوصة صنع في الولايات المتحدة الأمريكية ومخيط",
+      "oldPrice": 20.36,
+      "newPrice": 25.0,
+      "delivery" : "هل أنت مهتم بهذا المنتج؟ ,أخبرنا بما أنت على استعداد لدفعه! ,املأ النموذج أدناه بمبلغ العرض الخاص بك وأي تعليقات إضافية",
+      "pic": "/item (1).png" 
+    } 
+  ],
+  "Enter your offer" : "أدخل العرض الخاص بك",
+  "Recommend" : "توصية" ,
+
+  "Submit Offer" : "إرسال العرض",
+  "An offer is not a purchase. If the seller accepts, you’ll have 24 hours to buy the item at your offer price." : "العرض ليس شراء. ,إذا وافق البائع، سيكون لديك 24 ساعة لشراء العنصر بسعر العرض الخاص بك." 
+  
+   
   
 
     

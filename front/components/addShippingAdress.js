@@ -2,11 +2,14 @@ import { Button, Input } from '@nextui-org/react'
 import React from 'react'
 import {Select, SelectItem} from "@nextui-org/react";
 import {country} from "./country";
+import { useTranslation } from '../context/TranslationContext';
 
 function AddShippingAdress() {
+  const { t } = useTranslation();
+
   return (
     <div className="bg-white p-6 rounded-lg shadow-lg max-w-sm mb-5 h-fit ">
-      <h2 className="text-xl font-semibold mb-4">Add your shipping address</h2>
+      <h2 className="text-xl font-semibold mb-4">{t("Add your shipping address")}</h2>
       <form>
         <div className="mb-4">
            
@@ -14,7 +17,7 @@ function AddShippingAdress() {
             className="text-gray-700 w-full text-sm  mb-2"
             variant="bordered"
 
-            label="Country" 
+            label={t("Country")}
             
             >
             {country.map((count) => (
@@ -25,47 +28,47 @@ function AddShippingAdress() {
         </Select>
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Full Name</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">{t("Fullname")}</label>
           <Input
             variant="bordered"
             type="text"
-            placeholder="Full Name"
+            placeholder={t("Fullname")}
             className=" appearance-none  rounded w-full   text-gray-700  "
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Address Line 1</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">{t("Address line 1")}</label>
           <Input
             variant="bordered"
             type="text"
-            placeholder="Address Line 1"
+            placeholder={t("Address line 1")}
             className=" appearance-none  rounded w-full   text-gray-700  "
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Address Line 2 (optional)</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">{t("Address line 2 (optional)")}</label>
           <Input
             variant="bordered"
             type="text"
-            placeholder="Address Line 2 (optional)"
+            placeholder={t("Address line 2 (optional)")}
             className=" appearance-none  rounded w-full   text-gray-700  "
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 text-sm font-bold mb-2">Zip Code</label>
+          <label className="block text-gray-700 text-sm font-bold mb-2">{t("Zip code")}</label>
           <Input
             variant="bordered"
             type="text"
-            placeholder="Zip Code"
+            placeholder={t("Zip code")}
             className=" appearance-none  rounded w-full   text-gray-700  "
           />
         </div>
          
           <Button  className='me-1 bg-white text-black rounded-full border' href="/auth/signup" variant="flat">
-            Cancel
+          {t("cancel")}
           </Button>
           <Button  className='bg-black text-white rounded-full' href="#" variant="flat">
-           Save
+          {t("save")}
           </Button>
           
       </form>
