@@ -31,9 +31,9 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <TranslationProvider >
- <NextUIProvider > 
+    <NextUIProvider > 
 
-   
+          
           <Layout>
           <div  className={poppins.className}>
           

@@ -13,12 +13,13 @@ import {
   Button,
   Image,
 } from "@nextui-org/react";
-import { usePathname } from "next/navigation";
-// import Search from "../search";
+ // import Search from "../search";
 // import MegaMenu from "../megaMenu";
 // import WomenSawar from "../womenSawar";
 
 export default function Mynavbar() {
+
+  
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
     "Profile",

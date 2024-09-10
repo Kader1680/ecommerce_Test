@@ -11,9 +11,10 @@ export function TranslationProvider({ children }) {
   const [locale, setLocale] = useState('en');
 
   const t = (key) => translations[locale][key] || key;
-
+   
   const changeLanguage = (lang) => {
     setLocale(lang);
+    
   };
 
   
