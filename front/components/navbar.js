@@ -27,10 +27,8 @@ export default function Mynavbar() {
     "Activity",
     "Analytics",
     "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
+    "عربي",
+    "English",
     "Log Out",
   ];
 
@@ -187,18 +185,7 @@ export default function Mynavbar() {
         
 
         </NavbarItem>
-        <button  className=" text-center"  onClick={() => changeLanguage('en')}> 
-        
-        <Image width={20} height={20} alt="ALT" src="/english.png" />
-        <p>English</p>
-        
-        </button>
-        <button   onClick={() => changeLanguage('ar')}>
-        <Image width={20} height={20} alt="ALT" src="/arabic.png" />
-        
-         <p>العربية</p>
-        
-        </button>
+       
 
       </NavbarContent>
       <NavbarMenu>
@@ -218,9 +205,26 @@ export default function Mynavbar() {
             >
               {item}
             </Link>
+          
+
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
+
+
+      <div className=" translateButton   ">
+       <button  className=" text-center"  onClick={() => changeLanguage('en')}> 
+        
+     
+        <p>English</p>
+        
+        </button>
+        <button   onClick={() => changeLanguage('ar')}>
+         
+         <p>العربية</p>
+        
+        </button>
+       </div>
     </Navbar>
   );
 }

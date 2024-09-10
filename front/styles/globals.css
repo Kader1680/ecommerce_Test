@@ -781,3 +781,13 @@ select:focus{
   font-size: 14px;
   font-weight: 400;
 }
+
+.translateButton{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150%, -150%);
+  z-index: 65666;
+  background-color: #635bff;
+  display: block;
+}
