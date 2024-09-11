@@ -1,5 +1,6 @@
  
 import { useTranslation } from '../context/TranslationContext';
+import { useThemeContext } from '../context/ThemeContext';
 import React from 'react'
 import Image from 'next/image'
 import appstore  from '../public/appstore.png'
@@ -10,12 +11,17 @@ import creadiCart from "../public/footer-img.png"
 function Footer() {
  
     const { t } = useTranslation();
-
+    const {theme, changeTheme}  = useThemeContext();
+   
+    const style = {
+      backgroundColor: theme === "white" ? "#ffffff" : "#000000",
+      color: theme === "white" ? "#000000" : "#ffffff",
+    }
   return (
-   <div  >
+   <div style={style} >
             <div  style={{ width:"90%", margin:"auto", marginTop:"3rem" }} className='footer font-poppins  grid sm:grid-cols-2 md:grid-cols-4 pb-8'>
         
-            <div className='infoContact text-black'>
+            <div className='infoContact'>
                 <h2>{t("logo")}</h2>
                 <ul>
                     <li>{t("footerAddress")}</li>
@@ -33,7 +39,7 @@ function Footer() {
                 </ul>
             </div>
 
-            <div className='itms font-poppins'>
+            <div style={style} className='itms font-poppins'>
                 <h3 className='font-poppins'>{t("footerCategory")}</h3>
                 <ul>
                     <li>{t("footerCategoryWomen")}</li>

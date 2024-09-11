@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useTranslation } from '../context/TranslationContext';
+import { useThemeContext } from '../context/ThemeContext';
  
 import {
   Navbar,
@@ -13,13 +14,16 @@ import {
   Button,
   Image,
 } from "@nextui-org/react";
- // import Search from "../search";
-// import MegaMenu from "../megaMenu";
-// import WomenSawar from "../womenSawar";
+ 
 
 export default function Mynavbar() {
 
-  
+  const {theme, changeTheme}  = useThemeContext();
+   
+  const style = {
+    backgroundColor: theme === "white" ? "#ffffff" : "#000000",
+    color: theme === "white" ? "#000000" : "#ffffff",
+  }
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const menuItems = [
     "Profile",
@@ -50,11 +54,11 @@ export default function Mynavbar() {
   };
  
   const { t, changeLanguage } = useTranslation();
-  return (
-    <Navbar   onMenuOpenChange={setIsMenuOpen}>
+  return ( 
+    <Navbar style={style}   onMenuOpenChange={setIsMenuOpen}>
    
  
-      <div
+      <div 
         className="menswear"
         style={{ display: menswear ? "block" : "none" }}
       >
@@ -158,6 +162,8 @@ export default function Mynavbar() {
           </div>
         </NavbarItem>
         <NavbarItem>
+
+        <button onClick={()=>{changeTheme(theme)}}>Change Theme</button>
           <Button
             as={Link}
             className=" bg-white text-black rounded-full border"

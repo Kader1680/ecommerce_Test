@@ -1,26 +1,25 @@
 "use client";
 import { NextUIProvider } from '@nextui-org/react';
 import '../styles/globals.css';
-import React, { useContext } from 'react'
+import React, { createContext, useContext } from 'react'
 import Layout from '../components/layout';
 
-import { isRtl } from '../utils/directions';
+
 
 import { Poppins } from 'next/font/google';
 import { useEffect } from 'react';
 import i18n from '../i18n';
 import { TranslationProvider } from '../context/TranslationContext';
-import { useRouter } from 'next/router';
+import ThemeContext  from '../context/ThemeContext';
+ 
  
 const poppins = Poppins({
   subsets: ['latin'],
-  weight: ['400', '500', '600', '700'], // You can include other weights as needed
-  style: ['normal', 'italic'], // Include styles if needed
+  weight: ['400', '500', '600', '700'], 
+  style: ['normal', 'italic'], 
 });
 
- 
 
- 
 function MyApp({ Component, pageProps }) {
 
   useEffect(() => {
@@ -28,23 +27,24 @@ function MyApp({ Component, pageProps }) {
     i18n.init();
   }, []);
  
+ 
 
   return (
-    <TranslationProvider >
-    <NextUIProvider > 
 
-          
-          <Layout>
-          <div  className={poppins.className}>
-          
-                <Component {...pageProps} />
 
-          </div>
-          </Layout>
-      </NextUIProvider>
-    </TranslationProvider>
-     
-   
+    <ThemeContext>
+    <TranslationProvider>
+          <NextUIProvider> 
+                <Layout>
+                  <div   className={poppins.className}>
+                        <Component {...pageProps} />
+                  </div>
+                </Layout>
+          </NextUIProvider>
+      </TranslationProvider>
+    </ThemeContext> 
+  
+  
   );
 }
 
