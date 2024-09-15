@@ -22,8 +22,8 @@ class loignRequest extends FormRequest
     public function rules(): array
     {
         return [
-            "email" => "min:0|string|required|email",
-            "password" => "min:0|string|required",
+            "email" => "min:2|max:255|string|required|email",
+            "password" => "min:2|string|required",
            
         ];
     }

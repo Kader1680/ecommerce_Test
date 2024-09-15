@@ -35,7 +35,7 @@ function Login() {
     try {
       const response = await axios.post("http://127.0.0.1:8000/api/login", formData);
       
-      if (response.data.message === "succesfull login information") {
+      if (response.data.message === "Successful login") {
            router.push('/profil')
         
       } 
@@ -122,7 +122,7 @@ function Login() {
                   />
 
              
-              <Link className="mt-4 float-end" href="/">{t('forget')}</Link>
+              <Link className="mt-4 float-end" href="/auth/forget-password">{t('forget')}</Link>
 
               <Button type="submit" className="LoginIcon" style={{ backgroundColor:"black", margin: "30px 0px" }}>
               {t('login')}

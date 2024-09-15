@@ -6,17 +6,17 @@ use App\Http\Requests\registerRequest;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 
 class RegisterController extends Controller
 {
-    public function store(registerRequest $request){
+    public function store(Request $request){
          
 
         $data = User::create([
             'name' => $request->get('name'),
             'email' => $request->get('email'),
-            // 'gender' => $request->get('gender'),
             'password' => Hash::make($request->get('password')),
             
         ]);
@@ -34,10 +34,7 @@ class RegisterController extends Controller
             'status' => true,
             'error' => null,
             'data' => $data,
-            // 'authorisation' => [
-            //     'token' => $token,
-            //     'type' => 'bearer',
-            // ]
+       
         ], 201);
     }
 
@@ -51,12 +48,12 @@ class RegisterController extends Controller
         ]);
     }
 
-    public function getuser(){
-        $users = User::all();
+        public function getuser(){
+            $users = DB::table("users")->pluck('password');
 
-        return  response()->json([
-            'status' => true,
-            'users' => $users,
-        ],200);
-    }
+            return  response()->json([
+                'status' => true,
+                'users' => $users,
+            ],200);
+        }
 }

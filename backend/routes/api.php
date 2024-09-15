@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\cartItemController;
+use App\Http\Controllers\ForgetPasswordController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\orderController;
 use App\Http\Controllers\productController;
@@ -17,6 +18,39 @@ Route::get('/user', function (Request $request) {
 Route::post('/login', [LoginController::class, "store"]);
 Route::post('/register', [RegisterController::class, "store"]);
 Route::get('/users', [RegisterController::class, "getuser"]);
+
+
+
+
+// // reset for the forget password
+// Route::post('/forget-password', [ForgetPasswordController::class, "forgetPassword"]);
+// Route::post('/reset-password', [ForgetPasswordController::class, "submitResetPasswordForm"]);
+
+
+// Route::get('/forget-password', [ForgetPasswordController::class, "forgetPassword"]);
+// Route::get('/reset-password', [ForgetPasswordController::class, "submitResetPasswordForm"]);
+
+
+
+Route::post('/forget-password', [ForgetPasswordController::class, "forgetPassword"]);
+
+Route::get('/forget-password-view', [ForgetPasswordController::class, "forgetPassword"]);
+
+ 
+
+ 
+Route::post('/reset-password', [ForgetPasswordController::class, "submitResetPasswordForm"]);
+
+Route::get('reset-password/{token}', [ForgetPasswordController::class, 'showResetPasswordForm']);
+
+
+// Route to display reset password page (GET)
+Route::get('/reset-password/{token}', function() {
+    return view('reset-password'); // Your reset password view
+});
+
+
+
 
 // products router
 Route::get('/prodcuts', [productController::class, "index"]);
@@ -39,6 +73,7 @@ Route::post('/cart', [cartItemController ::class, "store"]);
 Route::put('/cart/{id}', [cartItemController ::class, "update"]);
 Route::delete('/cart/{id}', [cartItemController ::class, "destroy"]);
 
-
-
+// profil page
 Route::get('/profile', [profileController::class, "view"]);
+
+
