@@ -25,7 +25,7 @@ function Login() {
   }
 
   const router = useRouter()
-  // const alerts = () => {alert('dfdfd')}
+ 
   const handelInput = async (e) => {
     e.preventDefault();
     const formData = new FormData();

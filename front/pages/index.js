@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 
 import { useTranslation } from "../context/TranslationContext";
  
@@ -26,6 +26,7 @@ import g2 from "../public/g2.png";
 import g3 from "../public/g3.png";
 import g4 from "../public/g4.png";
 import ChangeMode from "../components/changeMode";
+import axios from "axios";
   
 function Index() {
   const { t } = useTranslation();
@@ -36,9 +37,15 @@ function Index() {
     color: theme === "white" ? "#000000" : "#ffffff",
   }
   
+
+  
+ 
+
+  
   return (
     <div style={style}>
       
+       
       <div 
         className="homePub font-poppins "
         style={{ width: "90%", margin: "auto",  backgroundColor : theme  }}
