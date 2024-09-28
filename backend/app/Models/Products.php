@@ -17,6 +17,15 @@ class Products extends Model
         "size" ,
         "shipping" ,
         "discount" ,
-        "id_user" 
+        "id_user" ,
+        "brand",
+        "condition" ,
+        "category" ,
+        "review" ,
+        "model",
+        "description",
+        "quantity"
     ];
+
+     
 }

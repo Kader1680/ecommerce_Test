@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useTranslation } from '../context/TranslationContext';
 import { useThemeContext } from '../context/ThemeContext';
  
@@ -54,6 +54,24 @@ export default function Mynavbar() {
   };
  
   const { t, changeLanguage } = useTranslation();
+
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  // Simulated authentication check (replace this with an actual API call)
+  const checkAuth = () => {
+    // Example: if a token exists in localStorage or cookies
+    const token = localStorage.getItem('auth_token');
+    if (token) {
+      setIsAuthenticated(true);
+    } else {
+      setIsAuthenticated(false);
+    }
+  };
+
+  useEffect(() => {
+    checkAuth();
+  }, []);
+
   return ( 
     <Navbar style={style}   onMenuOpenChange={setIsMenuOpen}>
    
@@ -164,16 +182,26 @@ export default function Mynavbar() {
         <NavbarItem>
 
         <button onClick={()=>{changeTheme(theme)}}>Change Theme</button>
+          
+
+          {/* <Button
+            as={Link}
+            className=" bg-white text-black rounded-full border"
+            href="/auth/login"
+            variant="flat"
+
+            style={{ display : isAuthenticated ? "block" : "none" }}
+          >
+             login
+          </Button>
+          
           <Button
             as={Link}
             className=" bg-white text-black rounded-full border"
             href="/auth/signup"
             variant="flat"
           >
-                     
-                    {t('sign')}
-
-
+            {t('sign')}
           </Button>
           <Button
             as={Link}
@@ -181,15 +209,73 @@ export default function Mynavbar() {
             href="#"
             variant="flat"
           >
-            
+      
             {t('sell')}
-
-
           </Button>
 
-         
-        
 
+          <Button
+            as={Link}
+            className=" bg-black text-white rounded-full"
+            href="#"
+            variant="flat"
+          >
+      
+            logout
+          </Button> */}
+
+
+
+
+
+          
+      {isAuthenticated ? (
+          <>
+            <Button
+              as={Link}
+              className="bg-black text-white rounded-full"
+              href="/profile"
+              variant="flat"
+            >
+              {t('Profile')}
+            </Button>
+            <Button
+              as={Link}
+              className="bg-black text-white rounded-full"
+              href="/sell"
+              variant="flat"
+            >
+              {t('sell')}
+            </Button>
+            <Button
+              as={Link}
+              className="bg-black text-white rounded-full"
+              href="/logout"
+              variant="flat"
+            >
+              {t('logout')}
+            </Button>
+          </>
+        ) : (
+          <>
+            <Button
+              as={Link}
+              className="bg-white text-black rounded-full border"
+              href="/auth/login"
+              variant="flat"
+            >
+              {t('login')}
+            </Button>
+            <Button
+              as={Link}
+              className="bg-white text-black rounded-full border"
+              href="/auth/signup"
+              variant="flat"
+            >
+              {t('sign')}
+            </Button>
+          </>
+        )}
         </NavbarItem>
        
 

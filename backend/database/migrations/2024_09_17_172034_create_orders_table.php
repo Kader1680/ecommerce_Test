@@ -15,10 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string("status");
             $table->double("total_price");
-            $table->unsignedInteger("id_user");
-            $table->unsignedInteger("id_product");
+            $table->unsignedBigInteger("id_user");
+            $table->unsignedBigInteger("id_product");
             $table->foreign("id_user")->references('id')->on('users');
             $table->foreign("id_product")->references('id')->on('products');
+            $table->timestamps();
         });
     }
 

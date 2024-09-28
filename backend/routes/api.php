@@ -73,7 +73,16 @@ Route::post('/cart', [cartItemController ::class, "store"]);
 Route::put('/cart/{id}', [cartItemController ::class, "update"]);
 Route::delete('/cart/{id}', [cartItemController ::class, "destroy"]);
 
+
+ 
+
+
 // profil page
 Route::get('/profile', [profileController::class, "view"]);
 
 
+Route::get('/pics', function(){
+    return view("welcome");
+});
+ 
+Route::post('/pics', [productController::class, "store"]);

@@ -4,6 +4,12 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from '../context/TranslationContext';
 import axios from 'axios';
+import {
+ 
+    Link,
+    
+  } from "@nextui-org/react";
+
 
 function Products() {
     const { t } = useTranslation();
@@ -13,7 +19,7 @@ function Products() {
     const [products, setproducts] = useState([]);
 
   const allProdcuts = async () =>{
-    await axios.get("http://127.0.0.1:8000/api/prodcuts/")
+    await axios.get("http://127.0.0.1:8000/api/prodcuts")
     .then(response => setproducts(response.data.data))
     .catch(error => console.log(error))
       
@@ -34,7 +40,7 @@ function Products() {
                     </div>
                     <Image alt='alt' src={item.image} width={300} height={460.03} />
                     <div className='price flex justify-between'>
-                       <p style={{ width:"70%" }}> {item.title}</p>
+                       <Link href={`http://localhost:3000/${item.id}`}><p style={{ width:"70%" }}> {item.title}</p></Link>
                         <div className='block'>
                             <div style={{ fontSize: "18px" }} className='font-bold'>{item.newPrice} $</div>
                             <div className=' line-through' style={{ fontSize: "12px" }}>{item.oldPrice} $</div>

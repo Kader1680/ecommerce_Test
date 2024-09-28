@@ -13,17 +13,6 @@ return new class extends Migration
     {
         Schema::create('products', function (Blueprint $table) {
             $table->id();
-
-//  "title"	=> 'required|string|max:255',
-// "oldPrice"	=> 'required|numeric|max:255',
-// "newPrice"	=> 'required|numeric|max:255',
-// "image"	=> 'required|string|max:255',
-// "color"	=> 'required|string|max:255',
-// "size"	=> 'required|string|max:255',
-// "shipping"	=> 'required|string|max:255',
-// "discount" => 'required|numeric',
-// "id_user" => 'required|numeric',
-
             $table->string('title');
             $table->integer('oldPrice');
             $table->integer('newPrice');
@@ -32,8 +21,14 @@ return new class extends Migration
             $table->string('size');
             $table->string('shipping');
             $table->integer('discount');
-            $table->string('id_user');
-
+            $table->string('brand');
+            $table->string('condition');
+            $table->string('model');
+            $table->string('category');
+            $table->integer('review');
+            $table->unsignedBigInteger('id_user');
+            $table->foreign('id_user')->references("id")->on('users');
+            
             $table->timestamps();
         });
     }

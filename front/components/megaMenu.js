@@ -12,7 +12,7 @@ function MegaMenu() {
       className="flex flex-col lg:flex-row   bg-white"
     >
 
-    s
+     
       {/* <div className="w-full lg:w-2/4 p-5 bg-white  ">
         <h2 className="text-xl font-bold mb-6">
           {intl.formatMessage({ id: "Menswear" })}
